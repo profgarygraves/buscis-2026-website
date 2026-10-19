@@ -4,8 +4,11 @@ from pages import DYN, UP, linklist
 
 PAGES_ES = {
  "forms.html": dict(title="Formularios y solicitudes", eyebrow="Recursos estudiantiles",
-  lead="Solicita un certificado, pide sustituir un requisito o impugna un prerrequisito. Un consejero puede ayudarte a elegir el formulario correcto.",
+  lead="Cambia tu carrera, solicita un certificado, pide sustituir un requisito o impugna un prerrequisito. Un consejero puede ayudarte a elegir el formulario correcto.",
   body=f"""
+<div class="block"><h2>Cambia tu carrera</h2>
+<p>¿Quieres estudiar un programa de Negocios o CIS? Actualiza tu carrera con Admisiones y Registros para que tu consejero, tu plan educativo y tu ruta de <span lang="en">Hornet Pathways</span> coincidan con tu meta. Elige el título o certificado exacto que planeas obtener; las páginas de programas de este sitio enlazan a cada uno en el catálogo.</p>
+<ul class="linklist"><li><a href="https://admissions.fullcoll.edu/major-changes/">Cambiar mi carrera (<span lang="en">Change My Major</span>)</a> <span>Admisiones y Registros, formulario en inglés</span></li></ul></div>
 <div class="block"><h2>Certificados</h2>
 <p>Las solicitudes de certificados de Negocios y CIS las procesa la Unidad de Evaluaciones de Admisiones y Registros. Presenta tu solicitud solo cuando hayas terminado todas tus clases y se hayan publicado tus calificaciones finales.</p>
 <ul class="linklist"><li><a href="https://dynamicforms.ngwebsolutions.com/Submit/Page?form=0dbbf09f-d7bb-4ff3-8ef5-71ccd1684947&amp;section=1147703&amp;page=734430&amp;token=Jqj9sXaialUHA2W2lXQ4K9AxYxFg-ciqpJBfSzPChjE">Solicitud de certificado de la División de Negocios y CIS</a> <span>Formulario en inglés</span></li>
@@ -119,7 +122,8 @@ PAGES_ES = {
   lead="Visita, llama o escribe a la oficina de la División de Negocios y CIS. Te ayudaremos a encontrar a la persona indicada.",
   body="""<div class="block"><h2>Oficina de la división</h2>
 <div class="tablebox"><table><tbody>
-<tr><th scope="row">Ubicación</th><td>Edificio 300, salón 325<br>321 E. Chapman Ave., Fullerton, CA 92832</td></tr>
+<tr><th scope="row">Ubicación</th><td>Edificio 300, suite 314<br>321 E. Chapman Ave., Fullerton, CA 92832</td></tr>
+<tr><th scope="row">Sala de conferencias</th><td>Edificio 300, salón 325</td></tr>
 <tr><th scope="row">Teléfono</th><td>714-992-7032</td></tr>
 <tr><th scope="row">Correo electrónico</th><td>buscis@fullcoll.edu</td></tr></tbody></table></div></div>
 <div class="block" id="hours"><h2>Horario de oficina</h2>
@@ -150,7 +154,7 @@ PAGES_ES = {
 <p>Algunas páginas enlazan a herramientas de otras oficinas, como el horario de clases, el catálogo, los formularios en línea y Canvas. Algunos documentos de los programas son archivos PDF. Si alguno te resulta difícil de usar, comunícate con nosotros y te daremos la información en otro formato.</p></div>
 <div class="block"><h2>Reporta un problema</h2>
 <p>Si algo en este sitio no funciona para ti, dinos en qué página y qué pasó. Responderemos en un plazo de cinco días hábiles.</p>
-<ul><li>Correo electrónico: buscis@fullcoll.edu</li><li>Teléfono: 714-992-7032</li><li>Visítanos: Edificio 300, salón 325</li></ul></div>""",
+<ul><li>Correo electrónico: buscis@fullcoll.edu</li><li>Teléfono: 714-992-7032</li><li>Visítanos: Edificio 300, suite 314</li></ul></div>""",
   aside="""<div class="aside-card highlight"><h2>Servicios de Apoyo para Discapacidades</h2><p class="small" style="margin:0 0 8px">Para adaptaciones en clases y exámenes, comunícate con Servicios de Apoyo para Discapacidades (DSS) de Fullerton College.</p><ul><li><a href="https://dss.fullcoll.edu/">Disability Support Services (DSS)</a></li></ul></div>
 <div class="aside-card"><h2>Opciones de visualización</h2><p class="small" style="margin:0">Usa los botones de tema en la parte superior de cualquier página para elegir claro, oscuro o la configuración de tu dispositivo. Tu elección se recuerda en este dispositivo.</p></div>"""),
 }

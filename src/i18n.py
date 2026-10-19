@@ -34,7 +34,7 @@ T = {
                  "¿Tienes preguntas sobre un programa, una clase o un certificado? Comunícate con la oficina de la división."),
  "tagline": ("Once a Hornet, always a Hornet.", "Once a Hornet, always a Hornet."),
  "visit": ("Visit", "Visítanos"),
- "room": ("Building 300, Room 325", "Edificio 300, salón 325"),
+ "room": ("Building 300, Suite 314", "Edificio 300, suite 314"),
  "office_hours": ("Office hours", "Horario de oficina"),
  "contact": ("Contact", "Contacto"),
  "directory_link": ("Faculty &amp; staff directory", "Directorio del profesorado y personal"),

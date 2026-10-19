@@ -72,7 +72,8 @@ def initials(name):
     parts = [w for w in name.split(",")[0].replace("Dr. ", "").split() if w[0].isalpha()]
     return (parts[0][0] + parts[-1][0]).upper()
 
-PHOTO_ALIASES = {"sandy-carter": "sandy-santalia-carter"}
+PHOTO_ALIASES = {"santalia-carter": "sandy-santalia-carter", "brenda-klingenmaier": "brenda-terry-klingenmaier",
+                 "steve-john-haddadin": "steve-haddadin", "kathy-standen": "kathleen-standen"}
 def photo(name):
     s = slug(name); s = PHOTO_ALIASES.get(s, s)
     return f"img/people/{s}.jpg" if (ROOT / "img" / "people" / f"{s}.jpg").exists() else None
@@ -87,7 +88,7 @@ def person(name, role="", area="", email="", phone="", dept="bus", lang="en"):
             + (f'<p class="ar">{tr_area(area, lang)}</p>' if area else "")
             + (f'<p class="ct">{phone}</p>' if phone else "")
             + (f'<p class="ct mail">{email}</p>' if email else "")
-            + (f'<p class="cls"><a href="https://schedule.nocccd.edu/?college=2&amp;instr={quote(SCHEDULE_NAMES[email])}">'
+            + (f'<p class="cls"><a href="https://schedule.nocccd.edu/?college=2{("&amp;term=" + SCHEDULE_NAMES[email][1]) if SCHEDULE_NAMES[email][1] else ""}&amp;instr={quote(SCHEDULE_NAMES[email][0])}">'
                f'{L(lang, "Find classes", "Ver sus clases")}<span class="sr-only"> {L(lang, "taught by", "de")} {name}</span> &rarr;</a></p>'
                if email in SCHEDULE_NAMES else ""))
     return f'<li class="person">{ph}<div class="pm">{meta}</div></li>'

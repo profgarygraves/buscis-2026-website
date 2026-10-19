@@ -8,7 +8,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Program leads carried over from the 2023 brochure: Marcus Wilson (Business), Barry McCarthy (International Business), Richard Ghidella (Real Estate), Brandon Tran (Accounting), Michael Moore (Paralegal), Anna Carlin (Cyber Security)
 - [x] Confirmed leads: Gary Graves (Entrepreneurship, AI in Business), Marwin Luminarias (Marketing), Brian Roach (CIS), Carlos Antunez (Computer Gaming)
 - [ ] Department coordinators: Kathy Standen and Marcus Wilson (Business Management), Brandon Tran (Accounting), Brian Roach (CIS), Michael Moore (Paralegal)
-- [ ] Name spellings: Kathleen or Kathy Standen; Richard or Rich Ghidella; Marwin Luminarias
+- [x] Faculty names now match the official class schedule (October 19): Kathy Standen, Julianne Dixon, Kristine Wilson, Leonard Rosenblum, Santalia Carter, Brenda Klingenmaier, Steve John Haddadin, Richard Ghidella, Marwin Luminarias
 - [ ] Faculty roster (82 names from the old directory): remove anyone who has left and add new hires
 - [x] Laura Melella removed from the CIS page (October 19)
 - [ ] Jane Troop: Business Management (directory) or CIS (old CIS page)?
@@ -17,7 +17,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Counselors (Barajas, Castillo, Nguyen, Skiles) and Fall hours
 
 ### Office
-- [x] Location: Building 300, Room 325 (confirmed October 19)
+- [x] Location: Building 300, Division Office Suite 314; Conference Room 325 (confirmed October 19)
 - [ ] Office hours: Mon–Thu 8 a.m.–7 p.m., Fri 8 a.m.–5 p.m.; summer Mon–Thu 8 a.m.–5 p.m., closed Friday
 
 ### Program details
@@ -63,6 +63,9 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Confirm these old pages can be dropped: New certificates (2020), New courses, CAE notice, Business City field trip, NASA JPL internship, Late-start internship, RE 103 and MKT 208 promos, Buzzy blog, Typing Test, draft faculty page
 
 ## D. Technical
+- [x] "Find classes" button on the 69 faculty cards with classes in Fall 2026 or Winter/Spring 2027 (October 19). Fall-only faculty open Fall 2026.
+- [ ] Each new term: refresh `SCHEDULE_NAMES` in `src/people.py` (or have PHP read the schedule's instructors.json daily)
+- [x] "Change My Major" link on the home page (Start here step 1 and Plan your classes) and the Forms page (October 19)
 - [ ] Redirect file (`web.config`) so old addresses go to the new pages
 - [ ] Copy seven documents from the old WordPress server into `/docs`: three course rotations (Accounting, CIS, Paralegal), the CPA worksheet, the FCAP flyer, and both internship brochures
 - [ ] Convert the build to PHP: `header.php`, `footer.php`, `programs.php`, `people.php`

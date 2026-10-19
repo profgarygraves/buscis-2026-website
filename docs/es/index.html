@@ -180,6 +180,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.15;text-wra
 .steps h3{font-size:19px;margin-bottom:6px}
 .steps p{margin:0 0 10px;color:var(--muted);font-size:15px}
 .steps a{font-weight:700;font-size:14px}
+.steps .two{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0}
 @media (max-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:520px){.steps{grid-template-columns:minmax(0,1fr)}}
 
@@ -570,7 +571,7 @@ h1,h2,h3,h4,p,li,dd,td,a{overflow-wrap:break-word}
   <div class="wrap">
     <div class="section-head"><div><h2 id="start-h">Empieza aquí</h2><p>¿Eres nuevo en Fullerton College o en la división? Estos cuatro pasos te llevan de tu primera clase a tu certificado.</p></div></div>
     <ol class="steps">
-      <li><h3>Solicita admisión a Fullerton College</h3><p>La admisión es gratuita. Haz una sola solicitud en CCCApply y podrás tomar clases de cualquier programa.</p><a href="https://www.fullcoll.edu/admissions/">Cómo solicitar &rarr;</a></li>
+      <li><h3>Solicita admisión o cambia tu carrera</h3><p>¿Eres nuevo en FC? La admisión es gratuita en CCCApply. ¿Ya eres estudiante? Haz que un programa de Negocios o CIS sea tu carrera oficial para que tu consejero y tu plan educativo coincidan con tu meta.</p><p class="two"><a href="https://www.fullcoll.edu/admissions/">Cómo solicitar &rarr;</a><a href="https://admissions.fullcoll.edu/major-changes/">Cambiar mi carrera<span class="sr-only"> (en inglés)</span> &rarr;</a></p></li>
       <li><h3>Toma un curso para empezar</h3><p>Cada programa indica uno o dos cursos iniciales. Cuentan para el título y te muestran cómo es el área.</p><a href="#programs">Ver los cursos iniciales &rarr;</a></li>
       <li><h3>Planea con un consejero</h3><p>Usa los mapas de programas de la ruta de Negocios y reúnete con un consejero de educación profesional para planear tus semestres.</p><a href="counselors.html">Conoce a los consejeros &rarr;</a></li>
       <li><h3>Solicita tu título o certificado</h3><p>Los certificados y títulos no se otorgan automáticamente. Solicítalos en el semestre en que terminas tu último curso.</p><a href="forms.html">Formularios y solicitudes &rarr;</a></li>
@@ -588,7 +589,7 @@ h1,h2,h3,h4,p,li,dd,td,a{overflow-wrap:break-word}
         <li><a href="https://www.fullcoll.edu/hornet-pathways/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span><b lang="en">Hornet Pathways</b><span>Mapas de programas por ruta</span></span></a></li>
         <li><a href="counselors.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span><b>Consejeros</b><span>Consejeros de la división y de educación profesional</span></span></a></li>
         <li><a href="forms.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg><span><b>Formularios y solicitudes</b><span>Solicitudes de certificado y peticiones</span></span></a></li>
-        <li><a href="contact.html#hours"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Contacto y horario</b><span>Oficina, personal y horario de la división</span></span></a></li>
+        <li><a href="https://admissions.fullcoll.edu/major-changes/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg><span><b>Cambiar mi carrera</b><span>Cámbiate a una carrera de Negocios o CIS en línea (en inglés)</span></span></a></li>
       </ul>
     </div>
     <div class="set" id="beyond">
@@ -613,7 +614,7 @@ h1,h2,h3,h4,p,li,dd,td,a{overflow-wrap:break-word}
       <p>¿Tienes preguntas sobre un programa, una clase o un certificado? Comunícate con la oficina de la división.</p>
       <p class="tagline" lang="en">Once a Hornet, always a Hornet.</p>
     </div>
-    <div><h3 class="k">Visítanos</h3><p>Edificio 300, salón 325<br>321 E. Chapman Ave., Fullerton</p><p><a href="contact.html#hours">Horario de oficina</a></p></div>
+    <div><h3 class="k">Visítanos</h3><p>Edificio 300, suite 314<br>321 E. Chapman Ave., Fullerton</p><p><a href="contact.html#hours">Horario de oficina</a></p></div>
     <div><h3 class="k">Contacto</h3><p>714-992-7032<br><a href="mailto:buscis@fullcoll.edu">buscis@fullcoll.edu</a></p><p><a href="faculty.html">Directorio del profesorado y personal</a></p></div>
     <div><h3 class="k">Sigue a la división</h3><ul class="soc"><li><a href="https://www.facebook.com/fcbusinessdiv/"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.5V14h2.7v8z"/></svg><span>Facebook <small>@fcbusinessdiv</small></span></a></li><li><a href="https://www.instagram.com/fcbusiness_div/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram <small>@fcbusiness_div</small></span></a></li><li><a href="https://www.linkedin.com/groups/1654377/"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 9h3.6v11H4zM5.8 3.5a2.1 2.1 0 1 1 0 4.2 2.1 2.1 0 0 1 0-4.2zM9.8 9h3.4v1.6c.5-.9 1.7-1.9 3.5-1.9 3.7 0 4.3 2.4 4.3 5.5V20h-3.6v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V20H9.8z"/></svg><span>LinkedIn <small>FC Alumni group</small></span></a></li><li><a href="https://www.youtube.com/@fullertoncollegebusiness"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15V9l5.2 3z"/></svg><span>YouTube <small>@fullertoncollegebusiness</small></span></a></li></ul><p><a href="https://fullcoll.instructure.com/enroll/876ALN">Únete al Hornet Business Club</a></p></div>
   </div>

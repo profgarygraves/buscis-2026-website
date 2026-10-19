@@ -9,8 +9,11 @@ def linklist(items):
 
 PAGES = [
  dict(file="forms.html", title="Forms &amp; Applications", eyebrow="Student resources",
-  lead="Apply for a certificate, petition to substitute a requirement, or challenge a prerequisite. A counselor can help you choose the right form.",
+  lead="Change your major, apply for a certificate, petition to substitute a requirement, or challenge a prerequisite. A counselor can help you choose the right form.",
   body=f"""
+<div class="block"><h2>Change your major</h2>
+<p>Want to major in a Business or CIS program? Update your major with Admissions &amp; Records so your counselor, education plan, and Hornet Pathway match your goal. Pick the exact degree or certificate you plan to earn; the program pages on this site link to each one in the catalog.</p>
+{linklist([("Change My Major", "https://admissions.fullcoll.edu/major-changes/", "Admissions &amp; Records")])}</div>
 <div class="block"><h2>Certificates</h2>
 <p>Business and CIS certificate applications are processed by the Evaluations Unit in Admissions &amp; Records. Apply only after all of your classes are complete and final grades are posted.</p>
 {linklist([("BUS &amp; CIS Division Certificate Application", "https://dynamicforms.ngwebsolutions.com/Submit/Page?form=0dbbf09f-d7bb-4ff3-8ef5-71ccd1684947&amp;section=1147703&amp;page=734430&amp;token=Jqj9sXaialUHA2W2lXQ4K9AxYxFg-ciqpJBfSzPChjE", ""),
@@ -130,7 +133,8 @@ PAGES = [
   lead="Stop by, call, or email the Business &amp; CIS Division office. We will point you to the right person.",
   body="""<div class="block"><h2>Division office</h2>
 <div class="tablebox"><table><tbody>
-<tr><th scope="row">Location</th><td>Building 300, Room 325<br>321 E. Chapman Ave., Fullerton, CA 92832</td></tr>
+<tr><th scope="row">Location</th><td>Building 300, Suite 314<br>321 E. Chapman Ave., Fullerton, CA 92832</td></tr>
+<tr><th scope="row">Conference room</th><td>Building 300, Room 325</td></tr>
 <tr><th scope="row">Phone</th><td>714-992-7032</td></tr>
 <tr><th scope="row">Email</th><td>buscis@fullcoll.edu</td></tr></tbody></table></div></div>
 <div class="block" id="hours"><h2>Office hours</h2>
@@ -162,7 +166,7 @@ PAGES = [
 <p>Some pages link to tools run by other offices, such as the class schedule, the college catalog, online forms, and Canvas. Some program documents are PDF files. If any of these is hard for you to use, contact us and we will provide the information in another format.</p></div>
 <div class="block"><h2>Report a problem</h2>
 <p>If something on this site does not work for you, tell us the page and what happened. We will respond within five business days.</p>
-<ul><li>Email: buscis@fullcoll.edu</li><li>Phone: 714-992-7032</li><li>Visit: Building 300, Room 325</li></ul></div>""",
+<ul><li>Email: buscis@fullcoll.edu</li><li>Phone: 714-992-7032</li><li>Visit: Building 300, Suite 314</li></ul></div>""",
   aside="""<div class="aside-card highlight"><h2>Disability Support Services</h2><p class="small" style="margin:0 0 8px">For classroom and testing accommodations, contact Fullerton College Disability Support Services.</p><ul><li><a href="https://dss.fullcoll.edu/">Disability Support Services (DSS)</a></li></ul></div>
 <div class="aside-card"><h2>Display options</h2><p class="small" style="margin:0">Use the theme buttons at the top of any page to choose light, dark, or your device's setting. Your choice is remembered on this device.</p></div>""",
   todo="Confirm the five-business-day response time, and ask Campus Communications whether the college has an official accessibility statement to link to."),
