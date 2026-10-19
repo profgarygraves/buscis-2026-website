@@ -69,18 +69,33 @@ PAGES_ES = {
 <li><b>Paralegal</b><span>Prof. Michael Moore, mmoore1@fullcoll.edu</span></li></ul></div>"""),
 
  "study-abroad.html": dict(title="Estudios en el extranjero", eyebrow="Más allá del salón",
-  lead="Obtén unidades de Fullerton College mientras vives y aprendes en otro país, en cursos impartidos por profesores de FC.",
-  body="""<div class="block"><h2>Próximamente: Florencia, Italia</h2>
-<p>Fullerton College planea un semestre de estudios en <b>Florencia, Italia</b>, para el <b>otoño de 2028</b>, dirigido por el profesor Gary Graves con Silvie Grote de Cypress College. Aquí se publicarán los cursos, los costos y las fechas de solicitud.</p></div>
+  lead="Obtén unidades de Fullerton College mientras vives y aprendes en Florencia, Italia, en el otoño de 2028.",
+  body="""<div class="block"><a href="https://studyabroad.fullcoll.edu/"><img class="flyer" src="../img/florence-2028.jpg" width="1400" height="933" alt="Estudia historia del arte, negocios y bienestar en Florencia, Italia, otoño de 2028. Visita studyabroad.fullcoll.edu." lang="es"></a></div>
+<div class="block"><h2>Florencia, Italia: otoño de 2028</h2>
+<p>Pasa un semestre de 13 semanas en <b>Florencia, Italia</b>, estudiando historia del arte, negocios y bienestar. El programa lo dirige el profesor Gary Graves de Fullerton College con la profesora Silvie Grote de Cypress College. Obtienes unidades de Fullerton College que cuentan para la educación general, tu carrera y la transferencia.</p>
+<p class="notice" role="note"><b>Importante:</b> Este programa está pendiente de la aprobación de la Junta de Síndicos (<span lang="en">Board of Trustees</span>). Los cursos aún no son definitivos y pueden cambiar.</p>
+<p><a class="btn btn-primary" href="https://studyabroad.fullcoll.edu/">Solicita o pregunta en studyabroad.fullcoll.edu</a></p></div>
+<div class="block"><h2>Cursos planeados</h2>
+<h3>Historia del arte y negocios, con el profesor Gary Graves</h3>
+<div class="tablebox"><table><thead><tr><th scope="col">Curso</th><th scope="col">Título</th><th scope="col">Unidades</th><th scope="col">Área de GE de FC</th><th scope="col">Transferible a</th></tr></thead><tbody><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=BUS+240+F">BUS 240 F</a></th><td><span lang="en">Legal Environment of Business</span><br><span class="small">Honores disponible</span></td><td>3</td><td>4</td><td>CSU</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=ARTH+155+F">ARTH 155 F</a></th><td><span lang="en">Western Art History: 15th to 21st Century</span><br><span class="small">Honores disponible</span></td><td>3</td><td>3</td><td>CSU</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=BUS+211+F">BUS 211 F</a></th><td><span lang="en">Personal Critical Reasoning and Writing for Business Management</span><br><span class="small">Honores disponible</span></td><td>3</td><td>1B</td><td>CSU</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=ARTH+100+F">ARTH 100 F</a></th><td><span lang="en">Introduction to Visual Culture</span><br><span class="small">Honores disponible</span></td><td>3</td><td>3</td><td>CSU</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=BUS+185+F">BUS 185 F</a></th><td><span lang="en">Creativity Matters!</span></td><td>3</td><td>7</td><td>CSU</td></tr></tbody></table></div>
+<h3>Salud y bienestar, con la profesora Silvie Grote</h3>
+<div class="tablebox"><table><thead><tr><th scope="col">Curso</th><th scope="col">Título</th><th scope="col">Unidades</th><th scope="col">Área de GE de FC</th><th scope="col">Transferible a</th></tr></thead><tbody><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=PE+235+F">PE 235 F</a></th><td><span lang="en">First Aid, CPR, and Safety Education</span></td><td>3</td><td>—</td><td>CSU y UC</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=HED+140+F">HED 140 F</a></th><td><span lang="en">Health Science</span></td><td>3</td><td>5</td><td>CSU y UC</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=PE+121+F">PE 121 F</a></th><td><span lang="en">Walking for Fitness</span></td><td>1</td><td>7</td><td>CSU; UC limita el crédito</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=PE+243+F">PE 243 F</a></th><td><span lang="en">Stress Management</span></td><td>3</td><td>7</td><td>CSU; UC limita el crédito</td></tr></tbody></table></div>
+<p class="small">Las áreas de GE son para el título AA/AS de Fullerton College. ARTH 100 F y ARTH 155 F también cumplen el área 3 de Cal-GETC. Pregunta a un consejero cómo encaja cada curso en tu plan educativo.</p></div>
+<div class="block"><h2>Cómo pagar tus estudios en el extranjero</h2>
+<p>¿No sabes cómo pagarlo? Toma <a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=BUS+186+F">BUS 186 F, <span lang="en">Funding Special Projects and New Ventures</span></a>. Aprenderás a encontrar becas y subvenciones para estudiar en el extranjero, organizar una campaña de financiamiento colectivo, presentar tu proyecto y hacer un presupuesto. La ayuda financiera también puede aplicarse a programas aprobados; pregunta en la oficina de Ayuda Financiera.</p>
+<ul class="linklist"><li><a href="https://iefa.org/">IEFA: <span lang="en">International Education Financial Aid</span></a> <span>Búsqueda de becas (en inglés)</span></li>
+<li><a href="https://studyabroad.state.gov/">Departamento de Estado de EE. UU.: estudios en el extranjero</a> <span>Planeación y seguridad (en inglés)</span></li>
+<li><a href="https://financialaid.fullcoll.edu/">Ayuda Financiera de Fullerton College</a></li></ul></div>
 <div class="block"><h2>Quién puede solicitar</h2>
-<p>Los programas anteriores requerían al menos 12 unidades de trabajo universitario, incluido English 100 (College Writing) o su equivalente con C o más, un promedio (GPA) de 2.5 o más y una edad mínima de 18 años. Consulta con la oficina de Estudios en el Extranjero los requisitos de cada programa.</p></div>
-<div class="block"><h2>Planea con tiempo</h2>
-<p>Reúnete con un consejero para incluir los cursos en el extranjero en tu plan educativo, y empieza pronto tu plan de financiamiento.</p></div>""",
+<p>Los programas anteriores requerían al menos 12 unidades de trabajo universitario, incluido English 100 (College Writing) o su equivalente con C o más, un promedio (GPA) de 2.5 o más y una edad mínima de 18 años. Consulta en <a href="https://studyabroad.fullcoll.edu/">studyabroad.fullcoll.edu</a> los requisitos de este programa.</p></div>""",
   aside="""<div class="aside-card highlight"><h2>Oficina de Estudios en el Extranjero</h2><ul>
-<li><a href="https://studyabroad.fullcoll.edu/">Estudios en el extranjero de Fullerton College</a></li>
+<li><a href="https://studyabroad.fullcoll.edu/">studyabroad.fullcoll.edu</a></li>
 <li><a href="https://www.instagram.com/fcstudyabroad/">@fcstudyabroad en Instagram</a></li>
 <li>studyabroad@fullcoll.edu</li></ul></div>
-<div class="aside-card"><h2>Planea tu semestre</h2><ul><li><a href="counselors.html">Reúnete con un consejero</a></li></ul></div>"""),
+<div class="aside-card"><h2>Más sobre el programa</h2><ul>
+<li><a href="https://ggraves.faculty.fullcoll.edu/study-abroad.html">Florencia 2028 en el sitio del profesor Graves</a> (en inglés)</li>
+<li><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=BUS+186+F">BUS 186 F: cómo financiar tu viaje</a></li>
+<li><a href="counselors.html">Reúnete con un consejero</a></li></ul></div>"""),
 
  "career.html": dict(title="Recursos profesionales", eyebrow="Más allá del salón",
   lead="Investiga carreras, encuentra empleo, recibe comentarios sobre tu currículum y vístete para la entrevista, con herramientas gratuitas para estudiantes de Fullerton College.",

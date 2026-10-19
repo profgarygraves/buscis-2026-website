@@ -77,19 +77,34 @@ PAGES = [
   todo=""),
 
  dict(file="study-abroad.html", title="Study Abroad", eyebrow="Beyond class",
-  lead="Earn Fullerton College units while you live and learn in another country, in courses taught by FC faculty.",
-  body="""<div class="block"><h2>Coming up: Florence, Italy</h2>
-<p>A Fullerton College study abroad semester in <b>Florence, Italy</b> is planned for <b>Fall 2028</b>, led by Professor Gary Graves with Silvie Grote of Cypress College. Courses, costs, and application dates will be posted here.</p></div>
+  lead="Earn Fullerton College units while you live and learn in Florence, Italy, in Fall 2028.",
+  body=f"""<div class="block"><a href="https://studyabroad.fullcoll.edu/"><img class="flyer" src="img/florence-2028.jpg" width="1400" height="933" alt="Study Art History, Business, and Wellness in Florence, Italy, Fall 2028. Visit studyabroad.fullcoll.edu."></a></div>
+<div class="block"><h2>Florence, Italy: Fall 2028</h2>
+<p>Spend a 13-week semester in <b>Florence, Italy</b>, studying art history, business, and wellness. The program is led by Professor Gary Graves of Fullerton College with Professor Silvie Grote of Cypress College. You earn Fullerton College units that count toward general education, your major, and transfer.</p>
+<p class="notice" role="note"><b>Please note:</b> This program is pending Board of Trustees approval. Courses have not been finalized and are subject to change.</p>
+<p><a class="btn btn-primary" href="https://studyabroad.fullcoll.edu/">Apply or ask questions at studyabroad.fullcoll.edu</a></p></div>
+<div class="block"><h2>Planned courses</h2>
+<h3>Art history and business, with Professor Gary Graves</h3>
+<div class="tablebox"><table><thead><tr><th scope="col">Course</th><th scope="col">Title</th><th scope="col">Units</th><th scope="col">FC GE area</th><th scope="col">Transfers to</th></tr></thead><tbody><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=BUS+240+F">BUS 240 F</a></th><td><span lang="en">Legal Environment of Business</span><br><span class="small">Honors available</span></td><td>3</td><td>4</td><td>CSU</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=ARTH+155+F">ARTH 155 F</a></th><td><span lang="en">Western Art History: 15th to 21st Century</span><br><span class="small">Honors available</span></td><td>3</td><td>3</td><td>CSU</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=BUS+211+F">BUS 211 F</a></th><td><span lang="en">Personal Critical Reasoning and Writing for Business Management</span><br><span class="small">Honors available</span></td><td>3</td><td>1B</td><td>CSU</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=ARTH+100+F">ARTH 100 F</a></th><td><span lang="en">Introduction to Visual Culture</span><br><span class="small">Honors available</span></td><td>3</td><td>3</td><td>CSU</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=BUS+185+F">BUS 185 F</a></th><td><span lang="en">Creativity Matters!</span></td><td>3</td><td>7</td><td>CSU</td></tr></tbody></table></div>
+<h3>Health and wellness, with Professor Silvie Grote</h3>
+<div class="tablebox"><table><thead><tr><th scope="col">Course</th><th scope="col">Title</th><th scope="col">Units</th><th scope="col">FC GE area</th><th scope="col">Transfers to</th></tr></thead><tbody><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=PE+235+F">PE 235 F</a></th><td><span lang="en">First Aid, CPR, and Safety Education</span></td><td>3</td><td>—</td><td>CSU, UC</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=HED+140+F">HED 140 F</a></th><td><span lang="en">Health Science</span></td><td>3</td><td>5</td><td>CSU, UC</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=PE+121+F">PE 121 F</a></th><td><span lang="en">Walking for Fitness</span></td><td>1</td><td>7</td><td>CSU; UC limits credit</td></tr><tr><th scope="row"><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=PE+243+F">PE 243 F</a></th><td><span lang="en">Stress Management</span></td><td>3</td><td>7</td><td>CSU; UC limits credit</td></tr></tbody></table></div>
+<p class="small">GE areas are for the Fullerton College AA/AS degree. ARTH 100 F and ARTH 155 F also meet Cal-GETC Area 3. Ask a counselor how each course fits your education plan.</p></div>
+<div class="block"><h2>Paying for study abroad</h2>
+<p>Not sure how to pay for it? Take <a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=BUS+186+F">BUS 186 F, Funding Special Projects and New Ventures</a>. You will learn to find grants and scholarships for study abroad, run a crowdfunding campaign, pitch your project, and build a budget. Financial aid may also apply to approved programs; ask the Financial Aid office.</p>
+{linklist([("IEFA: International Education Financial Aid", "https://iefa.org/", "Scholarship search"),
+           ("U.S. Department of State: Study Abroad", "https://studyabroad.state.gov/", "Planning and safety"),
+           ("Fullerton College Financial Aid", "https://financialaid.fullcoll.edu/", "")])}</div>
 <div class="block"><h2>Who can apply</h2>
-<p>Past programs required at least 12 units of college work, including English 100 (College Writing) or the equivalent with a C or better, a GPA of 2.5 or higher, and a minimum age of 18. Check the Study Abroad office for the requirements of each program.</p></div>
-<div class="block"><h2>Plan ahead</h2>
-<p>Meet with a counselor to fit study abroad courses into your education plan, and start your funding plan early.</p></div>""",
+<p>Past programs required at least 12 units of college work, including English 100 (College Writing) or the equivalent with a C or better, a GPA of 2.5 or higher, and a minimum age of 18. Check <a href="https://studyabroad.fullcoll.edu/">studyabroad.fullcoll.edu</a> for the requirements of this program.</p></div>""",
   aside="""<div class="aside-card highlight"><h2>Study Abroad office</h2><ul>
-<li><a href="https://studyabroad.fullcoll.edu/">Fullerton College Study Abroad</a></li>
+<li><a href="https://studyabroad.fullcoll.edu/">studyabroad.fullcoll.edu</a></li>
 <li><a href="https://www.instagram.com/fcstudyabroad/">@fcstudyabroad on Instagram</a></li>
 <li>studyabroad@fullcoll.edu</li></ul></div>
-<div class="aside-card"><h2>Plan your semester</h2><ul><li><a href="counselors.html">Meet with a counselor</a></li></ul></div>""",
-  todo="The old page still describes Seville, Spring 2023. Please supply Florence 2028 details (courses, cost, dates, interest form)."),
+<div class="aside-card"><h2>More about the program</h2><ul>
+<li><a href="https://ggraves.faculty.fullcoll.edu/study-abroad.html">Florence 2028 on Professor Graves's site</a></li>
+<li><a href="https://catalog.nocccd.edu/search/?caturl=%2Ffullerton-college&amp;search=BUS+186+F">BUS 186 F: funding your trip</a></li>
+<li><a href="counselors.html">Meet with a counselor</a></li></ul></div>""",
+  todo=""),
 
  dict(file="career.html", title="Career Resources", eyebrow="Beyond class",
   lead="Research careers, find jobs, get feedback on your resume, and dress for the interview, with free tools for Fullerton College students.",
