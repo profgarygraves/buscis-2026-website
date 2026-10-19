@@ -1,45 +1,49 @@
-<section class="office" id="contact" aria-label="Division office">
+<section class="office" id="contact" aria-labelledby="office-h">
   <div class="wrap">
     <div>
-      <h2>Business &amp; CIS Division</h2>
-      <p>Questions about a program, a class, or a certificate? Start with the division office.</p>
-      <p class="tagline">Once a Hornet, always a Hornet.</p>
+      <h2 id="office-h">{{t:office_title}}</h2>
+      <p>{{t:office_text}}</p>
+      <p class="tagline" lang="en">{{t:tagline}}</p>
     </div>
-    <div><span class="k">Visit</span><p>Building 300, Room 325<br>321 E. Chapman Ave., Fullerton</p><p><a href="contact.html#hours">Office hours</a></p></div>
-    <div><span class="k">Contact</span><p>714-992-7032<br>buscis@fullcoll.edu</p><p><a href="faculty.html">Faculty &amp; staff directory</a></p></div>
-    <div><span class="k">Follow the division</span><ul class="soc">{{SOCIAL_LIST}}</ul><p><a href="{{CLUB}}">Join the Hornet Business Club</a></p></div>
+    <div><h3 class="k">{{t:visit}}</h3><p>{{t:room}}<br>321 E. Chapman Ave., Fullerton</p><p><a href="contact.html#hours">{{t:office_hours}}</a></p></div>
+    <div><h3 class="k">{{t:contact}}</h3><p>714-992-7032<br>buscis@fullcoll.edu</p><p><a href="faculty.html">{{t:directory_link}}</a></p></div>
+    <div><h3 class="k">{{t:follow}}</h3><ul class="soc">{{SOCIAL_LIST}}</ul><p><a href="{{CLUB}}">{{t:join_club}}</a></p></div>
   </div>
 </section>
 <footer class="fcfoot">
   <div class="wrap">
     <div class="cols">
       <div>
-        <div class="fc">Fullerton College</div>
+        <p class="fc">Fullerton College</p>
         <p>714-992-7000<br>321 E. Chapman Ave.<br>Fullerton, CA 92832</p>
-        <p><a href="https://www.fullcoll.edu/directory">Directory</a></p>
+        <p><a href="https://www.fullcoll.edu/directory">{{t:f_directory}}</a></p>
       </div>
       <div>
-        <h2>Connect</h2>
+        <h2>{{t:f_connect}}</h2>
         <ul>
-          <li><a href="https://www.fullcoll.edu/students">Students</a></li>
-          <li><a href="https://www.fullcoll.edu/staff">Faculty + Staff</a></li>
-          <li><a href="https://www.fullcoll.edu/community">Community</a></li>
-          <li><a href="https://www.fullcoll.edu/alumni">Alumni</a></li>
+          <li><a href="https://www.fullcoll.edu/students">{{t:f_students}}</a></li>
+          <li><a href="https://www.fullcoll.edu/staff">{{t:f_staff}}</a></li>
+          <li><a href="https://www.fullcoll.edu/community">{{t:f_community}}</a></li>
+          <li><a href="https://www.fullcoll.edu/alumni">{{t:f_alumni}}</a></li>
         </ul>
       </div>
       <div>
-        <h2>Follow the Division</h2>
+        <h2>{{t:f_follow}}</h2>
         <ul class="social">{{SOCIAL_ICONS}}</ul>
       </div>
       <div>
-        <h2>Search Fullerton College</h2>
-        <div class="search"><label for="fc-search" class="skip">Search Fullerton College</label><input id="fc-search" type="search" placeholder="Search fullcoll.edu"><a href="https://www.fullcoll.edu/">Search</a></div>
+        <h2 id="fc-search-h">{{t:f_search}}</h2>
+        <form class="search" role="search" aria-labelledby="fc-search-h" action="https://www.fullcoll.edu/" method="get">
+          <label for="fc-search" class="sr-only">{{t:f_search}}</label>
+          <input id="fc-search" name="s" type="search" placeholder="{{t:f_search_ph}}" autocomplete="off">
+          <button type="submit">{{t:f_search_btn}}</button>
+        </form>
       </div>
     </div>
     <div class="legal">
-      <p><a href="http://accreditation.fullcoll.edu">Accredited</a> by the <a href="http://www.accjc.org/">Accrediting Commission of Community and Junior Colleges</a>, of the <a href="http://www.acswasc.org/">Western Association of Schools and Colleges</a></p>
-      <p><a href="https://www.fullcoll.edu/disclaimer">Disclaimer</a> - &copy; 2026 Fullerton College. <a href="https://cm.maxient.com/reportingform.php?NorthOrangeCCCD&amp;layout_id=7">Unlawful Discrimination, Harassment, and Sexual Assault/Misconduct</a></p>
-      <p>Fullerton College is part of the <a href="https://nocccd.edu">North Orange County Community College District</a></p>
+      <p>{{t:f_accredited}}</p>
+      <p><a href="https://www.fullcoll.edu/disclaimer">{{t:f_disclaimer}}</a> - &copy; 2026 Fullerton College. <a href="https://cm.maxient.com/reportingform.php?NorthOrangeCCCD&amp;layout_id=7">{{t:f_unlawful}}</a> &middot; <a href="accessibility.html">{{t:f_access}}</a></p>
+      <p>{{t:f_district}} <a href="https://nocccd.edu" lang="en">North Orange County Community College District</a></p>
     </div>
   </div>
 </footer>

@@ -1,6 +1,6 @@
 # Open items before launch
 
-Last updated: October 18, 2026. Check items off as they are confirmed.
+Last updated: October 19, 2026. Check items off as they are confirmed.
 
 ## A. Facts to verify
 
@@ -59,7 +59,7 @@ Last updated: October 18, 2026. Check items off as they are confirmed.
 - [ ] Scholarships and tutoring links
 - [ ] Dual enrollment for high school students
 - [ ] Employer and partner page: advisory boards, hiring partners
-- [ ] Spanish versions of key pages (later phase)
+- [x] Spanish versions of every page (added October 19; needs review, see section E)
 - [ ] Confirm these old pages can be dropped: New certificates (2020), New courses, CAE notice, Business City field trip, NASA JPL internship, Late-start internship, RE 103 and MKT 208 promos, Buzzy blog, Typing Test, draft faculty page
 
 ## D. Technical
@@ -69,4 +69,18 @@ Last updated: October 18, 2026. Check items off as they are confirmed.
 - [ ] Confirm with IT that PHP is enabled on the IIS server and which version; get FTP access
 - [ ] Browser-tab icon (an approved FC mark), social-share image, 404 page, footer search box
 - [ ] Ask Campus Communications whether division sites must include the college analytics tag
-- [ ] Full link check and accessibility pass before launch
+- [ ] Full link check before launch
+- [x] Automated accessibility audit: axe-core, all 42 pages, light and dark: 0 issues; 320px reflow: pass
+
+## E. Spanish version
+- [ ] Review by a fluent Spanish speaker (faculty, staff, or the college's translation service), especially program descriptions and the Paralegal legal notice
+- [ ] Confirm the informal "tú" voice fits the college's style, or switch to "usted"
+- [ ] Ask Campus Communications whether the college has approved Spanish terms for program names
+- [ ] Official degree and certificate names stay in English (they match the catalog); confirm this is the preferred approach
+
+## F. Accessibility (ADA, WCAG 2.1 AA)
+- [ ] Manual screen reader test with NVDA (Windows) and VoiceOver (Mac/iPhone); DSS may be able to help
+- [ ] Linked PDFs (course rotations, CPA worksheet, FCAP flyer, internship brochures) must be tagged and accessible, or replaced with web pages
+- [ ] Any future photos need alt text; any video needs captions
+- [ ] Confirm the accessibility statement's five-business-day response time and contact
+- [ ] Ask Campus Communications whether the college has an official accessibility statement or web accessibility contact to link

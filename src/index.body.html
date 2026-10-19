@@ -2,7 +2,7 @@
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Business &amp; Computer Information Systems Division</span>
+      <p class="eyebrow">Business &amp; Computer Information Systems Division</p>
       <h1>Business is the <em>#1 major</em> at Fullerton College.</h1>
       <p class="lead">Choose from {{AWARD_TOTAL}} degrees and certificates in 11 program areas, from accounting and paralegal studies to cybersecurity and AI. Many classes are offered online.</p>
       <div class="btns">
@@ -10,34 +10,34 @@
         <a class="btn btn-ghost" href="{{SCHED}}">Search the class schedule</a>
       </div>
     </div>
-    <aside class="ads" aria-label="Division highlights" aria-roledescription="carousel">
-      <input type="checkbox" id="ads-pause" class="ads-toggle"><label for="ads-pause" class="ads-pause"><span class="when-run">Pause</span><span class="when-paused">Play</span></label>
+    <section class="ads" aria-label="Division highlights" aria-roledescription="carousel">
+      <input type="checkbox" id="ads-pause" class="ads-toggle"><label for="ads-pause" class="ads-pause"><span class="when-run">Pause<span class="sr-only"> highlights</span></span><span class="when-paused">Play<span class="sr-only"> highlights</span></span></label>
       <!-- Each slide is a square "post". To use a designed graphic instead of text,
            replace a slide's contents with: <a href="..."><img src="ads/name.png" alt="..."></a> (1080x1080). -->
-      <div class="slide s1"><span class="eyebrow">2024-25 at a glance</span><div class="big">2,708</div><p>students declared Business Administration, more than any other major on campus.</p><a href="business.html">Explore Business &rarr;</a></div>
-      <div class="slide s2"><span class="eyebrow">2024-25 at a glance</span><div class="big">1 in 7</div><p>Fullerton College students majored in Business Administration, Business Management, or Accounting.</p><a href="#programs">Find your program &rarr;</a></div>
-      <div class="slide s3"><span class="eyebrow">New this year</span><div class="big sm">AI in Business</div><p>A new certificate and AS degree. Start with BUS 256 F, AI and Prompt Engineering for Business.</p><a href="ai-in-business.html">See the AI programs &rarr;</a></div>
-      <div class="slide s4"><span class="eyebrow">Choose your path</span><div class="big">{{AWARD_TOTAL}}</div><p>degrees and certificates across 11 program areas, from bookkeeping to cyber security.</p><a href="#programs">Browse programs &rarr;</a></div>
-      <div class="slide s5"><span class="eyebrow">Paralegal Studies</span><div class="big sm">ABA-approved</div><p>Prepare to work on a legal team, with four new specialty certificates.</p><a href="paralegal.html">Explore Paralegal &rarr;</a></div>
-      <div class="slide s6"><span class="eyebrow">Cyber Security</span><div class="big sm">Center of Excellence</div><p>Designated a National Center of Academic Excellence in Cyber Defense by the NSA and DoD.</p><a href="cyber-security.html">Explore Cyber Security &rarr;</a></div>
+      <div class="slide s1" role="group" aria-roledescription="slide" aria-label="1 of 6"><p class="eyebrow">2024-25 at a glance</p><p class="big">2,708</p><p>students declared Business Administration, more than any other major on campus.</p><a href="business.html">Explore Business &rarr;</a></div>
+      <div class="slide s2" role="group" aria-roledescription="slide" aria-label="2 of 6"><p class="eyebrow">2024-25 at a glance</p><p class="big">1 in 7</p><p>Fullerton College students majored in Business Administration, Business Management, or Accounting.</p><a href="#programs">Find your program &rarr;</a></div>
+      <div class="slide s3" role="group" aria-roledescription="slide" aria-label="3 of 6"><p class="eyebrow">New this year</p><p class="big sm">AI in Business</p><p>A new certificate and AS degree. Start with BUS 256 F, AI and Prompt Engineering for Business.</p><a href="ai-in-business.html">See the AI programs &rarr;</a></div>
+      <div class="slide s4" role="group" aria-roledescription="slide" aria-label="4 of 6"><p class="eyebrow">Choose your path</p><p class="big">{{AWARD_TOTAL}}</p><p>degrees and certificates across 11 program areas, from bookkeeping to cyber security.</p><a href="#programs">Browse programs &rarr;</a></div>
+      <div class="slide s5" role="group" aria-roledescription="slide" aria-label="5 of 6"><p class="eyebrow">Paralegal Studies</p><p class="big sm">ABA-approved</p><p>Prepare to work on a legal team, with four new specialty certificates.</p><a href="paralegal.html">Explore Paralegal &rarr;</a></div>
+      <div class="slide s6" role="group" aria-roledescription="slide" aria-label="6 of 6"><p class="eyebrow">Cyber Security</p><p class="big sm">Center of Excellence</p><p>Designated a National Center of Academic Excellence in Cyber Defense by the NSA and DoD.</p><a href="cyber-security.html">Explore Cyber Security &rarr;</a></div>
       <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <p class="src">Enrollment figures: FC Institutional Effectiveness Report 2024-25, Table 8.</p>
-    </aside>
+    </section>
   </div>
 </section>
 
-<section class="section board" id="programs">
+<section class="section board" id="programs" aria-labelledby="programs-h">
   <div class="wrap">
     <div class="section-head">
       <div>
-        <h2>Find your program</h2>
+        <h2 id="programs-h">Find your program</h2>
         <p>Every program has a <strong>Start Here</strong> course. Take it first to see whether the field fits you before you commit.</p>
       </div>
       <fieldset class="filter">
-        <legend>Show programs by area</legend>
+        <legend class="sr-only">Show programs by area</legend>
         <input type="radio" name="area" id="f-all" checked><label for="f-all">All programs</label>
         <input type="radio" name="area" id="f-biz"><label for="f-biz"><i style="background:var(--biz)"></i>Business &amp; Management</label>
-        <input type="radio" name="area" id="f-law"><label for="f-law"><i style="background:var(--law)"></i><i style="background:var(--para);margin-left:-6px"></i>Accounting, Law &amp; Real Estate</label>
+        <input type="radio" name="area" id="f-law"><label for="f-law"><i style="background:var(--law)"></i><i style="background:var(--para);margin-left:-6px"></i>Accounting &amp; Law</label>
         <input type="radio" name="area" id="f-tech"><label for="f-tech"><i style="background:var(--tech)"></i>Technology</label>
       </fieldset>
     </div>
@@ -47,9 +47,9 @@
   </div>
 </section>
 
-<section class="section path" id="start">
+<section class="section path" id="start" aria-labelledby="start-h">
   <div class="wrap">
-    <div class="section-head"><div><h2>Start here</h2><p>New to Fullerton College or new to the division? These four steps get you from first class to finished certificate.</p></div></div>
+    <div class="section-head"><div><h2 id="start-h">Start here</h2><p>New to Fullerton College or new to the division? These four steps get you from first class to finished certificate.</p></div></div>
     <ol class="steps">
       <li><h3>Apply to Fullerton College</h3><p>Admission is free. Apply once through CCCApply and you can take classes in any program.</p><a href="https://www.fullcoll.edu/admissions/">How to apply &rarr;</a></li>
       <li><h3>Take a Start Here course</h3><p>Each program lists one or two first courses. They count toward the degree and show you what the field is like.</p><a href="#programs">See first courses &rarr;</a></li>
@@ -59,7 +59,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" aria-label="Student resources">
   <div class="wrap sets">
     <div class="set" id="plan">
       <h2>Plan your classes</h2>
@@ -85,5 +85,5 @@
     </div>
   </div>
 </section>
-<div class="wrap reviewed">Page last reviewed: Fall 2026</div>
+<p class="wrap reviewed">{{t:reviewed}}</p>
 </main>

@@ -141,6 +141,28 @@ PAGES = [
   aside="""<div class="aside-card highlight"><h2>Follow the division</h2><ul class="soc">{{SOCIAL_LIST}}</ul></div>
 <div class="aside-card"><h2>Quick links</h2><ul><li><a href="faculty.html">Faculty directory</a></li><li><a href="counselors.html">Counselors</a></li><li><a href="forms.html">Forms &amp; applications</a></li></ul></div>""",
   todo="The old Contact page lists Building 300, Suite 314. I used Room 325 as you told me; please confirm."),
+
+ dict(file="accessibility.html", title="Accessibility", eyebrow="About this site",
+  lead="The Business &amp; CIS Division wants every student, family member, and visitor to be able to use this website, including people who use assistive technology.",
+  body="""<div class="block"><h2>Our commitment</h2>
+<p>This website is designed to meet the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA, the standard used for ADA and Section 508 compliance at California community colleges.</p></div>
+<div class="block"><h2>What we do</h2>
+<ul>
+<li>Every page works with a keyboard alone, and a "Skip to content" link appears first.</li>
+<li>Text and controls meet WCAG color contrast in light and dark themes.</li>
+<li>Pages use clear headings, landmarks, and labels so screen readers can move through them.</li>
+<li>Pages reflow on small screens and at up to 400 percent zoom without sideways scrolling.</li>
+<li>Moving content can be paused, and animation stops if your device is set to reduce motion.</li>
+<li>Each page is available in English and Spanish, and the page language is marked for screen readers.</li>
+</ul></div>
+<div class="block"><h2>Content we link to</h2>
+<p>Some pages link to tools run by other offices, such as the class schedule, the college catalog, online forms, and Canvas. Some program documents are PDF files. If any of these is hard for you to use, contact us and we will provide the information in another format.</p></div>
+<div class="block"><h2>Report a problem</h2>
+<p>If something on this site does not work for you, tell us the page and what happened. We will respond within five business days.</p>
+<ul><li>Email: buscis@fullcoll.edu</li><li>Phone: 714-992-7032</li><li>Visit: Building 300, Room 325</li></ul></div>""",
+  aside="""<div class="aside-card highlight"><h2>Disability Support Services</h2><p class="small" style="margin:0 0 8px">For classroom and testing accommodations, contact Fullerton College Disability Support Services.</p><ul><li><a href="https://dss.fullcoll.edu/">Disability Support Services (DSS)</a></li></ul></div>
+<div class="aside-card"><h2>Display options</h2><p class="small" style="margin:0">Use the theme buttons at the top of any page to choose light, dark, or your device's setting. Your choice is remembered on this device.</p></div>""",
+  todo="Confirm the five-business-day response time, and ask Campus Communications whether the college has an official accessibility statement to link to."),
 ]
 
 COUNSELORS = [  # (name, title, email)
