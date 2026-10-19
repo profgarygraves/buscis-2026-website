@@ -9,7 +9,13 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [x] Confirmed leads: Gary Graves (Entrepreneurship, AI in Business), Marwin Luminarias (Marketing), Brian Roach (CIS), Carlos Antunez (Computer Gaming)
 - [ ] Department coordinators: Kathy Standen and Marcus Wilson (Business Management), Brandon Tran (Accounting), Brian Roach (CIS), Michael Moore (Paralegal)
 - [x] Faculty names now match the official class schedule (October 19): Kathy Standen, Julianne Dixon, Kristine Wilson, Leonard Rosenblum, Santalia Carter, Brenda Klingenmaier, Steve John Haddadin, Richard Ghidella, Marwin Luminarias
-- [ ] Faculty roster (82 names from the old directory): remove anyone who has left and add new hires
+- [x] Faculty roster checked against the division's faculty list (October 19): 72 faculty listed
+  - Removed 11 who are not on the division list and have no classes in Fall 2026 or Spring 2027: Pascual, Snow, Oates, Reid, West, Collar, Douglas, Kazerooni, Woolridge, Yi, Peikes
+  - Added Franco Torres (Paralegal); moved James Downs to Paralegal
+- [ ] Teaching but not on the division list; keep? Barry McCarthy (International Business lead), Kenneth Colby, Ross DiLeo, Justin Rife
+- [ ] Joel Salcedo (full-time in another division, teaches BUS): list him?
+- [ ] Franco Torres: add a "Find classes" button once he appears on the schedule
+- [ ] Preferred names that differ from HR: Marwin (HR: Thaddeus M.) Luminarias, Lee (HR: Karen L.) Steidel, Rajen (HR: Ramalingum) Vurdien, Robert (HR: Bob) Konefsky
 - [x] Laura Melella removed from the CIS page (October 19)
 - [ ] Jane Troop: Business Management (directory) or CIS (old CIS page)?
 - [ ] Dean Dr. Dani Wilson: direct phone line? (new gray-background photo added October 19)
@@ -42,11 +48,11 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 
 ## B. Content needed
 - [ ] Study Abroad: Florence 2028 courses, cost, dates, interest form
-- [ ] Headshots for 38 faculty (44 of 82 done):
-  - Accounting: Chen, Hoffman, Lim, Pascual, St. John, C. Tran, Uchlik
-  - Business Management: Boyer, Caudillo, Chan, Colby, Conlin, J. Dixon, Downs, Durfield, Furlong, C. Ghidella, Gomez-Velazquez, Hines, Jezek-Arriaga, Reid, Rife, Steidel, Troop, Underdue, Webb, K. Wilson
-  - CIS: Roach, Collar, Douglas, Fitzpatrick, Kazerooni, Konefsky, Long, Rosenblum, Yi, Zentner
-  - Paralegal: Peikes
+- [ ] Headshots for 32 faculty (40 of 72 done):
+  - Accounting: Chen, Hoffman, Lim, St. John, C. Tran, Uchlik
+  - Business Management: Boyer, Caudillo, Chan, Colby, Conlin, J. Dixon, Durfield, Furlong, C. Ghidella, Gomez-Velazquez, Hines, Jezek-Arriaga, Rife, Steidel, Troop, Underdue, Webb, K. Wilson
+  - CIS: Roach, Fitzpatrick, Konefsky, Long, Rosenblum, Zentner
+  - Paralegal: Downs, Torres
 - [ ] Headshots of the four counselors
 - [ ] Official Business & CIS Division wordmark from Campus Communications
 - [ ] Photos of students and campus, one per program page
