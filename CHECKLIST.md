@@ -56,7 +56,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
   - Business Management: Boyer, Caudillo, Chan, Colby, Conlin, J. Dixon, Durfield, Furlong, C. Ghidella, Gomez-Velazquez, Hines, Jezek-Arriaga, Rife, Steidel, Troop, Underdue, Webb, K. Wilson
   - CIS: Fitzpatrick, Konefsky, Long, Rosenblum, Zentner
   - Paralegal: Downs, Torres
-- [ ] Headshots of the four counselors
+- [ ] Headshots of the counselors: Olivia Barajas done (October 19); still need Castillo, Nguyen, Skiles
 - [ ] Official Business & CIS Division wordmark from Campus Communications
 - [ ] Photos of students and campus, one per program page
 - [ ] Optional: one student quote per program
