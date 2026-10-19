@@ -137,6 +137,7 @@ AREA_ES = {
  "Networking and Game Design": "Redes y diseño de videojuegos",
  "Paralegal Studies": "Estudios paralegales",
  "Real Estate and Finance": "Bienes raíces y finanzas",
+ "Business Management and Marketing": "Gestión empresarial y mercadotecnia",
  "Web Design": "Diseño web",
 }
 ROLE_ES = {

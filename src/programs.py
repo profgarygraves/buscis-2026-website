@@ -45,6 +45,7 @@ P = {
    faculty=[F("Kathy Standen", "Marketing and Business Communications", "kstanden@fullcoll.edu", "Department Coordinator"),
             F("Marcus Wilson", "Business Law, Business Economics, Introduction to Business", "mwilson@fullcoll.edu", "Department Coordinator"),
             F("Gary Graves", "Business Management, Entrepreneurship, and Creativity", "ggraves@fullcoll.edu"),
+            F("Marwin Luminarias", "Business Management and Marketing", "mluminarias@fullcoll.edu"),
             F("Richard Ghidella", "Real Estate and Finance", "rghidella@fullcoll.edu"),
             F("Barry McCarthy", "Management and International Business", "bmccarthy@fullcoll.edu")],
    map="https://fullerton.programmapper.com/academics/interest-clusters/a2c7bbaa-8de4-4f0f-bde6-bbe78a530b1e/programs/03143619-676d-a626-fd24-2090bdde4aa5",
