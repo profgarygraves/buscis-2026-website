@@ -34,12 +34,13 @@ PAGES = [
   body="""<div class="block"><h2>Career education counselors</h2>
 <ul class="people compact">{{COUNSELORS}}</ul>
 <p><a class="btn btn-primary" href="{{ESARS}}">Book a counseling appointment</a></p></div>
-<div class="block"><h2>Career education counseling hours</h2>
+<div class="block"><h2>Counseling Center hours</h2>
 <div class="tablebox"><table><thead><tr><th>Day</th><th>Hours</th></tr></thead><tbody>
-<tr><td>Monday</td><td class="num">1 to 5 p.m.</td></tr><tr><td>Tuesday</td><td class="num">8 a.m. to 6 p.m.</td></tr>
-<tr><td>Wednesday</td><td class="num">1 to 5 p.m.</td></tr><tr><td>Thursday</td><td class="num">8 a.m. to 5 p.m.</td></tr>
-<tr><td>Friday</td><td class="num">1 to 5 p.m.</td></tr></tbody></table></div>
-<p class="small">Hours posted for Spring 2026 and subject to change.</p></div>""",
+<tr><td>Monday</td><td class="num">8 a.m. to 5 p.m.</td></tr><tr><td>Tuesday</td><td class="num">8 a.m. to 6 p.m.</td></tr>
+<tr><td>Wednesday</td><td class="num">8 a.m. to 6 p.m.</td></tr><tr><td>Thursday</td><td class="num">8 a.m. to 5 p.m.</td></tr>
+<tr><td>Friday</td><td class="num">8 a.m. to noon</td></tr>
+<tr><td>Select Saturdays</td><td class="num">9 a.m. to 1 p.m., remote only</td></tr></tbody></table></div>
+<p class="small">Hours are subject to change. Drop-in (general information) sign-ups close at least 30 minutes before the end of the day. See <a href="https://counseling.fullcoll.edu/hours-and-location/">Counseling Center hours and location</a> for Saturday dates.</p></div>""",
   aside="""<div class="aside-card"><h2>More counseling</h2><ul>
 <li><a href="https://counseling.fullcoll.edu/appointments/">Counseling Center appointments</a></li>
 <li><a href="https://counseling.fullcoll.edu/hours-and-location/">Counseling Center hours and location</a></li>

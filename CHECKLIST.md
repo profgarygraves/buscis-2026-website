@@ -20,7 +20,8 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Jane Troop: Business Management (directory) or CIS (old CIS page)?
 - [ ] Dean Dr. Dani Wilson: direct phone line? (new gray-background photo added October 19)
 - [ ] Paralegal coordinator phone: (714) 992-7208
-- [ ] Counselors (Barajas, Castillo, Nguyen, Skiles) and Fall hours
+- [x] Counselors page: Counseling Center hours from counseling.fullcoll.edu, DegreeWorks link added (October 19)
+- [ ] Counselors (Barajas, Castillo, Nguyen, Skiles): confirm the list is current
 
 ### Office
 - [x] Location: Building 300, Division Office Suite 314; Conference Room 325 (confirmed October 19)

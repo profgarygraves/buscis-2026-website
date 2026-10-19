@@ -28,12 +28,13 @@ PAGES_ES = {
   body="""<div class="block"><h2>Consejeros de educación profesional</h2>
 <ul class="people compact">{{COUNSELORS}}</ul>
 <p><a class="btn btn-primary" href="{{ESARS}}">Haz una cita de consejería</a></p></div>
-<div class="block"><h2>Horario de consejería de educación profesional</h2>
+<div class="block"><h2>Horario del Centro de Consejería</h2>
 <div class="tablebox"><table><thead><tr><th>Día</th><th>Horario</th></tr></thead><tbody>
-<tr><td>Lunes</td><td class="num">1 a 5 p.m.</td></tr><tr><td>Martes</td><td class="num">8 a.m. a 6 p.m.</td></tr>
-<tr><td>Miércoles</td><td class="num">1 a 5 p.m.</td></tr><tr><td>Jueves</td><td class="num">8 a.m. a 5 p.m.</td></tr>
-<tr><td>Viernes</td><td class="num">1 a 5 p.m.</td></tr></tbody></table></div>
-<p class="small">Horario publicado para la primavera de 2026; puede cambiar.</p></div>""",
+<tr><td>Lunes</td><td class="num">8 a.m. a 5 p.m.</td></tr><tr><td>Martes</td><td class="num">8 a.m. a 6 p.m.</td></tr>
+<tr><td>Miércoles</td><td class="num">8 a.m. a 6 p.m.</td></tr><tr><td>Jueves</td><td class="num">8 a.m. a 5 p.m.</td></tr>
+<tr><td>Viernes</td><td class="num">8 a.m. a mediodía</td></tr>
+<tr><td>Algunos sábados</td><td class="num">9 a.m. a 1 p.m., solo en línea</td></tr></tbody></table></div>
+<p class="small">El horario puede cambiar. Las inscripciones sin cita (información general) cierran al menos 30 minutos antes del final del día. Consulta las fechas de los sábados en <a href="https://counseling.fullcoll.edu/hours-and-location/">Horario y ubicación del Centro de Consejería</a> (en inglés).</p></div>""",
   aside="""<div class="aside-card"><h2>Más consejería</h2><ul>
 <li><a href="https://counseling.fullcoll.edu/appointments/">Citas en el Centro de Consejería</a></li>
 <li><a href="https://counseling.fullcoll.edu/hours-and-location/">Horario y ubicación del Centro de Consejería</a></li>
