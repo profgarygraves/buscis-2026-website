@@ -10,7 +10,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Department coordinators: Kathy Standen and Marcus Wilson (Business Management), Brandon Tran (Accounting), Brian Roach (CIS), Michael Moore (Paralegal)
 - [ ] Name spellings: Kathleen or Kathy Standen; Richard or Rich Ghidella; Marwin Luminarias
 - [ ] Faculty roster (81 names from the old directory): remove anyone who has left and add new hires
-- [ ] Laura Melella appears on the old CIS page but not in the directory. Include her?
+- [x] Laura Melella removed from the CIS page (October 19)
 - [ ] Jane Troop: Business Management (directory) or CIS (old CIS page)?
 - [ ] Dean Dr. Dani Wilson: direct phone line? A larger photo with a gray background?
 - [ ] Paralegal coordinator phone: (714) 992-7208

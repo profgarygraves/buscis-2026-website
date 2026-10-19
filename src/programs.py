@@ -206,7 +206,6 @@ P = {
    faculty=[F("Brian Roach", "Networking and Cyber Security", "broach@fullcoll.edu", "Department Coordinator"),
             F("Anna Carlin", "Networking and Cyber Security", "acarlin@fullcoll.edu"),
             F("Dale Craig", "Networking and Game Design", "dcraig@fullcoll.edu"),
-            F("Laura Melella", "Web Design", "lmelella@fullcoll.edu"),
             F("Jane Troop", "Computer Applications", "jtroop@fullcoll.edu"),
             F("Nancy Woolridge", "Networking", "nwoolridge@fullcoll.edu")],
    docs=[("CIS projected course rotation (Excel)", UPLOADS+"2025/10/CIS-Course-Rotation-for-Fall-2026-updated-9-25.xlsx")],
