@@ -9,7 +9,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [x] Confirmed leads: Gary Graves (Entrepreneurship, AI in Business), Marwin Luminarias (Marketing), Brian Roach (CIS), Carlos Antunez (Computer Gaming)
 - [ ] Department coordinators: Kathy Standen and Marcus Wilson (Business Management), Brandon Tran (Accounting), Brian Roach (CIS), Michael Moore (Paralegal)
 - [ ] Name spellings: Kathleen or Kathy Standen; Richard or Rich Ghidella; Marwin Luminarias
-- [ ] Faculty roster (81 names from the old directory): remove anyone who has left and add new hires
+- [ ] Faculty roster (82 names from the old directory): remove anyone who has left and add new hires
 - [x] Laura Melella removed from the CIS page (October 19)
 - [ ] Jane Troop: Business Management (directory) or CIS (old CIS page)?
 - [ ] Dean Dr. Dani Wilson: direct phone line? A larger photo with a gray background?
@@ -42,7 +42,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 
 ## B. Content needed
 - [ ] Study Abroad: Florence 2028 courses, cost, dates, interest form
-- [ ] Headshots for 38 faculty:
+- [ ] Headshots for 38 faculty (44 of 82 done):
   - Accounting: Chen, Hoffman, Lim, Pascual, St. John, C. Tran, Uchlik
   - Business Management: Boyer, Caudillo, Chan, Colby, Conlin, J. Dixon, Downs, Durfield, Furlong, C. Ghidella, Gomez-Velazquez, Hines, Jezek-Arriaga, Reid, Rife, Steidel, Troop, Underdue, Webb, K. Wilson
   - CIS: Roach, Collar, Douglas, Fitzpatrick, Kazerooni, Konefsky, Long, Rosenblum, Yi, Zentner
