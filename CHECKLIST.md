@@ -12,7 +12,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Faculty roster (82 names from the old directory): remove anyone who has left and add new hires
 - [x] Laura Melella removed from the CIS page (October 19)
 - [ ] Jane Troop: Business Management (directory) or CIS (old CIS page)?
-- [ ] Dean Dr. Dani Wilson: direct phone line? A larger photo with a gray background?
+- [ ] Dean Dr. Dani Wilson: direct phone line? (new gray-background photo added October 19)
 - [ ] Paralegal coordinator phone: (714) 992-7208
 - [ ] Counselors (Barajas, Castillo, Nguyen, Skiles) and Fall hours
 
