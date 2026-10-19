@@ -41,7 +41,7 @@ PAGES = [
 <tr><td>Friday</td><td class="num">1 to 5 p.m.</td></tr></tbody></table></div>
 <p class="small">Hours posted for Spring 2026 and subject to change.</p></div>""",
   aside="""<div class="aside-card"><h2>More counseling</h2><ul>
-<li><a href="https://counseling.fullcoll.edu/">Counseling Center appointments</a></li>
+<li><a href="https://counseling.fullcoll.edu/appointments/">Counseling Center appointments</a></li>
 <li><a href="https://counseling.fullcoll.edu/hours-and-location/">Counseling Center hours and location</a></li>
 <li><a href="https://www.fullcoll.edu/hornet-pathways/">Hornet Pathways program maps</a></li></ul></div>""",
   todo="Confirm the current counselor list and Fall 2026 hours. An older page also listed Jennika Celo."),
