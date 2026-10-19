@@ -15,7 +15,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Teaching but not on the division list; keep? Barry McCarthy (International Business lead), Kenneth Colby, Ross DiLeo, Justin Rife
 - [ ] Joel Salcedo (full-time in another division, teaches BUS): list him?
 - [ ] Franco Torres: add a "Find classes" button once he appears on the schedule
-- [ ] Preferred names that differ from HR: Marwin (HR: Thaddeus M.) Luminarias, Lee (HR: Karen L.) Steidel, Rajen (HR: Ramalingum) Vurdien, Robert (HR: Bob) Konefsky
+- [x] Names follow the class schedule, not HR (decided October 19): Marwin Luminarias, Lee Steidel, Rajen Vurdien, Robert Konefsky. Use the schedule name for anyone added later.
 - [x] Laura Melella removed from the CIS page (October 19)
 - [ ] Jane Troop: Business Management (directory) or CIS (old CIS page)?
 - [ ] Dean Dr. Dani Wilson: direct phone line? (new gray-background photo added October 19)
