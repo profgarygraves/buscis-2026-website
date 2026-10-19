@@ -102,3 +102,9 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Any future photos need alt text; any video needs captions
 - [ ] Confirm the accessibility statement's five-business-day response time and contact
 - [ ] Ask Campus Communications whether the college has an official accessibility statement or web accessibility contact to link
+
+## H. Future enhancements
+- [ ] "Get the KSAs" section on each program page: the knowledge, skills, and abilities students gain from the program's courses, and how they lead to jobs (requested October 19; waiting on CurricUNET)
+  - Source: course student learning outcomes (SLOs) from CurricUNET
+  - Match each skill to the program's target jobs using the O*NET knowledge, skills, and abilities lists already linked on each program page
+  - Start with the Workforce Pell candidates: Real Estate Sales, Entrepreneurship Skills, Business Data Analytics, AI Foundations
