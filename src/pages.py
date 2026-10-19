@@ -143,7 +143,7 @@ PAGES = [
 <div class="block"><h2>Division leadership and staff</h2><ul class="people compact">{{STAFF}}</ul></div>""",
   aside="""<div class="aside-card highlight"><h2>Follow the division</h2><ul class="soc">{{SOCIAL_LIST}}</ul></div>
 <div class="aside-card"><h2>Quick links</h2><ul><li><a href="faculty.html">Faculty directory</a></li><li><a href="counselors.html">Counselors</a></li><li><a href="forms.html">Forms &amp; applications</a></li></ul></div>""",
-  todo="The old Contact page lists Building 300, Suite 314. I used Room 325 as you told me; please confirm."),
+  todo=""),
 
  dict(file="accessibility.html", title="Accessibility", eyebrow="About this site",
   lead="The Business &amp; CIS Division wants every student, family member, and visitor to be able to use this website, including people who use assistive technology.",

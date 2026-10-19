@@ -17,7 +17,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Counselors (Barajas, Castillo, Nguyen, Skiles) and Fall hours
 
 ### Office
-- [ ] Location: Building 300, Room 325 (the old site said Suite 314)
+- [x] Location: Building 300, Room 325 (confirmed October 19)
 - [ ] Office hours: Mon–Thu 8 a.m.–7 p.m., Fri 8 a.m.–5 p.m.; summer Mon–Thu 8 a.m.–5 p.m., closed Friday
 
 ### Program details
