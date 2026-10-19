@@ -237,7 +237,7 @@ P = {
    faculty=[F("Brian Roach", "Networking and Cyber Security", "broach@fullcoll.edu", "CIS Department Coordinator"),
             F("Anna Carlin", "Networking and Cyber Security", "acarlin@fullcoll.edu")],
    related=["cis", "gaming", "ai", "paralegal"],
-   snap='Designated a <strong>National Center of Academic Excellence in Cyber Defense</strong> (NSA and DoD).',
+   snap='OC median pay, computer network support specialists: <strong>$35.62/hr</strong>',
    awards=[A("Cyber Security","AS","computer-information-systems/cyber-security-associate-in-science-degree"),
            A("Cyber Security Technician (Level 1)","C","computer-information-systems/cyber-security-technician-certificate"),
            A("Cyber Security Analyst (Level 2)","C","computer-information-systems/cyber-security-analyst-certificate"),

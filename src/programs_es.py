@@ -103,7 +103,7 @@ ES = {
    overview=["<b>Nivel 1, Técnico:</b> habilidades básicas para trabajos de nivel inicial y para analizar amenazas. <b>Nivel 2, Analista:</b> agrega hackeo ético, detección de intrusiones, respuesta a incidentes y seguridad de aplicaciones web. <b>Nivel 3, Maestro:</b> agrega programación avanzada y sistemas operativos.",
              "El título asociado en ciencias (AS) te prepara para puestos de nivel inicial como soporte de TI, analista de seguridad de la información, administrador de seguridad de sistemas y administrador de seguridad de redes. Conoce más en el <a href=\"https://cybersecurity.fullcoll.edu/\" lang=\"en\">Hornet Security Education Center</a>."],
    highlights=["Centro Nacional de Excelencia Académica en Ciberdefensa (NSA y Departamento de Defensa)", "Tres niveles de certificados acumulables", "Hornet Security Education Center"],
-   snap='Designado <strong>Centro Nacional de Excelencia Académica en Ciberdefensa</strong> (NSA y Departamento de Defensa).'),
+   snap='Mediana salarial en OC, especialistas en soporte de redes: <strong>$35.62/hora</strong>'),
  "gaming": dict(name="Videojuegos",
    starts=["Introducción al diseño de videojuegos"],
    desc="Motores de juego, arte y diseño de juegos, y programación de videojuegos, para trabajos de nivel inicial en la industria.",
