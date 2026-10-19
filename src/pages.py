@@ -89,7 +89,7 @@ PAGES = [
   todo="The old page still describes Seville, Spring 2023. Please supply Florence 2028 details (courses, cost, dates, interest form)."),
 
  dict(file="career.html", title="Career Resources", eyebrow="Beyond class",
-  lead="Find jobs, get feedback on your resume, and dress for the interview, with free tools for Fullerton College students.",
+  lead="Research careers, find jobs, get feedback on your resume, and dress for the interview, with free tools for Fullerton College students.",
   body="""<div class="block" id="connect"><h2>FC Career Connect</h2>
 <p>Search jobs on the NACE job board, upload your resume and cover letter, connect with employers and faculty, and browse sample resumes and cover letters.</p>
 <ol class="numbered"><li>Log in to <a href="https://mg.nocccd.edu">myGateway</a>.</li><li>Open the Student tab.</li><li>Under Student Links, select FCCareerConnect.</li><li>Complete your profile.</li></ol>
@@ -97,6 +97,9 @@ PAGES = [
 <div class="block" id="vmock"><h2>VMock resume review</h2>
 <p>Get instant, detailed feedback on your resume through the Career Center's VMock service.</p>
 <ol class="numbered"><li>Go to <a href="https://www.vmock.com/nocccd">vmock.com/nocccd</a>.</li><li>Choose Continue with University ID.</li><li>Sign in with your myGateway ID and password.</li></ol></div>
+<div class="block" id="research"><h2>Research careers</h2>
+<p>Before you choose a program, look up the careers it leads to: what people do all day, what they earn, and whether jobs are growing. These free tools are a good place to start.</p>
+<ul class="linklist">{{CAREER_SOURCES}}</ul></div>
 <div class="block"><h2>Career Closet</h2>
 <p>The Career Closet, with free professional clothing for interviews and work, is now part of the Fullerton College Career Center.</p></div>""",
   aside="""<div class="aside-card highlight"><h2>Career Center</h2><ul>

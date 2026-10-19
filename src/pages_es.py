@@ -80,7 +80,7 @@ PAGES_ES = {
 <div class="aside-card"><h2>Planea tu semestre</h2><ul><li><a href="counselors.html">Reúnete con un consejero</a></li></ul></div>"""),
 
  "career.html": dict(title="Recursos profesionales", eyebrow="Más allá del salón",
-  lead="Encuentra empleo, recibe comentarios sobre tu currículum y vístete para la entrevista, con herramientas gratuitas para estudiantes de Fullerton College.",
+  lead="Investiga carreras, encuentra empleo, recibe comentarios sobre tu currículum y vístete para la entrevista, con herramientas gratuitas para estudiantes de Fullerton College.",
   body="""<div class="block" id="connect"><h2 lang="en">FC Career Connect</h2>
 <p>Busca empleos en la bolsa de trabajo de NACE, sube tu currículum y tu carta de presentación, conéctate con empleadores y profesores, y consulta ejemplos de currículums y cartas.</p>
 <ol class="numbered"><li>Inicia sesión en <a href="https://mg.nocccd.edu">myGateway</a>.</li><li>Abre la pestaña <span lang="en">Student</span>.</li><li>En <span lang="en">Student Links</span>, selecciona FCCareerConnect.</li><li>Completa tu perfil.</li></ol>
@@ -88,6 +88,9 @@ PAGES_ES = {
 <div class="block" id="vmock"><h2>Revisión de currículum con VMock</h2>
 <p>Recibe comentarios inmediatos y detallados sobre tu currículum con el servicio VMock del Centro de Carreras.</p>
 <ol class="numbered"><li>Ve a <a href="https://www.vmock.com/nocccd">vmock.com/nocccd</a>.</li><li>Elige <span lang="en">Continue with University ID</span>.</li><li>Inicia sesión con tu usuario y contraseña de myGateway.</li></ol></div>
+<div class="block" id="research"><h2>Investiga carreras</h2>
+<p>Antes de elegir un programa, investiga las carreras a las que lleva: qué hacen las personas cada día, cuánto ganan y si los empleos están creciendo. Estas herramientas gratuitas son un buen punto de partida.</p>
+<ul class="linklist">{{CAREER_SOURCES}}</ul></div>
 <div class="block"><h2 lang="en">Career Closet</h2>
 <p>El <span lang="en">Career Closet</span>, con ropa profesional gratuita para entrevistas y el trabajo, ahora forma parte del Centro de Carreras de Fullerton College.</p></div>""",
   aside="""<div class="aside-card highlight"><h2>Centro de Carreras</h2><ul>

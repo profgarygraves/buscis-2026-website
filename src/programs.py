@@ -267,3 +267,41 @@ LEADS = {
  "accounting": "btran1@fullcoll.edu", "paralegal": "mmoore1@fullcoll.edu",
  "cis": "broach@fullcoll.edu", "cyber": "acarlin@fullcoll.edu", "gaming": "cantunez@fullcoll.edu",
 }
+
+# Standard Occupational Classification codes, used to link each occupation to O*NET (English) and Mi Próximo Paso (Spanish)
+JOB_SOC = {
+ "gom": "11-1021.00", "mga": "13-1111.00", "bos": "13-1199.00", "pms": "13-1082.00", "mra": "13-1161.00",
+ "sam": "11-2022.00", "web": "15-1255.00", "acc": "13-2011.00", "par": "23-2011.00", "net": "15-1231.00",
+ "dev": "15-1252.00", "hra": "43-4161.00",
+}
+
+# Each program's main page on Hornet Pathways (course maps plus the careers Pathways matches to it).
+# AI in Business is not on Pathways yet, so it points to the Business pathway.
+PATHWAYS = "https://pathways.fullcoll.edu/"
+PW = {
+ "business": "program/business-administration-2-0/", "entrepreneurship": "program/entrepreneurship-2/",
+ "ai": "category/business/", "marketing": "program/marketing-management-2/",
+ "intl": "program/international-business-management/", "realestate": "program/real-estate-management/",
+ "accounting": "program/accounting-2/", "paralegal": "program/paralegal-studies-2/",
+ "cis": "program/computer-information-systems-2/", "cyber": "program/cyber-security/",
+ "gaming": "program/computer-game-design/",
+}
+
+# Free career research tools, shown on every program page and on the Career Resources page.
+# (label_en, desc_en, url_en, label_es, desc_es, url_es)
+CAREER_SOURCES = [
+ ("O*NET OnLine", "Tasks, skills, education, and pay for almost every occupation", "https://www.onetonline.org/",
+  "Mi Próximo Paso", "Versión en español de O*NET: tareas, habilidades, educación y salario de cada ocupación", "https://www.miproximopaso.org/"),
+ ("My Next Move", "Take a short interest quiz and see careers that fit you", "https://www.mynextmove.org/",
+  "My Next Move", "Haz un cuestionario breve de intereses y descubre carreras para ti (en inglés)", "https://www.mynextmove.org/"),
+ ("Occupational Outlook Handbook", "U.S. Bureau of Labor Statistics guide to pay, outlook, and how to get started", "https://www.bls.gov/ooh/",
+  "Occupational Outlook Handbook", "Guía de la Oficina de Estadísticas Laborales sobre salario, perspectivas y cómo empezar (en inglés)", "https://www.bls.gov/ooh/"),
+ ("CareerOneStop Salary Finder", "Compare pay for a job in Orange County or any ZIP code", "https://www.careeronestop.org/Toolkit/Wages/find-salary.aspx",
+  "CareerOneStop: buscador de salarios", "Compara el salario de un empleo en el condado de Orange o en cualquier código postal", "https://www.careeronestop.org/Toolkit/Wages/find-salary.aspx"),
+ ("California EDD: Orange County", "Local jobs, wages, and growth projections from the state", "https://labormarketinfo.edd.ca.gov/geography/orange-county.html",
+  "EDD de California: condado de Orange", "Empleos, salarios y proyecciones locales del estado (en inglés)", "https://labormarketinfo.edd.ca.gov/geography/orange-county.html"),
+ ("Salary Surfer", "What California community college graduates earn, by program", "https://salarysurfer.cccco.edu/",
+  "Salary Surfer", "Lo que ganan los egresados de los colleges comunitarios de California, por programa", "https://salarysurfer.cccco.edu/"),
+ ("California CareerZone", "Free career exploration and planning for Californians", "https://www.cacareerzone.org/",
+  "California CareerZone", "Exploración y planeación de carreras gratuita para California", "https://www.cacareerzone.org/"),
+]

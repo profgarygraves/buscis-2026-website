@@ -445,3 +445,4 @@ h1,h2,h3,h4,p,li,dd,td,a{overflow-wrap:break-word}
 @media (max-width:520px){.related{grid-template-columns:minmax(0,1fr)}}
 .people{grid-template-columns:repeat(auto-fill,minmax(min(200px,100%),1fr))}
 .people.compact{grid-template-columns:repeat(auto-fill,minmax(min(170px,100%),1fr))}
+.prose .linklist{padding-left:0}

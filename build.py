@@ -9,7 +9,7 @@ import pathlib, sys, re, shutil
 ROOT = pathlib.Path(__file__).parent
 S = ROOT / "src"; OUT = ROOT / "docs"
 sys.path.insert(0, str(S))
-from programs import P, GROUPS, JOBS, SCHED, LEADS
+from programs import P, GROUPS, JOBS, SCHED, LEADS, JOB_SOC, PATHWAYS, PW, CAREER_SOURCES
 from programs_es import ES, GROUPS_ES, TAGS_ES, JOBS_ES, AREA_ES, ROLE_ES, DEPTS_ES
 from people import STAFF, DEPTS, FACULTY, SOCIAL, CLUB
 from pages import PAGES, COUNSELORS, ESARS
@@ -174,6 +174,22 @@ def programs_html(lang):
                    + "".join(card(k, lang) for k in keys) + '</div></div>')
     return "\n".join(out)
 
+
+def career_sources(lang):
+    return "".join(f'<li><a href="{(ue if lang == "en" else us)}"{(" lang=\"en\"" if lang == "es" and ls == le else "")}>{(le if lang == "en" else ls)}</a> <span>{(de if lang == "en" else ds)}</span></li>'
+                   for le, de, ue, ls, ds, us in CAREER_SOURCES)
+
+def research_block(key, lang):
+    name = pv(key, "name", lang)
+    pw_label = (L(lang, f"Careers and course maps for {name}", f"Carreras y mapas de cursos de {name}") if key != "ai"
+                else L(lang, "Business pathway careers and course maps", "Carreras y mapas de cursos de la ruta de Negocios"))
+    pw_desc = (L(lang, "Every career Hornet Pathways matches to this program, with national pay and growth",
+                 "Todas las carreras que Hornet Pathways relaciona con este programa, con salario y crecimiento nacional")
+               if key != "ai" else L(lang, "The AI programs will be added to Hornet Pathways soon", "Los programas de IA se agregarán pronto a Hornet Pathways"))
+    return (f'<div class="block research"><h2>{L(lang, "Research careers on your own", "Investiga carreras por tu cuenta")}</h2>'
+            f'<p>{L(lang, "These free tools show what people in each field do, what they earn, and how many jobs are expected. Compare a few before you choose.", "Estas herramientas gratuitas muestran qué hacen las personas en cada área, cuánto ganan y cuántos empleos se esperan. Compara varias antes de decidir.")}</p>'
+            f'<ul class="linklist"><li><a href="{PATHWAYS}{PW[key]}">{pw_label}</a> <span>{pw_desc}</span></li>{career_sources(lang)}</ul></div>')
+
 # ---------- program pages ----------
 PATHWAY = {
  "tech": ("Applied Technology, Engineering and Mathematics", "https://www.fullcoll.edu/hornet-pathways/"),
@@ -216,14 +232,18 @@ def program_page(key, lang):
         blocks.append(f'<div class="block"><h2>{L(lang, "Events every semester", "Eventos cada semestre")}</h2><ul class="events">{ev}</ul></div>')
     if p["jobs"]:
         bach = L(lang, "Bachelor&#8217;s", "Licenciatura")
-        jr = "".join(f'<tr><td>{L(lang, JOBS[j][0], JOBS_ES[j])}{f" <span class=\"pill\">{bach}</span>" if JOBS[j][3] else ""}</td>'
+        prof = L(lang, "https://www.onetonline.org/link/summary/", "https://www.miproximopaso.org/profile/summary/")
+        jr = "".join(f'<tr><td><a href="{prof}{JOB_SOC[j]}">{L(lang, JOBS[j][0], JOBS_ES[j])}</a>{f" <span class=\"pill\">{bach}</span>" if JOBS[j][3] else ""}</td>'
                      f'<td class="num">{JOBS[j][1]}</td><td class="num">{JOBS[j][2]}{L(lang, "/hr", "/hora")}</td></tr>' for j in p["jobs"])
         blocks.append(f'<div class="block"><h2>{L(lang, "Where it can lead", "Hacia dónde puede llevarte")}</h2><div class="tablebox"><table>'
                       f'<thead><tr><th scope="col">{L(lang, "Occupation", "Ocupación")}</th><th scope="col">{L(lang, "OC jobs, 2024", "Empleos en OC, 2024")}</th>'
                       f'<th scope="col">{L(lang, "Median pay", "Mediana salarial")}</th></tr></thead><tbody>{jr}</tbody></table></div><p class="small">'
                       + L(lang, "Orange County data from Lightcast, as reported in the Fullerton College Institutional Effectiveness Report 2024-25. Roles marked Bachelor&#8217;s usually require a four-year degree. ",
                           "Datos del condado de Orange de Lightcast, citados en el Informe de Efectividad Institucional de Fullerton College 2024-25. Los puestos marcados con Licenciatura normalmente requieren un título universitario de cuatro años. ")
+                      + L(lang, "Each occupation links to its O*NET profile with daily tasks, skills, and national pay. ",
+                            "Cada ocupación enlaza a su perfil en Mi Próximo Paso, con tareas, habilidades y salario nacional. ")
                       + (pv(key, "jobs_note", lang) or "") + '</p></div>')
+    blocks.append(research_block(key, lang))
     fac = sorted(p["faculty"], key=lambda f: f["email"] != LEADS[key])
     if not any(f["email"] == LEADS[key] for f in fac):
         fac.insert(0, {"name": ln, "email": le, "role": "", "area": BY_EMAIL[le][4]})
@@ -238,7 +258,7 @@ def program_page(key, lang):
     plan = [(L(lang, f"Find {first[1]} in the schedule", f"Busca {first[1]} en el horario"), SCHED + first[0]),
             (L(lang, f'All {p["subj"]} classes this term', f'Todas las clases de {p["subj"]} de este semestre'), SCHED + p["subj"])]
     if p.get("map"): plan.append((L(lang, "Program map", "Mapa del programa"), p["map"]))
-    plan += [(L(lang, "Hornet Pathways program maps", "Mapas de programas de Hornet Pathways"), "https://www.fullcoll.edu/hornet-pathways/"),
+    plan += [(L(lang, "Course maps on Hornet Pathways", "Mapas de cursos en Hornet Pathways"), PATHWAYS + PW[key]),
              (L(lang, "Career education counselors", "Consejeros de educación profesional"), "counselors.html"),
              (L(lang, "Apply for a certificate", "Solicita un certificado"), "forms.html")]
     plan_html = "".join(f'<li><a href="{u}">{x}</a></li>' for x, u in plan)
@@ -330,6 +350,7 @@ def content_page(pg, lang):
     src = pg if lang == "en" else {**pg, **PAGES_ES[pg["file"]]}
     todo = (f'<div class="todo" role="note" lang="en"><b>{t("todo", "en")}</b> {pg["todo"]}</div>' if pg["todo"] else "")
     body = (src["body"].replace("{{COUNSELORS}}", "".join(person(n, ti, "", e, "", "staff", lang) for n, ti, e in COUNSELORS))
+            .replace("{{CAREER_SOURCES}}", career_sources(lang))
             .replace("{{STAFF}}", "".join(person(n, ti, "", e, ph, "staff", lang) for n, ti, ph, e in STAFF)))
     return f"""<main id="main">
 <section class="hero slim"><div class="wrap"><div>

@@ -72,6 +72,12 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Full link check before launch
 - [x] Automated accessibility audit: axe-core, all 42 pages, light and dark: 0 issues; 320px reflow: pass
 
+## G. Career information
+- [x] Every program page links each occupation to O*NET (Spanish pages: Mi Próximo Paso) and lists free career research tools
+- [x] Each program links to its own Hornet Pathways page for course maps and the full career list
+- [ ] AI in Business is not on Hornet Pathways yet; update its link in `src/programs.py` (`PW`) when it is added
+- [ ] Optional: once a year, import program details from Pathways (units, terms to degree, learning outcomes) and let program leads pick which careers to feature
+
 ## E. Spanish version
 - [ ] Review by a fluent Spanish speaker (faculty, staff, or the college's translation service), especially program descriptions and the Paralegal legal notice
 - [ ] Confirm the informal "tú" voice fits the college's style, or switch to "usted"
