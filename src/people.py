@@ -108,3 +108,10 @@ SOCIAL = [  # division accounts, from the division's social media flyer
  ("YouTube", "@fullertoncollegebusiness", "https://www.youtube.com/@fullertoncollegebusiness"),
 ]
 CLUB = "https://fullcoll.instructure.com/enroll/876ALN"
+
+# "Find classes" links: each person's name exactly as the class schedule lists it ("Last, First").
+# The link opens the newest term on schedule.nocccd.edu. Test group first; add others after review.
+SCHEDULE_NAMES = {
+ "ggraves@fullcoll.edu": "Graves, Gary",
+ "mwilson@fullcoll.edu": "Wilson, Marcus",
+}

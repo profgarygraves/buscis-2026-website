@@ -11,7 +11,8 @@ S = ROOT / "src"; OUT = ROOT / "docs"
 sys.path.insert(0, str(S))
 from programs import P, GROUPS, JOBS, SCHED, LEADS, JOB_SOC, PATHWAYS, PW, CAREER_SOURCES
 from programs_es import ES, GROUPS_ES, TAGS_ES, JOBS_ES, AREA_ES, ROLE_ES, DEPTS_ES
-from people import STAFF, DEPTS, FACULTY, SOCIAL, CLUB
+from people import STAFF, DEPTS, FACULTY, SOCIAL, CLUB, SCHEDULE_NAMES
+from urllib.parse import quote
 from pages import PAGES, COUNSELORS, ESARS
 from pages_es import PAGES_ES
 from i18n import t
@@ -85,7 +86,10 @@ def person(name, role="", area="", email="", phone="", dept="bus", lang="en"):
     meta = (f'<p class="nm">{name}</p>' + (f'<p class="rl">{role}</p>' if role else "")
             + (f'<p class="ar">{tr_area(area, lang)}</p>' if area else "")
             + (f'<p class="ct">{phone}</p>' if phone else "")
-            + (f'<p class="ct mail">{email}</p>' if email else ""))
+            + (f'<p class="ct mail">{email}</p>' if email else "")
+            + (f'<p class="cls"><a href="https://schedule.nocccd.edu/?college=2&amp;instr={quote(SCHEDULE_NAMES[email])}">'
+               f'{L(lang, "Find classes", "Ver sus clases")}<span class="sr-only"> {L(lang, "taught by", "de")} {name}</span> &rarr;</a></p>'
+               if email in SCHEDULE_NAMES else ""))
     return f'<li class="person">{ph}<div class="pm">{meta}</div></li>'
 
 def last_name(n):

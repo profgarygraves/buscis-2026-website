@@ -446,3 +446,7 @@ h1,h2,h3,h4,p,li,dd,td,a{overflow-wrap:break-word}
 .people{grid-template-columns:repeat(auto-fill,minmax(min(200px,100%),1fr))}
 .people.compact{grid-template-columns:repeat(auto-fill,minmax(min(170px,100%),1fr))}
 .prose .linklist{padding-left:0}
+/* "Find classes" link on person cards */
+.pm .cls{margin-top:6px}
+.pm .cls a{display:inline-block;font:700 13px/1.2 var(--display);color:#1B0D42;background:#FFD600;padding:6px 10px;border-radius:4px;text-decoration:none}
+.pm .cls a:hover{background:#ffe03d;text-decoration:underline}
