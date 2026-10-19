@@ -98,23 +98,37 @@ PAGES_ES = {
 <li><a href="counselors.html">Reúnete con un consejero</a></li></ul></div>"""),
 
  "career.html": dict(title="Recursos profesionales", eyebrow="Más allá del salón",
-  lead="Investiga carreras, encuentra empleo, recibe comentarios sobre tu currículum y vístete para la entrevista, con herramientas gratuitas para estudiantes de Fullerton College.",
-  body="""<div class="block" id="connect"><h2 lang="en">FC Career Connect</h2>
-<p>Busca empleos en la bolsa de trabajo de NACE, sube tu currículum y tu carta de presentación, conéctate con empleadores y profesores, y consulta ejemplos de currículums y cartas.</p>
-<ol class="numbered"><li>Inicia sesión en <a href="https://mg.nocccd.edu">myGateway</a>.</li><li>Abre la pestaña <span lang="en">Student</span>.</li><li>En <span lang="en">Student Links</span>, selecciona FCCareerConnect.</li><li>Completa tu perfil.</li></ol>
-<p class="small">Preguntas: Jennifer Merchant, jmerchant@fullcoll.edu</p></div>
-<div class="block" id="vmock"><h2>Revisión de currículum con VMock</h2>
-<p>Recibe comentarios inmediatos y detallados sobre tu currículum con el servicio VMock del Centro de Carreras.</p>
-<ol class="numbered"><li>Ve a <a href="https://www.vmock.com/nocccd">vmock.com/nocccd</a>.</li><li>Elige <span lang="en">Continue with University ID</span>.</li><li>Inicia sesión con tu usuario y contraseña de myGateway.</li></ol></div>
+  lead="Encuentra empleos y prácticas en Handshake, recibe comentarios sobre tu currículum, investiga carreras y vístete para la entrevista, con ayuda gratuita del Centro de Carreras de Fullerton College.",
+  body="""<div class="block" id="jobs"><h2>Encuentra empleo en <span lang="en">Handshake</span></h2>
+<p><span lang="en">Handshake</span> es la plataforma de empleos y prácticas profesionales de Fullerton College. Busca empleos y prácticas dentro y fuera del campus, conéctate con empleadores e inscríbete en ferias y eventos de empleo.</p>
+<ol class="numbered"><li>Ve a <a href="https://fullcoll.joinhandshake.com/login">fullcoll.joinhandshake.com</a>.</li><li>Elige <b lang="en">Login using your Student ID</b>.</li><li>Inicia sesión con tu cuenta de estudiante de Fullerton College, el mismo usuario y contraseña de myGateway.</li><li>Completa tu perfil y sube tu currículum para que los empleadores te encuentren.</li></ol>
+<p><a class="btn btn-primary" href="https://fullcoll.joinhandshake.com/login">Entra a <span lang="en">Handshake</span></a></p>
+<p class="small">¿Es tu primera vez en <span lang="en">Handshake</span>? El Centro de Carreras ofrece un seminario web gratuito, <span lang="en">Handshake 101 Job Search</span>. Consulta las fechas en el <a href="https://careercenter.fullcoll.edu/calendar/">calendario del Centro de Carreras</a>.</p></div>
+<div class="block" id="resume"><h2>Ayuda con tu currículum y carta de presentación</h2>
+<ul class="linklist"><li><a href="https://fullcoll.joinhandshake.com/login"><span lang="en">Handshake Resume Optimizer</span></a> <span>Comentarios inmediatos sobre tu currículum; la principal recomendación del Centro de Carreras</span></li>
+<li><a href="https://careercenter.fullcoll.edu/resume/">Guía de currículum y carta de presentación</a> <span>Plantillas, consejos y el seminario web <span lang="en">Resume and Cover Letter 101</span> (en inglés)</span></li>
+<li><a href="https://forms.office.com/r/T1XCq0cEpB">Formulario de admisión del Centro de Carreras</a> <span>Pide ayuda individual con tu currículum o tu búsqueda de empleo (en inglés)</span></li></ul></div>
 <div class="block" id="research"><h2>Investiga carreras</h2>
 <p>Antes de elegir un programa, investiga las carreras a las que lleva: qué hacen las personas cada día, cuánto ganan y si los empleos están creciendo. Estas herramientas gratuitas son un buen punto de partida.</p>
 <ul class="linklist">{{CAREER_SOURCES}}</ul></div>
-<div class="block"><h2 lang="en">Career Closet</h2>
-<p>El <span lang="en">Career Closet</span>, con ropa profesional gratuita para entrevistas y el trabajo, ahora forma parte del Centro de Carreras de Fullerton College.</p></div>""",
-  aside="""<div class="aside-card highlight"><h2>Centro de Carreras</h2><ul>
-<li><a href="https://careercenter.fullcoll.edu/">Centro de Carreras de Fullerton College</a></li>
-<li><a href="https://fullcoll-csm.symplicity.com/">Bolsa de trabajo de NACE</a></li>
-<li><a href="https://www.vmock.com/nocccd">VMock</a></li></ul></div>
+<div class="block" id="explore"><h2>¿No sabes qué carrera te conviene?</h2>
+<p>El Centro de Carreras puede ayudarte a elegir una carrera y un camino profesional. Estos recursos están en inglés.</p>
+<ul class="linklist"><li><a href="https://careercenter.fullcoll.edu/exploration-experience/"><span lang="en">Career Exploration Experience</span></a> <span>Seis pasos con un consejero de carreras que terminan en tu plan educativo</span></li>
+<li><a href="https://careercenter.fullcoll.edu/superstrong-journey/"><span lang="en">SuperStrong Journey</span></a> <span>Una evaluación de intereses y un plan para estudiantes de primer año</span></li>
+<li><a href="https://nocccd.lightcastcc.com/?radius=&amp;region=Orange%20County"><span lang="en">Career Coach</span></a> <span>Empleos y salarios del condado de Orange, y los programas que llevan a ellos</span></li>
+<li><a href="https://fullcoll.candidcareer.com/"><span lang="en">Candid Career</span></a> <span>Videos cortos de personas que describen su trabajo</span></li>
+<li><a href="https://whatcanidowiththismajor.com/"><span lang="en">What Can I Do With This Major?</span></a> <span>Caminos profesionales por carrera</span></li>
+<li><a href="https://careercenter.fullcoll.edu/courses/">Cursos de orientación profesional</a> <span>Obtén unidades mientras planeas tu carrera</span></li></ul></div>
+<div class="block" id="closet"><h2 lang="en">Career Closet</h2>
+<p>Elige ropa y accesorios profesionales gratis para entrevistas, ferias de empleo y el trabajo. Los estudiantes inscritos en al menos media unidad reciben puntos cada semestre para canjear por artículos que se quedan. Visita el edificio 2000, salón 2026, de lunes a jueves.</p>
+<p><a href="https://careercenter.fullcoll.edu/career-closet/">Horario y detalles del <span lang="en">Career Closet</span> (en inglés) &rarr;</a></p></div>""",
+  aside="""<div class="aside-card highlight"><h2>Centro de Carreras</h2>
+<p class="small" style="margin:0 0 8px">Edificio 2000, salón 2027<br>714-992-7121<br>Lun–jue 9 a.m.–6 p.m., vie 9 a.m.–1 p.m.</p><ul>
+<li><a href="https://fullcoll.joinhandshake.com/login">Entrar a <span lang="en">Handshake</span></a></li>
+<li><a href="https://careercenter.fullcoll.edu/">Sitio web del Centro de Carreras</a></li>
+<li><a href="https://careercenter.fullcoll.edu/calendar/">Talleres y seminarios web</a></li>
+<li><a href="https://fullcoll.instructure.com/enroll/WHKEJW">Centro de Carreras en Canvas</a></li>
+<li><a href="https://forms.office.com/r/T1XCq0cEpB">Pide ayuda (formulario de admisión)</a></li></ul></div>
 <div class="aside-card"><h2>Gana experiencia</h2><ul><li><a href="internships.html">Prácticas profesionales con créditos</a></li></ul></div>"""),
 
  "clubs.html": dict(title="Clubes estudiantiles", eyebrow="Más allá del salón",

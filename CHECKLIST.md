@@ -43,7 +43,8 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Is the Accounting Society still active at fullcollacctsociety@gmail.com?
 - [ ] LEX contact: FCParalegalStudies@fullcoll.edu
 - [ ] Internship contacts (Graves, Carlin, Moore), both Google Forms, and the Canvas space are current
-- [ ] Career Connect contact: Jennifer Merchant
+- [x] Career page now uses Handshake (replaced FC Career Connect, the NACE job board, and VMock, which the Career Center no longer lists) (October 19)
+- [ ] Career Center: confirm Handshake sign-in steps and Career Closet details are current each year
 - [ ] LinkedIn "FC Alumni" group is the right one to link
 
 ## B. Content needed
