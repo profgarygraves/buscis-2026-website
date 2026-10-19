@@ -285,10 +285,18 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:700}
 @media (max-width:860px){.ads{justify-self:stretch;max-width:none;aspect-ratio:auto;min-height:340px}}
 
 /* ---------- board layout tweaks ---------- */
-.featured{grid-row:span 2}
+/* Featured card runs the full width of its group, so it is only as tall as its content.
+   Business has 6 cards: featured on top, then 3 + 2 (on a 6-column grid, the last two run wider). */
+.featured{grid-column:1/-1}
 .featured .list{margin:10px 0 0;padding-left:18px;font-size:14px;display:grid;gap:4px}
+.featured .prog-body{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);column-gap:40px}
+.grid.n6{grid-template-columns:repeat(6,minmax(0,1fr))}
+.grid.n6>.prog{grid-column:span 2}
+.grid.n6>.featured{grid-column:1/-1}
+.grid.n6>.prog:nth-last-child(-n+2){grid-column:span 3}
 .grid.n2{grid-template-columns:repeat(2,minmax(0,1fr))}
-@media (max-width:980px){.featured{grid-row:auto}}
+@media (max-width:980px){.grid.n6{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.n6>.prog,.grid.n6>.prog:nth-last-child(-n+2){grid-column:auto}.grid.n6>.featured,.grid.n6>.prog:last-child{grid-column:1/-1}}
+@media (max-width:620px){.grid.n6{grid-template-columns:minmax(0,1fr)}.grid.n6>.prog:last-child{grid-column:auto}}
 @media (max-width:620px){.grid.n2{grid-template-columns:minmax(0,1fr)}}
 .start a{color:inherit;text-decoration:none}
 .start a b{color:var(--link);text-decoration:underline;text-underline-offset:3px}
