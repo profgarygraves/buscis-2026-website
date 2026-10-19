@@ -4,7 +4,7 @@
 OLD = "https://buscis.fullcoll.edu/wp-content/uploads/"
 
 STAFF = [  # (name, title, phone, email)
- ("Dr. Dani Wilson", "Interim Dean, Business &amp; CIS Division", "714-992-7032", "dwilson@fullcoll.edu"),
+ ("Dr. Dani Wilson", "Acting Dean, Business &amp; CIS Division", "714-992-7032", "dwilson@fullcoll.edu"),
  ("Adriana Goncalves", "Administrative Assistant III", "714-732-5324", "agoncalves@fullcoll.edu"),
  ("Kelley Jones-Horwood", "Administrative Assistant II", "714-732-5568", "kjoneshorwood@fullcoll.edu"),
  ("Adrienne Williams", "Administrative Assistant I", "714-732-5323", "awilliams@fullcoll.edu"),

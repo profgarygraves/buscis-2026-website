@@ -144,7 +144,7 @@ ROLE_ES = {
  "CIS Department Coordinator": "Coordinación del departamento de CIS",
  "Department Coordinator, (714) 992-7208": "Coordinación del departamento, (714) 992-7208",
  "Program Lead": "Líder del programa",
- "Interim Dean, Business &amp; CIS Division": "Decana interina, División de Negocios y CIS",
+ "Acting Dean, Business &amp; CIS Division": "Decana en funciones, División de Negocios y CIS",
  "Administrative Assistant III": "Asistente de administración III",
  "Administrative Assistant II": "Asistente de administración II",
  "Administrative Assistant I": "Asistente de administración I",
