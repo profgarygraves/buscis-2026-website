@@ -272,6 +272,12 @@ def program_page(key, lang):
         docs = (f'<div class="aside-card"><h2>{L(lang, "Program documents", "Documentos del programa")}</h2><ul>'
                 + "".join(f'<li><a href="{u}"{en}>{x}</a></li>' for x, u in p["docs"]) + '</ul></div>')
     hl = "".join(f"<li>{h}</li>" for h in pv(key, "highlights", lang))
+    site = ""
+    if p.get("site"):
+        su, sn, sd_en, sd_es = p["site"]
+        site = (f'<div class="aside-card highlight"><h2>{L(lang, "Visit the program site", "Visita el sitio del programa")}</h2>'
+                f'<p class="small" style="margin:0 0 8px">{L(lang, sd_en, sd_es)}</p>'
+                f'<ul><li><a href="{su}"' + ('' if lang == "en" else ' lang="en"') + f'>{sn}</a></li></ul></div>')
     rel = "".join(f'<a class="a-{P[r]["color"]}" href="{P[r]["file"]}">{pv(r, "name", lang)}<span>{pv(r, "desc", lang).split(".")[0]}.</span></a>' for r in p["related"])
     crumbs = (f'<nav class="crumbs" aria-label="{L(lang, "Breadcrumb", "Ruta de navegación")}"><a href="index.html">{t("crumb_home", lang)}</a> &rsaquo; '
               f'<a href="index.html#programs">{t("nav_programs", lang)}</a> &rsaquo; <span aria-current="page">{name}</span></nav>')
@@ -297,6 +303,7 @@ def program_page(key, lang):
     <div class="prose" id="awards">{"".join(blocks)}</div>
     <section class="sidebar" aria-label="{L(lang, "Program links", "Enlaces del programa")}">
       <div class="aside-card highlight"><h2>{L(lang, "Highlights", "Lo más destacado")}</h2><ul class="ticks">{hl}</ul></div>
+      {site}
       <div class="aside-card"><h2>{L(lang, "Plan your classes", "Planea tus clases")}</h2><ul>{plan_html}</ul></div>
       {docs}
     </section>
