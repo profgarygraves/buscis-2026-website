@@ -1,0 +1,89 @@
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Business &amp; Computer Information Systems Division</span>
+      <h1>Business is the <em>#1 major</em> at Fullerton College.</h1>
+      <p class="lead">Choose from {{AWARD_TOTAL}} degrees and certificates in 11 program areas, from accounting and paralegal studies to cybersecurity and AI. Many classes are offered online.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#programs">Explore programs</a>
+        <a class="btn btn-ghost" href="{{SCHED}}">Search the class schedule</a>
+      </div>
+    </div>
+    <aside class="ads" aria-label="Division highlights" aria-roledescription="carousel">
+      <input type="checkbox" id="ads-pause" class="ads-toggle"><label for="ads-pause" class="ads-pause"><span class="when-run">Pause</span><span class="when-paused">Play</span></label>
+      <!-- Each slide is a square "post". To use a designed graphic instead of text,
+           replace a slide's contents with: <a href="..."><img src="ads/name.png" alt="..."></a> (1080x1080). -->
+      <div class="slide s1"><span class="eyebrow">2024-25 at a glance</span><div class="big">2,708</div><p>students declared Business Administration, more than any other major on campus.</p><a href="business.html">Explore Business &rarr;</a></div>
+      <div class="slide s2"><span class="eyebrow">2024-25 at a glance</span><div class="big">1 in 7</div><p>Fullerton College students majored in Business Administration, Business Management, or Accounting.</p><a href="#programs">Find your program &rarr;</a></div>
+      <div class="slide s3"><span class="eyebrow">New this year</span><div class="big sm">AI in Business</div><p>A new certificate and AS degree. Start with BUS 256 F, AI and Prompt Engineering for Business.</p><a href="ai-in-business.html">See the AI programs &rarr;</a></div>
+      <div class="slide s4"><span class="eyebrow">Choose your path</span><div class="big">{{AWARD_TOTAL}}</div><p>degrees and certificates across 11 program areas, from bookkeeping to cyber security.</p><a href="#programs">Browse programs &rarr;</a></div>
+      <div class="slide s5"><span class="eyebrow">Paralegal Studies</span><div class="big sm">ABA-approved</div><p>Prepare to work on a legal team, with four new specialty certificates.</p><a href="paralegal.html">Explore Paralegal &rarr;</a></div>
+      <div class="slide s6"><span class="eyebrow">Cyber Security</span><div class="big sm">Center of Excellence</div><p>Designated a National Center of Academic Excellence in Cyber Defense by the NSA and DoD.</p><a href="cyber-security.html">Explore Cyber Security &rarr;</a></div>
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="src">Enrollment figures: FC Institutional Effectiveness Report 2024-25, Table 8.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="section board" id="programs">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Find your program</h2>
+        <p>Every program has a <strong>Start Here</strong> course. Take it first to see whether the field fits you before you commit.</p>
+      </div>
+      <fieldset class="filter">
+        <legend>Show programs by area</legend>
+        <input type="radio" name="area" id="f-all" checked><label for="f-all">All programs</label>
+        <input type="radio" name="area" id="f-biz"><label for="f-biz"><i style="background:var(--biz)"></i>Business &amp; Management</label>
+        <input type="radio" name="area" id="f-law"><label for="f-law"><i style="background:var(--law)"></i><i style="background:var(--para);margin-left:-6px"></i>Accounting, Law &amp; Real Estate</label>
+        <input type="radio" name="area" id="f-tech"><label for="f-tech"><i style="background:var(--tech)"></i>Technology</label>
+      </fieldset>
+    </div>
+
+{{PROGRAMS}}
+    <p class="note">Pay figures are Orange County median hourly earnings from Lightcast, as reported in the Fullerton College Institutional Effectiveness Report 2024-25. Roles marked bachelor's-level usually require a four-year degree.</p>
+  </div>
+</section>
+
+<section class="section path" id="start">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Start here</h2><p>New to Fullerton College or new to the division? These four steps get you from first class to finished certificate.</p></div></div>
+    <ol class="steps">
+      <li><h3>Apply to Fullerton College</h3><p>Admission is free. Apply once through CCCApply and you can take classes in any program.</p><a href="https://www.fullcoll.edu/admissions/">How to apply &rarr;</a></li>
+      <li><h3>Take a Start Here course</h3><p>Each program lists one or two first courses. They count toward the degree and show you what the field is like.</p><a href="#programs">See first courses &rarr;</a></li>
+      <li><h3>Map your plan with a counselor</h3><p>Use the Business pathway's program maps and meet a career education counselor to plan your semesters.</p><a href="counselors.html">Meet a counselor &rarr;</a></li>
+      <li><h3>Apply for your award</h3><p>Certificates and degrees are not automatic. Apply in the term you finish your last course.</p><a href="forms.html">Forms &amp; applications &rarr;</a></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap sets">
+    <div class="set" id="plan">
+      <h2>Plan your classes</h2>
+      <ul class="links">
+        <li><a href="{{SCHED}}">{{I_CAL}}<span><b>Class schedule</b><span>Search by subject, course, or instructor</span></span></a></li>
+        <li><a href="https://catalog.nocccd.edu/fullerton-college/">{{I_BOOK}}<span><b>College catalog</b><span>Official degree and certificate requirements</span></span></a></li>
+        <li><a href="https://www.fullcoll.edu/hornet-pathways/">{{I_MAP}}<span><b>Hornet Pathways</b><span>Program maps by pathway</span></span></a></li>
+        <li><a href="counselors.html">{{I_USER}}<span><b>Counselors</b><span>Division and career education counselors</span></span></a></li>
+        <li><a href="forms.html">{{I_DOC}}<span><b>Forms &amp; applications</b><span>Certificate applications and petitions</span></span></a></li>
+        <li><a href="contact.html#hours">{{I_CLOCK}}<span><b>Contact &amp; hours</b><span>Division office, staff, and hours</span></span></a></li>
+      </ul>
+    </div>
+    <div class="set" id="beyond">
+      <h2>Beyond class</h2>
+      <ul class="links">
+        <li><a href="internships.html">{{I_BRIEF}}<span><b>Internships</b><span>Earn experience and units</span></span></a></li>
+        <li><a href="study-abroad.html">{{I_GLOBE}}<span><b>Study abroad</b><span>Florence, Italy, planned for Fall 2028</span></span></a></li>
+        <li><a href="career.html#connect">{{I_BRIEF}}<span><b>Find a job</b><span>FC Career Connect job board</span></span></a></li>
+        <li><a href="career.html#vmock">{{I_SHIRT}}<span><b>Resume &amp; interview help</b><span>VMock review and the Career Closet</span></span></a></li>
+        <li><a href="{{CLUB}}">{{I_USERS}}<span><b>Hornet Business Club</b><span>Join in Canvas for news and events</span></span></a></li>
+        <li><a href="clubs.html">{{I_USERS}}<span><b>Student clubs</b><span>Accounting Society, Paralegal honor society</span></span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="wrap reviewed">Page last reviewed: Fall 2026</div>
+</main>
