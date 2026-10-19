@@ -228,7 +228,7 @@ P = {
            A("Web Design","SK","computer-information-systems/web-design-skills-certificate")]),
 
  "cyber": dict(file="cyber-security.html", name="Cyber Security", color="tech", subj="CYBR",
-   starts=[("CIS160", "CIS 160 F", "Introduction to Cyber Security")],
+   starts=[("CYBR106", "CYBR 106 F", "Introduction to Cybersecurity")],
    desc="Stackable certificates from technician to analyst to master level, built to protect businesses from cybercrime.",
    lead="Cyber security professionals protect the information of organizations, governments, and individuals. Build those skills one stackable certificate at a time, from technician to master level.",
    overview=["<b>Level 1, Technician:</b> foundational skills for entry-level work and for analyzing threats. <b>Level 2, Analyst:</b> adds ethical hacking, intrusion detection, incident response, and web application security. <b>Level 3, Master:</b> adds advanced programming and operating systems.",

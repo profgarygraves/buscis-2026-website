@@ -28,7 +28,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Office hours: Mon–Thu 8 a.m.–7 p.m., Fri 8 a.m.–5 p.m.; summer Mon–Thu 8 a.m.–5 p.m., closed Friday
 
 ### Program details
-- [ ] Start Here courses: BUS 100, BUS 180/181, BUS 256, MKT 100/151, BUS 131, RE 101, ACCT 100/101A, PLEG 101, CIS 100/111, CIS 160, CISG 100
+- [ ] Start Here courses: BUS 100, BUS 180/181, BUS 256, MKT 100/151, BUS 131, RE 101, ACCT 100/101A, PLEG 101, CIS 100/111, CYBR 106 (corrected from CIS 160, October 19), CISG 100
 - [ ] Claims carried over from the old site:
   - [ ] Accounting courses count toward the 24 accounting units required for the CPA exam
   - [ ] Real Estate covers the coursework for the CA salesperson and broker licenses
