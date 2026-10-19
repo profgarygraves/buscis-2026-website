@@ -43,8 +43,9 @@ PAGES = [
   aside="""<div class="aside-card"><h2>More counseling</h2><ul>
 <li><a href="https://counseling.fullcoll.edu/appointments/">Counseling Center appointments</a></li>
 <li><a href="https://counseling.fullcoll.edu/hours-and-location/">Counseling Center hours and location</a></li>
-<li><a href="https://www.fullcoll.edu/hornet-pathways/">Hornet Pathways program maps</a></li></ul></div>""",
-  todo="Confirm the current counselor list and Fall 2026 hours. An older page also listed Jennika Celo."),
+<li><a href="https://www.fullcoll.edu/hornet-pathways/">Hornet Pathways program maps</a></li>
+<li><a href="https://admissions.fullcoll.edu/degreeworks-faq/">Learn about DegreeWorks</a></li></ul></div>""",
+  todo=""),
 
  dict(file="internships.html", title="Internships", eyebrow="Beyond class",
   lead="Earn college credit while you work with a local employer in a job related to your program. Paid and unpaid positions both count.",

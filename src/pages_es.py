@@ -37,7 +37,8 @@ PAGES_ES = {
   aside="""<div class="aside-card"><h2>Más consejería</h2><ul>
 <li><a href="https://counseling.fullcoll.edu/appointments/">Citas en el Centro de Consejería</a></li>
 <li><a href="https://counseling.fullcoll.edu/hours-and-location/">Horario y ubicación del Centro de Consejería</a></li>
-<li><a href="https://www.fullcoll.edu/hornet-pathways/">Mapas de programas de <span lang="en">Hornet Pathways</span></a></li></ul></div>"""),
+<li><a href="https://www.fullcoll.edu/hornet-pathways/">Mapas de programas de <span lang="en">Hornet Pathways</span></a></li>
+<li><a href="https://admissions.fullcoll.edu/degreeworks-faq/">Conoce <span lang="en">DegreeWorks</span> (en inglés)</a></li></ul></div>"""),
 
  "internships.html": dict(title="Prácticas profesionales", eyebrow="Más allá del salón",
   lead="Obtén créditos universitarios mientras trabajas con un empleador local en un puesto relacionado con tu programa. Cuentan tanto los puestos pagados como los no pagados.",
