@@ -108,9 +108,9 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
   - Source: course student learning outcomes (SLOs) from CurricUNET
   - Match each skill to the program's target jobs using the O*NET knowledge, skills, and abilities lists already linked on each program page
   - Start with the Workforce Pell candidates: Real Estate Sales, Entrepreneurship Skills, Business Data Analytics, AI Foundations
-- [ ] Course rotation schedules for every department, so students know which semesters each course is offered (faculty suggestion, October 20)
-  - Linked now, as files on the old WordPress server: Accounting (PDF, 9/30/25), CIS (Excel, Fall 2026), Paralegal (PDF, Spring 2026)
-  - Still needed: Business Management, Marketing, Real Estate, International Business, Computer Gaming, Cyber Security (if separate from CIS)
-  - Better for students: show each rotation as a web table (course, fall, spring, summer, online) instead of a PDF or Excel file; also fixes the file-accessibility item in section F
+- [x] Course Rotation page (rotation.html), semesters only, no years (October 20): Accounting, CIS (with Computer Gaming and Cyber Security), Paralegal; linked from the home page and each of those program pages
+  - Source files: Accounting (9/30/25), CIS spreadsheet (Spring 2026 and Fall 2026 columns), Paralegal (eff. 02/2026); data lives in `src/rotation.py`
+- [ ] Course rotations still needed: Business Management, Marketing, Real Estate, International Business
+- [ ] CIS rotation lists no summer or winter terms; 44 CIS courses have no planned semester (shown in a collapsed list). Confirm with CIS
 - [ ] Accounting: list the courses that count toward the CPA exam's 24 accounting units (faculty suggestion, October 20)
   - The Accounting page already says all FC accounting courses count and links the CPA worksheet PDF; need the course list from the Accounting department

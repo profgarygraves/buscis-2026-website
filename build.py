@@ -14,6 +14,7 @@ from programs_es import ES, GROUPS_ES, TAGS_ES, JOBS_ES, AREA_ES, ROLE_ES, DEPTS
 from people import STAFF, DEPTS, FACULTY, SOCIAL, CLUB, SCHEDULE_NAMES
 from urllib.parse import quote
 from pages import PAGES, COUNSELORS, ESARS
+import rotation as ROT
 from pages_es import PAGES_ES
 from i18n import t
 
@@ -266,6 +267,8 @@ def program_page(key, lang):
     plan += [(L(lang, "Course maps on Hornet Pathways", "Mapas de cursos en Hornet Pathways"), PATHWAYS + PW[key]),
              (L(lang, "Career education counselors", "Consejeros de educación profesional"), "counselors.html"),
              (L(lang, "Apply for a certificate", "Solicita un certificado"), "forms.html")]
+    if p.get("rot"):  # department course rotation, after Hornet Pathways
+        plan.insert(len(plan) - 2, (L(lang, "Course rotation: when classes are offered", "Rotación de cursos: cuándo se ofrecen"), "rotation.html#" + p["rot"]))
     plan_html = "".join(f'<li><a href="{u}">{x}</a></li>' for x, u in plan)
     docs = ""
     if p.get("docs"):
@@ -358,18 +361,76 @@ def faculty_page(lang):
 """
 
 # ---------- resource pages ----------
+MODES = {"D": ("Day", "Diurno"), "N": ("Night", "Nocturno"), "S": ("Saturday", "Sábado"),
+         "O": ("Online", "En línea"), "Y": ("Offered", "Se ofrece")}
+TERMS = {"fall": ("Fall", "Otoño"), "spring": ("Spring", "Primavera"), "summer": ("Summer", "Verano"), "winter": ("Winter", "Invierno")}
+
+def rot_table(rows, terms, lang, caption, groups=None):
+    """Course rotation table. rows: (course, title, fall, spring, summer, winter, note)."""
+    idx = {"fall": 2, "spring": 3, "summer": 4, "winter": 5}
+    def note(n):
+        if not n: return ""
+        if isinstance(n, tuple): return L(lang, n[0], n[1])
+        return L(lang, n, n.replace("Formerly", "Antes"))
+    allrows = [r for _, rs in groups for r in rs] if groups else rows
+    has_note = any(r[6] for r in allrows)
+    head = (f'<th scope="col">{L(lang, "Course", "Curso")}</th>'
+            + "".join(f'<th scope="col">{L(lang, *TERMS[t])}</th>' for t in terms)
+            + (f'<th scope="col">{L(lang, "Notes", "Notas")}</th>' if has_note else ""))
+    ncol = 1 + len(terms) + (1 if has_note else 0)
+    def cell(v):
+        if not v:
+            return f'<td class="off"><span aria-hidden="true">&mdash;</span><span class="sr-only">{L(lang, "Not offered", "No se ofrece")}</span></td>'
+        return "<td>" + ", ".join(L(lang, *MODES[m]) for m in v) + "</td>"
+    def tr(r):
+        return (f'<tr><th scope="row"><b>{r[0]}</b><br><span class="small" lang="en">{r[1]}</span></th>'
+                + "".join(cell(r[idx[t]]) for t in terms)
+                + (f'<td class="small">{note(r[6])}</td>' if has_note else "") + "</tr>")
+    if groups:
+        body = "".join(f'<tr class="grp"><th scope="colgroup" colspan="{ncol}">{g}</th></tr>' + "".join(tr(r) for r in rs) for g, rs in groups)
+    else:
+        body = "".join(tr(r) for r in rows)
+    return (f'<div class="tablebox" role="region" tabindex="0" aria-label="{caption}"><table class="rot"><caption class="sr-only">{caption}</caption>'
+            f'<thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>')
+
+def rotation_html(lang):
+    fs = ["fall", "spring"]; fss = ["fall", "spring", "summer"]; all4 = ["fall", "spring", "summer", "winter"]
+    none = ", ".join(f'{c}' for c, _ in ROT.CIS_NONE)
+    return (
+      f'<div class="block" id="accounting"><h2>{L(lang, "Accounting", "Contabilidad")}</h2>'
+      + rot_table(ROT.ACCT_ROWS, fss, lang, L(lang, "Accounting course rotation", "Rotación de cursos de Contabilidad"))
+      + f'<p class="small"><a href="accounting.html">{L(lang, "Accounting program", "Programa de Contabilidad")} &rarr;</a></p></div>'
+      + f'<div class="block" id="cis"><h2>{L(lang, "Computer Information Systems", "Sistemas de Información Computacional")}</h2>'
+      + f'<p>{L(lang, "The CIS department schedules CIS, Computer Gaming, and Cyber Security courses. This rotation lists fall and spring; check the class schedule for summer and winter.", "El departamento de CIS programa los cursos de CIS, Videojuegos y Ciberseguridad. Esta rotación muestra otoño y primavera; consulta el horario de clases para verano e invierno.")}</p>'
+      + f'<h3 id="cis-courses">CIS</h3>' + rot_table(ROT.CIS_ROWS, fs, lang, L(lang, "CIS course rotation", "Rotación de cursos de CIS"))
+      + f'<h3 id="gaming">{L(lang, "Computer Gaming", "Videojuegos")}</h3>' + rot_table(ROT.CISG_ROWS, fs, lang, L(lang, "Computer Gaming course rotation", "Rotación de cursos de Videojuegos"))
+      + f'<h3 id="cyber">{L(lang, "Cyber Security", "Ciberseguridad")}</h3>' + rot_table(ROT.CYBR_ROWS, fs, lang, L(lang, "Cyber Security course rotation", "Rotación de cursos de Ciberseguridad"))
+      + f'<details class="more"><summary>{L(lang, f"{len(ROT.CIS_NONE)} other CIS courses are not on the current rotation", f"Otros {len(ROT.CIS_NONE)} cursos de CIS no están en la rotación actual")}</summary>'
+      + f'<p class="small">{none}. {L(lang, "Ask the division office if you need one of these courses.", "Pregunta en la oficina de la división si necesitas alguno de estos cursos.")}</p></details></div>'
+      + f'<div class="block" id="paralegal"><h2>{L(lang, "Paralegal Studies", "Estudios Paralegales")}</h2>'
+      + rot_table(None, all4, lang, L(lang, "Paralegal Studies course rotation", "Rotación de cursos de Estudios Paralegales"),
+                  groups=[(L(lang, "Required courses", "Cursos obligatorios"), ROT.PLEG_REQUIRED), (L(lang, "Elective courses", "Cursos optativos"), ROT.PLEG_ELECTIVE)])
+      + '<ul class="small">'
+      + f'<li>{L(lang, "Online means fully asynchronous, with one live Zoom orientation at the start of the semester.", "En línea significa totalmente asincrónico, con una sola orientación en vivo por Zoom al inicio del semestre.")}</li>'
+      + f'<li>{L(lang, "Students must take at least 9 units of legal specialty courses in live (synchronous) classes.", "Debes tomar al menos 9 unidades de cursos de especialidad legal en clases en vivo (sincrónicas).")}</li>'
+      + f'<li>{L(lang, "Even and odd years refer to the calendar year of the term.", "Los años pares e impares se refieren al año calendario del semestre.")}</li></ul>'
+      + f'<p class="small"><a href="paralegal.html">{L(lang, "Paralegal Studies program", "Programa de Estudios Paralegales")} &rarr;</a></p></div>'
+      + f'<div class="block" id="coming"><h2>{L(lang, "Coming soon", "Próximamente")}</h2>'
+      + f'<p>{L(lang, "Rotations for Business Management, Marketing, Real Estate, and International Business will be added here. Until then, check the class schedule or ask a counselor.", "Aquí se agregarán las rotaciones de Gestión Empresarial, Mercadotecnia, Bienes Raíces y Negocios Internacionales. Mientras tanto, consulta el horario de clases o pregunta a un consejero.")}</p></div>')
+
 def content_page(pg, lang):
     src = pg if lang == "en" else {**pg, **PAGES_ES[pg["file"]]}
     todo = (f'<div class="todo" role="note" lang="en"><b>{t("todo", "en")}</b> {pg["todo"]}</div>' if pg["todo"] else "")
     body = (src["body"].replace("{{COUNSELORS}}", "".join(person(n, ti, "", e, "", "staff", lang) for n, ti, e in COUNSELORS))
             .replace("{{CAREER_SOURCES}}", career_sources(lang))
+            .replace("{{ROTATION}}", rotation_html(lang) if "{{ROTATION}}" in src["body"] else "")
             .replace("{{STAFF}}", "".join(person(n, ti, "", e, ph, "staff", lang) for n, ti, ph, e in STAFF)))
     return f"""<main id="main">
 <section class="hero slim"><div class="wrap"><div>
   <nav class="crumbs" aria-label="{L(lang, "Breadcrumb", "Ruta de navegación")}"><a href="index.html">{t("crumb_home", lang)}</a> &rsaquo; {src["eyebrow"]} &rsaquo; <span aria-current="page">{src["title"]}</span></nav>
   <h1>{src["title"]}</h1><p class="lead">{src["lead"]}</p>
 </div></div></section>
-<section class="section" aria-label="{src["title"]}"><div class="wrap">{todo}<div class="two"><div class="prose">{body}</div><section class="sidebar" aria-label="{L(lang, "Related links", "Enlaces relacionados")}">{src["aside"]}</section></div></div></section>
+<section class="section" aria-label="{src["title"]}"><div class="wrap">{todo}{('<div class="two"><div class="prose">' + body + '</div><section class="sidebar" aria-label="' + L(lang, "Related links", "Enlaces relacionados") + '">' + src["aside"] + '</section></div>') if src["aside"] else ('<div class="prose wide">' + body + '</div>')}</div></section>
 <p class="wrap reviewed">{t("reviewed", lang)}</p>
 </main>
 """
@@ -399,7 +460,7 @@ def link_names(html):
 css = (S / "style.css").read_text()
 HEADER = (S / "header.html").read_text()
 FOOTER = (S / "footer.html").read_text()
-RESOURCE_FILES = {"forms.html", "counselors.html", "internships.html", "study-abroad.html", "career.html", "clubs.html"}
+RESOURCE_FILES = {"rotation.html", "forms.html", "counselors.html", "internships.html", "study-abroad.html", "career.html", "clubs.html"}
 
 def fill_t(html, lang):
     return re.sub(r"\{\{t:([\w ]+)\}\}", lambda m: t(m.group(1), lang), html)

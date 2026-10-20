@@ -246,7 +246,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.15;text-wra
 .prose p,.prose li{max-width:66ch}
 .prose ul{padding-left:20px}
 .block+.block{margin-top:40px}
-.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.tablebox{position:relative;overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
 table{border-collapse:collapse;width:100%;font-size:15px}
 th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
 th{font:700 12px/1.3 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--chip)}
@@ -472,6 +472,19 @@ h1,h2,h3,h4,p,li,dd,td,a{overflow-wrap:break-word}
 .prose h3{margin:22px 0 10px}
 tbody th{font:700 15px/1.4 var(--body,inherit);letter-spacing:0;text-transform:none;color:var(--ink);background:none;white-space:nowrap}
 
+/* course rotation tables */
+table.rot th[scope=row]{white-space:normal;min-width:180px}
+table.rot td{white-space:nowrap}
+table.rot td.small{white-space:normal;min-width:160px}
+table.rot td.off{color:var(--muted)}
+table.rot tr.grp th{background:var(--chip);font:700 12px/1.3 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+details.more{margin-top:14px}
+details.more summary{cursor:pointer;font-weight:600;color:var(--link)}
+.prose.wide{max-width:none}
+nav.jump ul{list-style:none;margin:16px 0 8px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+nav.jump a{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}
+nav.jump a:hover{border-color:var(--link)}
+
 </style>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
@@ -552,7 +565,7 @@ tbody th{font:700 15px/1.4 var(--body,inherit);letter-spacing:0;text-transform:n
     <section class="sidebar" aria-label="Program links">
       <div class="aside-card highlight"><h2>Highlights</h2><ul class="ticks"><li>Game Design Certificate: 18 units</li><li>Game Programming Skills Certificate: 15 units</li><li>eSports</li></ul></div>
       
-      <div class="aside-card"><h2>Plan your classes</h2><ul><li><a href="https://schedule.nocccd.edu/?college=2&keyword=CISG100">Find CISG 100 F in the schedule</a></li><li><a href="https://schedule.nocccd.edu/?college=2&keyword=CISG">All CISG classes this term</a></li><li><a href="https://pathways.fullcoll.edu/program/computer-game-design/">Course maps on Hornet Pathways</a></li><li><a href="counselors.html">Career education counselors</a></li><li><a href="forms.html">Apply for a certificate</a></li></ul></div>
+      <div class="aside-card"><h2>Plan your classes</h2><ul><li><a href="https://schedule.nocccd.edu/?college=2&keyword=CISG100">Find CISG 100 F in the schedule</a></li><li><a href="https://schedule.nocccd.edu/?college=2&keyword=CISG">All CISG classes this term</a></li><li><a href="https://pathways.fullcoll.edu/program/computer-game-design/">Course maps on Hornet Pathways</a></li><li><a href="rotation.html#gaming">Course rotation: when classes are offered</a></li><li><a href="counselors.html">Career education counselors</a></li><li><a href="forms.html">Apply for a certificate</a></li></ul></div>
       
     </section>
   </div>

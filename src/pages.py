@@ -8,6 +8,14 @@ def linklist(items):
     return '<ul class="linklist">' + "".join(f'<li><a href="{u}">{t}</a>{(" <span>" + d + "</span>") if d else ""}</li>' for t, u, d in items) + "</ul>"
 
 PAGES = [
+ dict(file="rotation.html", title="Course Rotation", eyebrow="Student resources",
+  lead="See which semesters each course is usually offered, so you can plan ahead. Some courses run only once a year, or every other year.",
+  body="""<p class="notice" role="note">Rotations are planned and can change. Always confirm in the <a href="https://schedule.nocccd.edu/?college=2">class schedule</a> before you register, and plan your semesters with a <a href="counselors.html">counselor</a> or in <a href="https://admissions.fullcoll.edu/degreeworks-faq/">DegreeWorks</a>.</p>
+<nav class="jump" aria-label="Jump to"><ul><li><a href="#accounting">Accounting</a></li><li><a href="#cis">CIS</a></li><li><a href="#gaming">Computer Gaming</a></li><li><a href="#cyber">Cyber Security</a></li><li><a href="#paralegal">Paralegal Studies</a></li><li><a href="#coming">Coming soon</a></li></ul></nav>
+{{ROTATION}}""",
+  aside="",
+  todo=""),
+
  dict(file="forms.html", title="Forms &amp; Applications", eyebrow="Student resources",
   lead="Change your major, apply for a certificate, petition to substitute a requirement, or challenge a prerequisite. A counselor can help you choose the right form.",
   body=f"""

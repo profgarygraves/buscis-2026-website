@@ -246,7 +246,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.15;text-wra
 .prose p,.prose li{max-width:66ch}
 .prose ul{padding-left:20px}
 .block+.block{margin-top:40px}
-.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.tablebox{position:relative;overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
 table{border-collapse:collapse;width:100%;font-size:15px}
 th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
 th{font:700 12px/1.3 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--chip)}
@@ -472,6 +472,19 @@ h1,h2,h3,h4,p,li,dd,td,a{overflow-wrap:break-word}
 .prose h3{margin:22px 0 10px}
 tbody th{font:700 15px/1.4 var(--body,inherit);letter-spacing:0;text-transform:none;color:var(--ink);background:none;white-space:nowrap}
 
+/* course rotation tables */
+table.rot th[scope=row]{white-space:normal;min-width:180px}
+table.rot td{white-space:nowrap}
+table.rot td.small{white-space:normal;min-width:160px}
+table.rot td.off{color:var(--muted)}
+table.rot tr.grp th{background:var(--chip);font:700 12px/1.3 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+details.more{margin-top:14px}
+details.more summary{cursor:pointer;font-weight:600;color:var(--link)}
+.prose.wide{max-width:none}
+nav.jump ul{list-style:none;margin:16px 0 8px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+nav.jump a{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}
+nav.jump a:hover{border-color:var(--link)}
+
 </style>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
@@ -601,9 +614,11 @@ tbody th{font:700 15px/1.4 var(--body,inherit);letter-spacing:0;text-transform:n
         <li><a href="https://schedule.nocccd.edu/?college=2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg><span><b>Class schedule</b><span>Search by subject, course, or instructor</span></span></a></li>
         <li><a href="https://catalog.nocccd.edu/fullerton-college/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z"/><path d="M20 4h-6a3 3 0 0 0-1 .2V20a2 2 0 0 1 2-2h5z"/></svg><span><b>College catalog</b><span>Official degree and certificate requirements</span></span></a></li>
         <li><a href="https://www.fullcoll.edu/hornet-pathways/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span><b>Hornet Pathways</b><span>Program maps by pathway</span></span></a></li>
+        <li><a href="rotation.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg><span><b>Course rotation</b><span>Which semesters each course is offered</span></span></a></li>
         <li><a href="counselors.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span><b>Counselors</b><span>Division and career education counselors</span></span></a></li>
         <li><a href="forms.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg><span><b>Forms &amp; applications</b><span>Certificate applications and petitions</span></span></a></li>
         <li><a href="https://admissions.fullcoll.edu/major-changes/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg><span><b>Change my major</b><span>Switch to a Business or CIS major online</span></span></a></li>
+        <li><a href="contact.html#hours"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Contact &amp; hours</b><span>Division office, staff, and hours</span></span></a></li>
       </ul>
     </div>
     <div class="set" id="beyond">
