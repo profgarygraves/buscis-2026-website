@@ -6,7 +6,7 @@ PAGES_ES = {
  "rotation.html": dict(title="Rotación de cursos", eyebrow="Recursos estudiantiles",
   lead="Consulta en qué semestres se ofrece normalmente cada curso para planear con tiempo. Algunos cursos se ofrecen solo una vez al año o cada dos años.",
   body="""<p class="notice" role="note">Las rotaciones son planes y pueden cambiar. Confirma siempre en el <a href="https://schedule.nocccd.edu/?college=2">horario de clases</a> antes de inscribirte y planea tus semestres con un <a href="counselors.html">consejero</a> o en <a href="https://admissions.fullcoll.edu/degreeworks-faq/"><span lang="en">DegreeWorks</span></a>.</p>
-<nav class="jump" aria-label="Ir a"><ul><li><a href="#accounting">Contabilidad</a></li><li><a href="#cis">CIS</a></li><li><a href="#gaming">Videojuegos</a></li><li><a href="#cyber">Ciberseguridad</a></li><li><a href="#paralegal">Estudios Paralegales</a></li><li><a href="#coming">Próximamente</a></li></ul></nav>
+<nav class="jump" aria-label="Ir a"><ul><li><a href="#business">Negocios</a></li><li><a href="#intl">Negocios Internacionales</a></li><li><a href="#marketing">Mercadotecnia</a></li><li><a href="#realestate">Bienes Raíces</a></li><li><a href="#accounting">Contabilidad</a></li><li><a href="#cis">CIS</a></li><li><a href="#gaming">Videojuegos</a></li><li><a href="#cyber">Ciberseguridad</a></li><li><a href="#paralegal">Estudios Paralegales</a></li></ul></nav>
 {{ROTATION}}""",
   aside=""),
 

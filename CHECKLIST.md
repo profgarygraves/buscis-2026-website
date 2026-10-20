@@ -110,7 +110,8 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
   - Start with the Workforce Pell candidates: Real Estate Sales, Entrepreneurship Skills, Business Data Analytics, AI Foundations
 - [x] Course Rotation page (rotation.html), semesters only, no years (October 20): Accounting, CIS (with Computer Gaming and Cyber Security), Paralegal; linked from the home page and each of those program pages
   - Source files: Accounting (9/30/25), CIS spreadsheet (Spring 2026 and Fall 2026 columns), Paralegal (eff. 02/2026); data lives in `src/rotation.py`
-- [ ] Course rotations still needed: Business Management, Marketing, Real Estate, International Business
+- [x] Business Management, International Business, Marketing, and Real Estate rotations added (October 20, from the rotation revised 8/21/26), with 8-week session details; linked from those program pages plus Entrepreneurship and AI in Business
+- [ ] Not on the Business rotation: BUS 187 F, BUS 246 F, RE 207 F (listed under their tables). Confirm
 - [ ] CIS rotation lists no summer or winter terms; 44 CIS courses have no planned semester (shown in a collapsed list). Confirm with CIS
 - [ ] Accounting: list the courses that count toward the CPA exam's 24 accounting units (faculty suggestion, October 20)
   - The Accounting page already says all FC accounting courses count and links the CPA worksheet PDF; need the course list from the Accounting department

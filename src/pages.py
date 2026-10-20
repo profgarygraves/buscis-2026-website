@@ -11,7 +11,7 @@ PAGES = [
  dict(file="rotation.html", title="Course Rotation", eyebrow="Student resources",
   lead="See which semesters each course is usually offered, so you can plan ahead. Some courses run only once a year, or every other year.",
   body="""<p class="notice" role="note">Rotations are planned and can change. Always confirm in the <a href="https://schedule.nocccd.edu/?college=2">class schedule</a> before you register, and plan your semesters with a <a href="counselors.html">counselor</a> or in <a href="https://admissions.fullcoll.edu/degreeworks-faq/">DegreeWorks</a>.</p>
-<nav class="jump" aria-label="Jump to"><ul><li><a href="#accounting">Accounting</a></li><li><a href="#cis">CIS</a></li><li><a href="#gaming">Computer Gaming</a></li><li><a href="#cyber">Cyber Security</a></li><li><a href="#paralegal">Paralegal Studies</a></li><li><a href="#coming">Coming soon</a></li></ul></nav>
+<nav class="jump" aria-label="Jump to"><ul><li><a href="#business">Business</a></li><li><a href="#intl">International Business</a></li><li><a href="#marketing">Marketing</a></li><li><a href="#realestate">Real Estate</a></li><li><a href="#accounting">Accounting</a></li><li><a href="#cis">CIS</a></li><li><a href="#gaming">Computer Gaming</a></li><li><a href="#cyber">Cyber Security</a></li><li><a href="#paralegal">Paralegal Studies</a></li></ul></nav>
 {{ROTATION}}""",
   aside="",
   todo=""),

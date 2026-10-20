@@ -36,6 +36,7 @@ JOBS = {
 P = {
  "business": dict(file="business.html", name="Business Administration &amp; Management", color="biz",
    tag="Most popular major", featured=True, subj="BUS", starts=[("BUS100", "BUS 100 F", "Introduction to Business")],
+   rot="business",
    desc="Prepare to transfer to a four-year business program, or build management, finance, and operations skills for work right away.",
    lead="Business Management at Fullerton College covers every major area of business. Prepare to transfer, or update your skills for the job you have or the one you want.",
    overview=["Choose the <b>Business Administration AS-T 2.0</b> if you plan to transfer to a CSU business degree. Choose the <b>Business Management</b> degree and certificates to build skills for supervisory and management work now.",
@@ -67,6 +68,7 @@ P = {
 
  "entrepreneurship": dict(file="entrepreneurship.html", name="Entrepreneurship", color="biz", subj="BUS",
    starts=[("BUS180", "BUS 180 F", "Small Business Management"), ("BUS181", "BUS 181 F", "The Entrepreneurial Mindset")],
+   rot="business",
    desc="Plan, launch, and run your own business. You finish the program with a complete business plan.",
    lead="Thinking about starting your own business but not sure where to begin? We guide you step by step through business planning, so you finish with a complete plan and the skills to start or grow a company.",
    overview=["Take courses in small business management, small business promotions, and other business subjects. Build one specific skill, or work toward a certificate or an Associate in Science degree in Entrepreneurship.",
@@ -84,6 +86,7 @@ P = {
 
  "ai": dict(file="ai-in-business.html", name="AI in Business", color="biz", new=True, subj="BUS",
    starts=[("BUS256", "BUS 256 F", "AI and Prompt Engineering for Business")],
+   rot="business",
    desc="Use AI tools to analyze data, automate work, and make better business decisions. New in the Fall 2026 catalog.",
    lead="Learn AI literacy, prompt engineering, machine learning, and practical AI applications for business. The new AI programs took effect July 1, 2026.",
    overview=["Start with the 12-unit <b>AI Foundations Certificate</b>, then continue to the <b>AI in Business Certificate</b> or the <b>AI in Business AS degree</b> (21 to 23 units each).",
@@ -99,6 +102,7 @@ P = {
 
  "marketing": dict(file="marketing.html", name="Marketing", color="biz", subj="MKT",
    starts=[("MKT100", "MKT 100 F", "Introduction to Marketing"), ("MKT151", "MKT 151 F", "Digital Marketing")],
+   rot="marketing",
    desc="Advertising, social media, and digital marketing, for new marketers and for people already in the field who want to advance.",
    lead="Build the marketing skills employers look for, or sharpen the ones you have: marketing management, digital marketing, advertising, professional selling, and international marketing.",
    overview=["Earn an Associate in Science degree in Marketing Management, or certificates in Marketing Management and Digital Marketing.",
@@ -115,6 +119,7 @@ P = {
 
  "intl": dict(file="international-business.html", name="International Business", color="biz", subj="BUS",
    starts=[("BUS131", "BUS 131 F", "Principles of International Business")],
+   rot="intl",
    desc="Importing, exporting, and global marketing and management for organizations that work across borders.",
    lead="Prepare for work in organizations with an international footprint, with skills in importing, exporting, and international marketing and management.",
    overview=["Courses cover international business, imports and exports, international marketing, international law, and international management.",
@@ -129,6 +134,7 @@ P = {
 
  "realestate": dict(file="real-estate.html", name="Real Estate", color="biz", subj="RE",
    starts=[("RE101", "RE 101 F", "Principles of Real Estate")],
+   rot="realestate",
    desc="Coursework for the California salesperson and broker licenses, taught by working real estate professionals.",
    lead="Complete the coursework required for the California Real Estate Salesperson License and the California Real Estate Broker License, in classes taught by professionals in the field.",
    overview=["Courses include Real Estate Principles, Property Management, Real Estate Law, Appraisal, Commercial Real Estate, and USPAP.",

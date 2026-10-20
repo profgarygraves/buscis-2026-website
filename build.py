@@ -363,6 +363,8 @@ def faculty_page(lang):
 # ---------- resource pages ----------
 MODES = {"D": ("Day", "Diurno"), "N": ("Night", "Nocturno"), "S": ("Saturday", "Sábado"),
          "O": ("Online", "En línea"), "Y": ("Offered", "Se ofrece")}
+LENGTHS = {"16-8": ("16 or 8 weeks", "16 u 8 semanas"), "8a": ("first 8 weeks", "primeras 8 semanas"),
+           "8b": ("second 8 weeks", "segundas 8 semanas"), "88": ("either 8-week session", "cualquier sesión de 8 semanas")}
 TERMS = {"fall": ("Fall", "Otoño"), "spring": ("Spring", "Primavera"), "summer": ("Summer", "Verano"), "winter": ("Winter", "Invierno")}
 
 def rot_table(rows, terms, lang, caption, groups=None):
@@ -381,7 +383,12 @@ def rot_table(rows, terms, lang, caption, groups=None):
     def cell(v):
         if not v:
             return f'<td class="off"><span aria-hidden="true">&mdash;</span><span class="sr-only">{L(lang, "Not offered", "No se ofrece")}</span></td>'
-        return "<td>" + ", ".join(L(lang, *MODES[m]) for m in v) + "</td>"
+        toks = v.split() if (" " in v or ":" in v) else list(v)
+        out = []
+        for tk in toks:
+            m, _, ln = tk.partition(":")
+            out.append(L(lang, *MODES[m]) + (f' <span class="len">({L(lang, *LENGTHS[ln])})</span>' if ln else ""))
+        return "<td>" + "<br>".join(out) + "</td>"
     def tr(r):
         return (f'<tr><th scope="row"><b>{r[0]}</b><br><span class="small" lang="en">{r[1]}</span></th>'
                 + "".join(cell(r[idx[t]]) for t in terms)
@@ -396,7 +403,20 @@ def rot_table(rows, terms, lang, caption, groups=None):
 def rotation_html(lang):
     fs = ["fall", "spring"]; fss = ["fall", "spring", "summer"]; all4 = ["fall", "spring", "summer", "winter"]
     none = ", ".join(f'{c}' for c, _ in ROT.CIS_NONE)
-    return (
+    f4 = ["fall", "spring", "summer", "winter"]
+    def nonelist(rows):
+        if not rows: return ""
+        return f'<p class="small">{L(lang, "Not on the current rotation", "No están en la rotación actual")}: ' + ", ".join(f"{c} ({t})" for c, t in rows) + ".</p>"
+    biz = (f'<div class="block" id="business"><h2>{L(lang, "Business Management", "Gestión Empresarial")}</h2>'
+      + f'<p>{L(lang, "Includes the Business, Entrepreneurship, and AI in Business courses. Many online classes run in 8-week sessions: the first or second half of the semester.", "Incluye los cursos de Negocios, Emprendimiento e IA en los Negocios. Muchas clases en línea duran 8 semanas: la primera o la segunda mitad del semestre.")}</p>'
+      + rot_table(ROT.BUS_ROWS, f4, lang, L(lang, "Business course rotation", "Rotación de cursos de Negocios")) + nonelist(ROT.BUS_NONE) + '</div>'
+      + f'<div class="block" id="intl"><h2>{L(lang, "International Business", "Negocios Internacionales")}</h2>'
+      + rot_table(ROT.INTL_ROWS, f4, lang, L(lang, "International Business course rotation", "Rotación de cursos de Negocios Internacionales")) + '</div>'
+      + f'<div class="block" id="marketing"><h2>{L(lang, "Marketing", "Mercadotecnia")}</h2>'
+      + rot_table(ROT.MKT_ROWS, f4, lang, L(lang, "Marketing course rotation", "Rotación de cursos de Mercadotecnia")) + nonelist(ROT.MKT_NONE) + '</div>'
+      + f'<div class="block" id="realestate"><h2>{L(lang, "Real Estate", "Bienes Raíces")}</h2>'
+      + rot_table(ROT.RE_ROWS, f4, lang, L(lang, "Real Estate course rotation", "Rotación de cursos de Bienes Raíces")) + nonelist(ROT.RE_NONE) + '</div>')
+    return (biz +
       f'<div class="block" id="accounting"><h2>{L(lang, "Accounting", "Contabilidad")}</h2>'
       + rot_table(ROT.ACCT_ROWS, fss, lang, L(lang, "Accounting course rotation", "Rotación de cursos de Contabilidad"))
       + f'<p class="small"><a href="accounting.html">{L(lang, "Accounting program", "Programa de Contabilidad")} &rarr;</a></p></div>'
@@ -415,8 +435,7 @@ def rotation_html(lang):
       + f'<li>{L(lang, "Students must take at least 9 units of legal specialty courses in live (synchronous) classes.", "Debes tomar al menos 9 unidades de cursos de especialidad legal en clases en vivo (sincrónicas).")}</li>'
       + f'<li>{L(lang, "Even and odd years refer to the calendar year of the term.", "Los años pares e impares se refieren al año calendario del semestre.")}</li></ul>'
       + f'<p class="small"><a href="paralegal.html">{L(lang, "Paralegal Studies program", "Programa de Estudios Paralegales")} &rarr;</a></p></div>'
-      + f'<div class="block" id="coming"><h2>{L(lang, "Coming soon", "Próximamente")}</h2>'
-      + f'<p>{L(lang, "Rotations for Business Management, Marketing, Real Estate, and International Business will be added here. Until then, check the class schedule or ask a counselor.", "Aquí se agregarán las rotaciones de Gestión Empresarial, Mercadotecnia, Bienes Raíces y Negocios Internacionales. Mientras tanto, consulta el horario de clases o pregunta a un consejero.")}</p></div>')
+      )
 
 def content_page(pg, lang):
     src = pg if lang == "en" else {**pg, **PAGES_ES[pg["file"]]}
