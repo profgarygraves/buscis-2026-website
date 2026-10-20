@@ -1,7 +1,7 @@
 # Spanish text for each program (pairs with programs.py). Official award names stay in English, as in the catalog.
 # Needs review by a fluent Spanish speaker before launch.
-GROUPS_ES = {"biz": "Negocios y Gestión", "law": "Contabilidad y Derecho", "tech": "Tecnología"}
-TAGS_ES = {"biz": "Negocios y Gestión", "law": "Contabilidad y Derecho", "para": "Estudios Paralegales", "tech": "Tecnología"}
+GROUPS_ES = {"biz": "Negocios y Gestión", "law": "Contabilidad y Estudios Paralegales", "tech": "Tecnología"}
+TAGS_ES = {"biz": "Negocios y Gestión", "law": "Contabilidad y Estudios Paralegales", "para": "Estudios Paralegales", "tech": "Tecnología"}
 
 JOBS_ES = {
  "gom": "Gerentes generales y de operaciones",
@@ -144,6 +144,8 @@ ROLE_ES = {
  "Department Coordinator": "Coordinación del departamento",
  "CIS Department Coordinator": "Coordinación del departamento de CIS",
  "Department Coordinator, (714) 992-7208": "Coordinación del departamento, (714) 992-7208",
+ "Program Director": "Dirección del programa",
+ "Program Director, (714) 992-7208": "Dirección del programa, (714) 992-7208",
  "Program Lead": "Líder del programa",
  "Acting Dean, Business &amp; CIS Division": "Decana en funciones, División de Negocios y CIS",
  "Administrative Assistant III": "Asistente de administración III",

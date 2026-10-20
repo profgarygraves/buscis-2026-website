@@ -82,7 +82,7 @@ FACULTY = [
  ("Leonard Rosenblum","lrosenblum@fullcoll.edu","cis","","",None),
  ("Aeron Zentner","azentner@fullcoll.edu","cis","","",None),
 
- ("Michael Moore","mmoore1@fullcoll.edu","pleg","Department Coordinator","Paralegal Studies","2020/12/MooreMichael-photo-e1608234518529.jpg"),
+ ("Michael Moore","mmoore1@fullcoll.edu","pleg","Program Director","Paralegal Studies","2020/12/MooreMichael-photo-e1608234518529.jpg"),
  ("Santalia Carter","scarter@fullcoll.edu","pleg","","","2022/11/Carter-Sandy-bio-pic-scaled.jpg"),
  ("Jacqueline James","jjames@fullcoll.edu","pleg","","","2022/11/Jackie.jpeg"),
  ("Douglas Lusk","dlusk@fullcoll.edu","pleg","","","2020/06/Douglas-Lusk-e1593297469137.jpg"),

@@ -13,7 +13,7 @@ def F(name, area, email="", role=""):
 
 GROUPS = [
   ("biz", "Business &amp; Management", ["business", "entrepreneurship", "ai", "marketing", "intl", "realestate"]),
-  ("law", "Accounting &amp; Law", ["accounting", "paralegal"]),
+  ("law", "Accounting &amp; Paralegal Studies", ["accounting", "paralegal"]),
   ("tech", "Technology", ["cis", "cyber", "gaming"]),
 ]
 
@@ -190,7 +190,7 @@ P = {
            ("Law Day &amp; Legal Awareness Events", "Spring", "Speakers, screenings, and discussions tied to Law Day."),
            ("Paralegal Power Hour", "Summer", "Webinars on job searches, specialty certificates, certification, and law school options.")],
    jobs=["par"],
-   faculty=[F("Michael Moore", "Paralegal Studies", "mmoore1@fullcoll.edu", "Department Coordinator, (714) 992-7208")],
+   faculty=[F("Michael Moore", "Paralegal Studies", "mmoore1@fullcoll.edu", "Program Director, (714) 992-7208")],
    map="https://fullerton.programmapper.com/academics/interest-clusters/db959625-8fa4-4d43-b7ed-e199d085ac73/programs/c83a1863-16a8-0043-0dc6-8964addeb8ab",
    rot="paralegal",
    related=["realestate", "business", "accounting", "cyber"],

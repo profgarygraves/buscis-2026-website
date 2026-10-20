@@ -55,7 +55,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
 
 BY_EMAIL = {f[1]: f for f in FACULTY}
 DEPT_COLOR = {"acct": "law", "bus": "biz", "cis": "tech", "pleg": "para", "staff": "biz"}
-TAGS = {"biz": "Business &amp; Management", "law": "Accounting &amp; Law", "para": "Paralegal Studies", "tech": "Technology"}
+TAGS = {"biz": "Business &amp; Management", "law": "Accounting &amp; Paralegal Studies", "para": "Paralegal Studies", "tech": "Technology"}
 
 def pv(key, field, lang):
     """Program value in the requested language (falls back to English)."""

@@ -7,7 +7,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 ### People and roles
 - [ ] Program leads carried over from the 2023 brochure: Marcus Wilson (Business), Barry McCarthy (International Business), Richard Ghidella (Real Estate), Brandon Tran (Accounting), Michael Moore (Paralegal), Anna Carlin (Cyber Security)
 - [x] Confirmed leads: Gary Graves (Entrepreneurship, AI in Business), Marwin Luminarias (Marketing), Brian Roach (CIS), Carlos Antunez (Computer Gaming)
-- [ ] Department coordinators: Kathy Standen and Marcus Wilson (Business Management), Brandon Tran (Accounting), Brian Roach (CIS), Michael Moore (Paralegal)
+- [ ] Department coordinators: Kathy Standen and Marcus Wilson (Business Management), Brandon Tran (Accounting), Brian Roach (CIS); Michael Moore is Paralegal Studies Program Director (confirmed October 20)
 - [x] Faculty names now match the official class schedule (October 19): Kathy Standen, Julianne Dixon, Kristine Wilson, Leonard Rosenblum, Santalia Carter, Brenda Klingenmaier, Steve John Haddadin, Richard Ghidella, Marwin Luminarias
 - [x] Faculty roster checked against the division's faculty list (October 19): 72 faculty listed
   - Removed 11 who are not on the division list and have no classes in Fall 2026 or Spring 2027: Pascual, Snow, Oates, Reid, West, Collar, Douglas, Kazerooni, Woolridge, Yi, Peikes
