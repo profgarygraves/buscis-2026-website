@@ -185,4 +185,5 @@ LINKEDIN = {
  "runderdue@fullcoll.edu": "https://www.linkedin.com/in/rashawnunderdue/",
  "sjezekarriaga@fullcoll.edu": "https://www.linkedin.com/in/suzanne-jezek-arriaga-b4304b21/",
  "jrife@fullcoll.edu": "https://www.linkedin.com/in/taxrife/",
+ "azentner@fullcoll.edu": "https://www.linkedin.com/in/aeronzentner/",
 }
