@@ -182,4 +182,5 @@ SCHEDULE_NAMES = {
 LINKEDIN = {
  "jdixon@fullcoll.edu": "https://www.linkedin.com/in/julie-dixon-16978835/",
  "ggraves@fullcoll.edu": "https://www.linkedin.com/in/garygraves/",
+ "runderdue@fullcoll.edu": "https://www.linkedin.com/in/rashawnunderdue/",
 }
