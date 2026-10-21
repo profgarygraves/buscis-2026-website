@@ -11,7 +11,7 @@ S = ROOT / "src"; OUT = ROOT / "docs"
 sys.path.insert(0, str(S))
 from programs import P, GROUPS, JOBS, SCHED, LEADS, JOB_SOC, PATHWAYS, PW, CAREER_SOURCES
 from programs_es import ES, GROUPS_ES, TAGS_ES, JOBS_ES, AREA_ES, ROLE_ES, DEPTS_ES
-from people import STAFF, DEPTS, FACULTY, SOCIAL, CLUB, SCHEDULE_NAMES
+from people import STAFF, DEPTS, FACULTY, SOCIAL, CLUB, SCHEDULE_NAMES, LINKEDIN
 from urllib.parse import quote
 from pages import PAGES, COUNSELORS, ESARS
 import rotation as ROT
@@ -89,6 +89,7 @@ def person(name, role="", area="", email="", phone="", dept="bus", lang="en"):
             + (f'<p class="ar">{tr_area(area, lang)}</p>' if area else "")
             + (f'<p class="ct">{phone}</p>' if phone else "")
             + (f'<p class="ct mail">{email}</p>' if email else "")
+            + (f'<p class="li"><a href="{LINKEDIN[email]}">{SICON["LinkedIn"]}LinkedIn<span class="sr-only">: {name}</span></a></p>' if email in LINKEDIN else "")
             + (f'<p class="cls"><a href="https://schedule.nocccd.edu/?college=2{("&amp;term=" + SCHEDULE_NAMES[email][1]) if SCHEDULE_NAMES[email][1] else ""}&amp;instr={quote(SCHEDULE_NAMES[email][0])}">'
                f'{L(lang, "Find classes", "Ver sus clases")}<span class="sr-only"> {L(lang, "taught by", "de")} {name}</span> &rarr;</a></p>'
                if email in SCHEDULE_NAMES else ""))

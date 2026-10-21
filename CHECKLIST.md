@@ -51,9 +51,9 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 ## B. Content needed
 - [x] Study Abroad: Florence 2028 flyer, planned courses, pending-approval notice, BUS 186 F funding, links to studyabroad.fullcoll.edu (October 19)
 - [ ] Study Abroad: add cost and application dates when set; remove the pending-approval notice after the Board approves; update courses when final
-- [ ] Headshots for 31 faculty (41 of 72 done):
+- [ ] Headshots for 30 faculty (42 of 72 done):
   - Accounting: Chen, Hoffman, Lim, St. John, C. Tran, Uchlik
-  - Business Management: Boyer, Caudillo, Chan, Colby, Conlin, J. Dixon, Durfield, Furlong, C. Ghidella, Gomez-Velazquez, Hines, Jezek-Arriaga, Rife, Steidel, Troop, Underdue, Webb, K. Wilson
+  - Business Management: Boyer, Caudillo, Chan, Colby, Conlin, Durfield, Furlong, C. Ghidella, Gomez-Velazquez, Hines, Jezek-Arriaga, Rife, Steidel, Troop, Underdue, Webb, K. Wilson
   - CIS: Fitzpatrick, Konefsky, Long, Rosenblum, Zentner
   - Paralegal: Downs, Torres
 - [ ] Headshots of the counselors: Olivia Barajas done (October 19); still need Castillo, Nguyen, Skiles
@@ -104,6 +104,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Ask Campus Communications whether the college has an official accessibility statement or web accessibility contact to link
 
 ## H. Future enhancements
+- [x] LinkedIn link on faculty cards (October 21): add each person to `LINKEDIN` in `src/people.py` as links come in
 - [ ] "Get the KSAs" section on each program page: the knowledge, skills, and abilities students gain from the program's courses, and how they lead to jobs (requested October 19; waiting on CurricUNET)
   - Source: course student learning outcomes (SLOs) from CurricUNET
   - Match each skill to the program's target jobs using the O*NET knowledge, skills, and abilities lists already linked on each program page

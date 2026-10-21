@@ -177,3 +177,9 @@ SCHEDULE_NAMES = {
  "omurphy@fullcoll.edu": ("Murphy, Owen", ""),
  "lpatrick@fullcoll.edu": ("Patrick, Lisa", ""),
 }
+
+# LinkedIn profiles faculty asked to show on their card (by email). Use the public profile URL, no query string.
+LINKEDIN = {
+ "jdixon@fullcoll.edu": "https://www.linkedin.com/in/julie-dixon-16978835/",
+ "ggraves@fullcoll.edu": "https://www.linkedin.com/in/garygraves/",
+}
