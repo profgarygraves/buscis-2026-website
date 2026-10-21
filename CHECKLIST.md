@@ -51,9 +51,9 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 ## B. Content needed
 - [x] Study Abroad: Florence 2028 flyer, planned courses, pending-approval notice, BUS 186 F funding, links to studyabroad.fullcoll.edu (October 19)
 - [ ] Study Abroad: add cost and application dates when set; remove the pending-approval notice after the Board approves; update courses when final
-- [ ] Headshots for 27 faculty (45 of 72 done):
+- [ ] Headshots for 26 faculty (46 of 72 done):
   - Accounting: Chen, Hoffman, Lim, St. John, C. Tran, Uchlik
-  - Business Management: Boyer, Caudillo, Chan, Colby, Conlin, Durfield, Furlong, C. Ghidella, Gomez-Velazquez, Hines, Rife, Steidel, Troop, Webb
+  - Business Management: Boyer, Caudillo, Chan, Colby, Conlin, Durfield, Furlong, C. Ghidella, Gomez-Velazquez, Hines, Steidel, Troop, Webb
   - CIS: Fitzpatrick, Konefsky, Long, Rosenblum, Zentner
   - Paralegal: Downs, Torres
 - [ ] Headshots of the counselors: Olivia Barajas done (October 19); still need Castillo, Nguyen, Skiles
