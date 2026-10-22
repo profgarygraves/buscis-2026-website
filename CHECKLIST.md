@@ -40,7 +40,8 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [ ] Each program lead reviews the highlights and short descriptions on their card and program page
 
 ### Resources and links
-- [ ] Club advisors and meeting times
+- [x] Division Clubs page rebuilt as club cards from `src/clubs.py` (October 22); Esports Club added (advisor Carlos Antunez)
+- [ ] Club details still needed: Marwin Luminarias's club; advisors and meeting times for Hornet Business Club, Accounting Society, LEX
 - [ ] Is the Accounting Society still active at fullcollacctsociety@gmail.com?
 - [ ] LEX contact: FCParalegalStudies@fullcoll.edu
 - [ ] Internship contacts (Graves, Carlin, Moore), both Google Forms, and the Canvas space are current

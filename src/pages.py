@@ -151,22 +151,12 @@ PAGES = [
 <div class="aside-card"><h2>Get experience</h2><ul><li><a href="internships.html">Internships for credit</a></li></ul></div>""",
   todo=""),
 
- dict(file="clubs.html", title="Student Clubs", eyebrow="Beyond class",
-  lead="Meet students in your field, hear from employers, and build your resume through the division's clubs and honor society.",
-  body="""<div class="block"><h2>Hornet Business Club</h2>
-<p>The division's club for all Business and CIS students. Join the club's Canvas space to get news, events, and opportunities.</p>
-<p><a class="btn btn-primary" href="{{CLUB}}">Join the Hornet Business Club</a></p></div>
-<div class="block"><h2>Accounting Society</h2>
-<p>The business networking center of Fullerton College, for students planning to transfer to a UC, CSU, or other university. Members network through team-building activities, hear guest speakers describe how they landed jobs at accounting firms and corporate or government employers, and serve the community, from packing food for neighbors in need to writing letters to seniors in nursing homes.</p>
-<p>To join, email fullcollacctsociety@gmail.com and the club board will add you to the mailing list.</p></div>
-<div class="block"><h2>Lambda Epsilon Chi (Paralegal Honor Society)</h2>
-<p>Lambda Epsilon Chi (LEX) is the national honor society in paralegal studies of the American Association for Paralegal Education. Inductees receive a certificate, a lapel pin, and a stole to wear at graduation. The honor society also offers a scholarship each semester.</p>
-<p>Paralegal Studies students who have completed at least 18 units of PLEG courses with a cumulative GPA of 3.5 or higher may be eligible. Email FCParalegalStudies@fullcoll.edu to learn how and when to apply.</p></div>""",
-  aside="""<div class="aside-card highlight"><h2>Join</h2><ul>
-<li><a href="{{CLUB}}">Hornet Business Club (Canvas)</a></li>
-<li>Accounting Society: fullcollacctsociety@gmail.com</li>
-<li>LEX: FCParalegalStudies@fullcoll.edu</li></ul></div>""",
-  todo="Add faculty advisors and meeting times for each club."),
+ dict(file="clubs.html", title="Division Clubs", eyebrow="Beyond class",
+  lead="Student clubs and honor societies supported by Business &amp; CIS faculty. Meet students who share your interests, build your resume, and have fun along the way.",
+  body="""{{CLUBS}}
+<p class="small">Club advisors: to add or update your club, email <a href="mailto:ggraves@fullcoll.edu">Gary Graves</a> with its name, advisor, meeting times, sign-up link, social accounts, and logo.</p>""",
+  aside="",
+  todo=""),
 
  dict(file="contact.html", title="Contact &amp; Hours", eyebrow="Division office",
   lead="Stop by, call, or email the Business &amp; CIS Division office. We will point you to the right person.",

@@ -140,21 +140,11 @@ PAGES_ES = {
 <li><a href="https://forms.office.com/r/T1XCq0cEpB">Pide ayuda (formulario de admisión)</a></li></ul></div>
 <div class="aside-card"><h2>Gana experiencia</h2><ul><li><a href="internships.html">Prácticas profesionales con créditos</a></li></ul></div>"""),
 
- "clubs.html": dict(title="Clubes estudiantiles", eyebrow="Más allá del salón",
-  lead="Conoce a estudiantes de tu área, escucha a empleadores y fortalece tu currículum en los clubes y la sociedad de honor de la división.",
-  body="""<div class="block"><h2 lang="en">Hornet Business Club</h2>
-<p>El club de la división para todos los estudiantes de Negocios y CIS. Únete al espacio del club en Canvas para recibir noticias, eventos y oportunidades.</p>
-<p><a class="btn btn-primary" href="{{CLUB}}">Únete al <span lang="en">Hornet Business Club</span></a></p></div>
-<div class="block"><h2>Sociedad de Contabilidad <span lang="en">(Accounting Society)</span></h2>
-<p>El centro de contactos de negocios de Fullerton College, para estudiantes que planean transferirse a una UC, una CSU u otra universidad. Los miembros hacen contactos con actividades de trabajo en equipo, escuchan a conferencistas que cuentan cómo consiguieron empleo en firmas contables, empresas o el gobierno, y sirven a la comunidad, desde empacar alimentos para familias necesitadas hasta escribir cartas a personas mayores en asilos.</p>
-<p>Para unirte, escribe a fullcollacctsociety@gmail.com y la mesa directiva del club te agregará a la lista de correo.</p></div>
-<div class="block"><h2 lang="en">Lambda Epsilon Chi</h2>
-<p>Lambda Epsilon Chi (LEX) es la sociedad nacional de honor en estudios paralegales de la <span lang="en">American Association for Paralegal Education</span>. Los integrantes reciben un certificado, un pin y una estola para usar en la graduación. La sociedad de honor también ofrece una beca cada semestre.</p>
-<p>Pueden ser elegibles los estudiantes de Estudios Paralegales que hayan completado al menos 18 unidades de cursos PLEG con un promedio acumulado de 3.5 o más. Escribe a FCParalegalStudies@fullcoll.edu para saber cómo y cuándo solicitar.</p></div>""",
-  aside="""<div class="aside-card highlight"><h2>Únete</h2><ul>
-<li><a href="{{CLUB}}"><span lang="en">Hornet Business Club</span> (Canvas)</a></li>
-<li>Sociedad de Contabilidad: fullcollacctsociety@gmail.com</li>
-<li>LEX: FCParalegalStudies@fullcoll.edu</li></ul></div>"""),
+ "clubs.html": dict(title="Clubes de la división", eyebrow="Más allá del salón",
+  lead="Clubes estudiantiles y sociedades de honor apoyados por el profesorado de Negocios y CIS. Conoce a estudiantes con tus mismos intereses, fortalece tu currículum y diviértete.",
+  body="""{{CLUBS}}
+<p class="small">Asesores de clubes: para agregar o actualizar su club, escriban a <a href="mailto:ggraves@fullcoll.edu">Gary Graves</a> con el nombre, asesor, horario de reuniones, enlace de inscripción, redes sociales y logotipo.</p>""",
+  aside=""),
 
  "contact.html": dict(title="Contacto y horario", eyebrow="Oficina de la división",
   lead="Visita, llama o escribe a la oficina de la División de Negocios y CIS. Te ayudaremos a encontrar a la persona indicada.",

@@ -490,6 +490,26 @@ table.rot .len{font-size:13px;color:var(--muted)}
 :root[data-theme="dark"] .pm .li svg{color:currentColor}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pm .li svg{color:currentColor}}
 
+/* clubs */
+.why{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--hornet);border-radius:var(--r);padding:20px 24px;margin-bottom:28px}
+.why h2{margin:0 0 10px}.why ul{margin:0 0 8px;padding-left:20px;display:grid;gap:6px}
+.clubs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:760px){.clubs{grid-template-columns:minmax(0,1fr)}}
+.club{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:12px;scroll-margin-top:120px}
+.club p{margin:0}
+.club-head{display:flex;gap:16px;align-items:center}
+.club-head h2{font-size:22px;margin:0}
+.club-tag{color:var(--muted);font-size:14px;font-weight:600}
+.club-logo{width:72px;height:72px;border-radius:50%;flex:none;object-fit:cover}
+.club-logo.tile{display:grid;place-items:center;background:var(--biz);color:var(--hornet);font:700 22px/1 var(--display)}
+.club-dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;margin:0;font-size:15px}
+.club-dl dt{font-weight:700}.club-dl dd{margin:0}
+.club-join{margin-top:auto}
+.club-social{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.club-social a{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;font-size:13px;font-weight:600;text-decoration:none}
+.club-social a:hover{border-color:var(--link)}
+.prose ul.club-social{padding:0;margin:0}
+
 </style>
 </head><body>
 <a class="skip" href="#main">Saltar al contenido</a>
@@ -632,7 +652,7 @@ table.rot .len{font-size:13px;color:var(--muted)}
         <li><a href="career.html#research"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span><b>Investiga carreras</b><span>Mi Próximo Paso, salarios por código postal y más</span></span></a></li>
         <li><a href="career.html#jobs"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg><span><b>Empleos en <span lang="en">Handshake</span></b><span>Empleos, prácticas, ayuda con tu currículum y el <span lang="en">Career Closet</span></span></span></a></li>
         <li><a href="https://fullcoll.instructure.com/enroll/876ALN"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M22 20a7 7 0 0 0-4-6.3"/></svg><span><b lang="en">Hornet Business Club</b><span>Únete en Canvas para recibir noticias y eventos</span></span></a></li>
-        <li><a href="clubs.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M22 20a7 7 0 0 0-4-6.3"/></svg><span><b>Clubes estudiantiles</b><span>Sociedad de Contabilidad y sociedad de honor paralegal</span></span></a></li>
+        <li><a href="clubs.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M22 20a7 7 0 0 0-4-6.3"/></svg><span><b>Clubes de la división</b><span><span lang="en">Esports</span>, Sociedad de Contabilidad, sociedad de honor LEX y más</span></span></a></li>
       </ul>
     </div>
   </div>

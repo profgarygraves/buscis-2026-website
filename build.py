@@ -15,6 +15,7 @@ from people import STAFF, DEPTS, FACULTY, SOCIAL, CLUB, SCHEDULE_NAMES, LINKEDIN
 from urllib.parse import quote
 from pages import PAGES, COUNSELORS, ESARS
 import rotation as ROT
+from clubs import CLUBS
 from pages_es import PAGES_ES
 from i18n import t
 
@@ -276,6 +277,10 @@ def program_page(key, lang):
         docs = (f'<div class="aside-card"><h2>{L(lang, "Program documents", "Documentos del programa")}</h2><ul>'
                 + "".join(f'<li><a href="{u}"{en}>{x}</a></li>' for x, u in p["docs"]) + '</ul></div>')
     hl = "".join(f"<li>{h}</li>" for h in pv(key, "highlights", lang))
+    clubmap = {c["id"]: c for c in CLUBS}
+    cl = [clubmap[i] for i in p.get("clubs", []) if i in clubmap]
+    clubs_card = ("" if not cl else f'<div class="aside-card"><h2>{L(lang, "Join a club", "Únete a un club")}</h2><ul>'
+                  + "".join(f'<li><a href="clubs.html#{c["id"]}" lang="en">{c["name"]}</a></li>' for c in cl) + '</ul></div>')
     site = ""
     if p.get("site"):
         su, sn, sd_en, sd_es = p["site"]
@@ -309,7 +314,7 @@ def program_page(key, lang):
       <div class="aside-card highlight"><h2>{L(lang, "Highlights", "Lo más destacado")}</h2><ul class="ticks">{hl}</ul></div>
       {site}
       <div class="aside-card"><h2>{L(lang, "Plan your classes", "Planea tus clases")}</h2><ul>{plan_html}</ul></div>
-      {docs}
+      {clubs_card}{docs}
     </section>
   </div>
 </section>
@@ -438,11 +443,38 @@ def rotation_html(lang):
       + f'<p class="small"><a href="paralegal.html">{L(lang, "Paralegal Studies program", "Programa de Estudios Paralegales")} &rarr;</a></p></div>'
       )
 
+SICON_EXTRA = {
+ "TikTok": '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.3 2.3 1.6 3.8 3.9 4v3.2c-1.4.1-2.6-.3-3.9-1.1v6.1c0 4.1-3.6 6.5-7 5.6-3.9-1.1-5-6-2.4-8.6 1.1-1.1 2.6-1.6 4.3-1.4v3.3c-.8-.2-1.7-.1-2.3.4-1.3 1-.9 3.4.9 3.7 1.4.2 2.3-.7 2.3-2.4V3z"/></svg>',
+ "Twitch": '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 2 3 6v14h5v3h3l3-3h4l4-4V2zm15 13-3 3h-4l-3 3v-3H6V4h14zM15 7h2v6h-2zm-5 0h2v6h-2z"/></svg>',
+}
+
+def clubs_html(lang):
+    R = "" if lang == "en" else "../"
+    cards = []
+    for c in CLUBS:
+        logo = (f'<img class="club-logo" src="{R}{c["logo"]}" alt="{c.get("logo_alt", "")}" width="96" height="96">' if c["logo"]
+                else f'<div class="club-logo tile" aria-hidden="true">{c.get("initials") or initials(c["name"])}</div>')
+        dl = ""
+        if c["advisor"]: dl += f'<dt>{L(lang, "Advisor", "Asesor")}</dt><dd>{c["advisor"]}</dd>'
+        if c["meets"][0]: dl += f'<dt>{L(lang, "Meets", "Reuniones")}</dt><dd>{L(lang, *c["meets"])}</dd>'
+        soc = "".join(f'<li><a href="{u}">{(SICON.get(n) or SICON_EXTRA[n])}<span>{n}<span class="sr-only">: {h}</span></span></a></li>' for n, h, u in c["social"])
+        j_en, j_es, ju = c["join"]
+        cards.append(f'''<article class="club" id="{c["id"]}" aria-labelledby="h-{c["id"]}">
+<div class="club-head">{logo}<div><h2 id="h-{c["id"]}" lang="en">{c["name"]}</h2><p class="club-tag">{L(lang, *c["tag"])}</p></div></div>
+<p>{L(lang, *c["about"])}</p>{('<dl class="club-dl">' + dl + '</dl>') if dl else ""}
+<p class="club-join"><a class="btn btn-primary" href="{ju}">{L(lang, j_en, j_es)}</a></p>{('<ul class="club-social" aria-label="' + L(lang, "Follow", "Síguenos") + ' ' + c["name"] + '">' + soc + '</ul>') if soc else ""}
+</article>''')
+    why = L(lang,
+      '<div class="why"><h2>Why join a club?</h2><ul><li><b>Meet your people.</b> Find classmates who share your goals and study together.</li><li><b>Build your resume.</b> Leadership roles, events, and competitions show employers and universities what you can do.</li><li><b>Connect with faculty and professionals.</b> Advisors and guest speakers open doors to internships and jobs.</li></ul><p class="small">Clubs are free and open to Fullerton College students. Most welcome students from any major.</p></div>',
+      '<div class="why"><h2>¿Por qué unirte a un club?</h2><ul><li><b>Conoce a tu gente.</b> Encuentra compañeros con tus mismas metas y estudien juntos.</li><li><b>Fortalece tu currículum.</b> Los puestos de liderazgo, eventos y competencias muestran a empleadores y universidades lo que puedes hacer.</li><li><b>Conecta con profesores y profesionales.</b> Los asesores y conferencistas abren puertas a prácticas y empleos.</li></ul><p class="small">Los clubes son gratuitos y abiertos a estudiantes de Fullerton College. La mayoría acepta estudiantes de cualquier carrera.</p></div>')
+    return why + '<div class="clubs">' + "".join(cards) + '</div>'
+
 def content_page(pg, lang):
     src = pg if lang == "en" else {**pg, **PAGES_ES[pg["file"]]}
     todo = (f'<div class="todo" role="note" lang="en"><b>{t("todo", "en")}</b> {pg["todo"]}</div>' if pg["todo"] else "")
     body = (src["body"].replace("{{COUNSELORS}}", "".join(person(n, ti, "", e, "", "staff", lang) for n, ti, e in COUNSELORS))
             .replace("{{CAREER_SOURCES}}", career_sources(lang))
+            .replace("{{CLUBS}}", clubs_html(lang) if "{{CLUBS}}" in src["body"] else "")
             .replace("{{ROTATION}}", rotation_html(lang) if "{{ROTATION}}" in src["body"] else "")
             .replace("{{STAFF}}", "".join(person(n, ti, "", e, ph, "staff", lang) for n, ti, ph, e in STAFF)))
     return f"""<main id="main">

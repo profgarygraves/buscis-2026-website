@@ -490,6 +490,26 @@ table.rot .len{font-size:13px;color:var(--muted)}
 :root[data-theme="dark"] .pm .li svg{color:currentColor}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pm .li svg{color:currentColor}}
 
+/* clubs */
+.why{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--hornet);border-radius:var(--r);padding:20px 24px;margin-bottom:28px}
+.why h2{margin:0 0 10px}.why ul{margin:0 0 8px;padding-left:20px;display:grid;gap:6px}
+.clubs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:760px){.clubs{grid-template-columns:minmax(0,1fr)}}
+.club{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:12px;scroll-margin-top:120px}
+.club p{margin:0}
+.club-head{display:flex;gap:16px;align-items:center}
+.club-head h2{font-size:22px;margin:0}
+.club-tag{color:var(--muted);font-size:14px;font-weight:600}
+.club-logo{width:72px;height:72px;border-radius:50%;flex:none;object-fit:cover}
+.club-logo.tile{display:grid;place-items:center;background:var(--biz);color:var(--hornet);font:700 22px/1 var(--display)}
+.club-dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;margin:0;font-size:15px}
+.club-dl dt{font-weight:700}.club-dl dd{margin:0}
+.club-join{margin-top:auto}
+.club-social{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.club-social a{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;font-size:13px;font-weight:600;text-decoration:none}
+.club-social a:hover{border-color:var(--link)}
+.prose ul.club-social{padding:0;margin:0}
+
 </style>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
@@ -571,7 +591,7 @@ table.rot .len{font-size:13px;color:var(--muted)}
       <div class="aside-card highlight"><h2>Highlights</h2><ul class="ticks"><li>Coursework for the CA salesperson and broker licenses</li><li>Taught by working professionals</li><li>Brokers Certificate (formerly the Real Estate Sales Certificate)</li></ul></div>
       
       <div class="aside-card"><h2>Plan your classes</h2><ul><li><a href="https://schedule.nocccd.edu/?college=2&keyword=RE101">Find RE 101 F in the schedule</a></li><li><a href="https://schedule.nocccd.edu/?college=2&keyword=RE">All RE classes this term</a></li><li><a href="https://pathways.fullcoll.edu/program/real-estate-management/">Course maps on Hornet Pathways</a></li><li><a href="rotation.html#realestate">Course rotation: when classes are offered</a></li><li><a href="counselors.html">Career education counselors</a></li><li><a href="forms.html">Apply for a certificate</a></li></ul></div>
-      
+      <div class="aside-card"><h2>Join a club</h2><ul><li><a href="clubs.html#hornet-business-club" lang="en">Hornet Business Club</a></li></ul></div>
     </section>
   </div>
 </section>

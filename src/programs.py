@@ -36,6 +36,7 @@ JOBS = {
 P = {
  "business": dict(file="business.html", name="Business Administration &amp; Management", color="biz",
    tag="Most popular major", featured=True, subj="BUS", starts=[("BUS100", "BUS 100 F", "Introduction to Business")],
+   clubs=['hornet-business-club'],
    rot="business",
    desc="Prepare to transfer to a four-year business program, or build management, finance, and operations skills for work right away.",
    lead="Business Management at Fullerton College covers every major area of business. Prepare to transfer, or update your skills for the job you have or the one you want.",
@@ -68,6 +69,7 @@ P = {
 
  "entrepreneurship": dict(file="entrepreneurship.html", name="Entrepreneurship", color="biz", subj="BUS",
    starts=[("BUS180", "BUS 180 F", "Small Business Management"), ("BUS181", "BUS 181 F", "The Entrepreneurial Mindset")],
+   clubs=['hornet-business-club'],
    rot="business",
    desc="Plan, launch, and run your own business. You finish the program with a complete business plan.",
    lead="Thinking about starting your own business but not sure where to begin? We guide you step by step through business planning, so you finish with a complete plan and the skills to start or grow a company.",
@@ -86,6 +88,7 @@ P = {
 
  "ai": dict(file="ai-in-business.html", name="AI in Business", color="biz", new=True, subj="BUS",
    starts=[("BUS256", "BUS 256 F", "AI and Prompt Engineering for Business")],
+   clubs=['hornet-business-club'],
    rot="business",
    desc="Use AI tools to analyze data, automate work, and make better business decisions. New in the Fall 2026 catalog.",
    lead="Learn AI literacy, prompt engineering, machine learning, and practical AI applications for business. The new AI programs took effect July 1, 2026.",
@@ -102,6 +105,7 @@ P = {
 
  "marketing": dict(file="marketing.html", name="Marketing", color="biz", subj="MKT",
    starts=[("MKT100", "MKT 100 F", "Introduction to Marketing"), ("MKT151", "MKT 151 F", "Digital Marketing")],
+   clubs=['hornet-business-club'],
    rot="marketing",
    desc="Advertising, social media, and digital marketing, for new marketers and for people already in the field who want to advance.",
    lead="Build the marketing skills employers look for, or sharpen the ones you have: marketing management, digital marketing, advertising, professional selling, and international marketing.",
@@ -119,6 +123,7 @@ P = {
 
  "intl": dict(file="international-business.html", name="International Business", color="biz", subj="BUS",
    starts=[("BUS131", "BUS 131 F", "Principles of International Business")],
+   clubs=['hornet-business-club'],
    rot="intl",
    desc="Importing, exporting, and global marketing and management for organizations that work across borders.",
    lead="Prepare for work in organizations with an international footprint, with skills in importing, exporting, and international marketing and management.",
@@ -134,6 +139,7 @@ P = {
 
  "realestate": dict(file="real-estate.html", name="Real Estate", color="biz", subj="RE",
    starts=[("RE101", "RE 101 F", "Principles of Real Estate")],
+   clubs=['hornet-business-club'],
    rot="realestate",
    desc="Coursework for the California salesperson and broker licenses, taught by working real estate professionals.",
    lead="Complete the coursework required for the California Real Estate Salesperson License and the California Real Estate Broker License, in classes taught by professionals in the field.",
@@ -151,6 +157,7 @@ P = {
 
  "accounting": dict(file="accounting.html", name="Accounting", color="law", tag="Accounting", subj="ACCT",
    starts=[("ACCT100", "ACCT 100 F", "Accounting for Small Business"), ("ACCT101A", "ACCT 101A F", "Financial Accounting")],
+   clubs=['accounting-society', 'hornet-business-club'],
    desc="Entry-level paths into bookkeeping, payroll, and taxation, plus transfer preparation and CPA coursework.",
    lead="Start an entry-level career in bookkeeping, payroll, or taxation, prepare to transfer for any business degree, or change careers into accounting.",
    overview=["Prepare for entry-level work in bookkeeping, accounts receivable, accounts payable, payroll, or taxation, or complete the lower-division courses you need to transfer.",
@@ -177,6 +184,7 @@ P = {
 
  "paralegal": dict(file="paralegal.html", name="Paralegal Studies", color="para", tag="Paralegal Studies Department", subj="PLEG",
    starts=[("PLEG101", "PLEG 101 F", "Introduction to Paralegal Studies")],
+   clubs=['lex', 'hornet-business-club'],
    desc="An ABA-approved program that prepares you to work on a legal team under the supervision of an attorney.",
    lead="Our ABA-approved program prepares you to work under the supervision of an attorney as a key member of the legal support team, in any area of law.",
    overview=["Earn an Associate in Science degree or a Certificate, then add a specialty certificate in Criminal Law, eDiscovery and Technology, Real Estate Law, or Law School First-Year Prep. Core courses include legal research and terminology, legal writing, advanced legal writing, and civil litigation.",
@@ -204,6 +212,7 @@ P = {
 
  "cis": dict(file="cis.html", name="Computer Information Systems", color="tech", subj="CIS",
    starts=[("CIS100", "CIS 100 F", "Introduction to Personal Computers"), ("CIS111", "CIS 111 F", "Introduction to Information Systems")],
+   clubs=['hornet-business-club'],
    desc="Apply current technology to real business problems: programming, web design, networking, cloud, and office applications.",
    lead="Learn how software, hardware, data, networks, and the internet come together in information systems, and apply them to real business problems through hands-on work, virtual labs, and simulations.",
    overview=["Earn an Associate in Science degree, or certificates in Programming, Web Design, Networking, Cloud Computing, Computer Technician, Office Applications, Mobile Application Development, and Intelligent Systems Programming.",
@@ -235,6 +244,7 @@ P = {
 
  "cyber": dict(file="cyber-security.html", name="Cyber Security", color="tech", subj="CYBR",
    starts=[("CYBR106", "CYBR 106 F", "Introduction to Cybersecurity")],
+   clubs=['hornet-business-club'],
    desc="Stackable certificates from technician to analyst to master level, built to protect businesses from cybercrime.",
    lead="Cyber security professionals protect the information of organizations, governments, and individuals. Build those skills one stackable certificate at a time, from technician to master level.",
    overview=["<b>Level 1, Technician:</b> foundational skills for entry-level work and for analyzing threats. <b>Level 2, Analyst:</b> adds ethical hacking, intrusion detection, incident response, and web application security. <b>Level 3, Master:</b> adds advanced programming and operating systems.",
@@ -256,6 +266,7 @@ P = {
 
  "gaming": dict(file="computer-gaming.html", name="Computer Gaming", color="tech", subj="CISG",
    starts=[("CISG100", "CISG 100 F", "Introduction to Computer Game Design")],
+   clubs=['esports', 'hornet-business-club'],
    rot="gaming",
    desc="Game engines, art and design for games, and game programming, for entry-level work in the video game industry.",
    lead="Learn the architecture of game engines, art and design for games, and game programming, and apply them in the fast-growing video game industry.",
