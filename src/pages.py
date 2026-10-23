@@ -151,7 +151,7 @@ PAGES = [
 <div class="aside-card"><h2>Get experience</h2><ul><li><a href="internships.html">Internships for credit</a></li></ul></div>""",
   todo=""),
 
- dict(file="clubs.html", title="Division Clubs", eyebrow="Beyond class",
+ dict(file="clubs.html", title="Division Student Clubs", eyebrow="Beyond class",
   lead="Student clubs and honor societies supported by Business &amp; CIS faculty. Meet students who share your interests, build your resume, and have fun along the way.",
   body="""{{CLUBS}}
 <p class="small">Club advisors: to add or update your club, email <a href="mailto:ggraves@fullcoll.edu">Gary Graves</a> with its name, advisor, meeting times, sign-up link, social accounts, and logo.</p>""",

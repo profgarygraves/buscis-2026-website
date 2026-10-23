@@ -157,7 +157,7 @@ P = {
 
  "accounting": dict(file="accounting.html", name="Accounting", color="law", tag="Accounting", subj="ACCT",
    starts=[("ACCT100", "ACCT 100 F", "Accounting for Small Business"), ("ACCT101A", "ACCT 101A F", "Financial Accounting")],
-   clubs=['accounting-society', 'hornet-business-club'],
+   clubs=['hornet-business-club'],
    desc="Entry-level paths into bookkeeping, payroll, and taxation, plus transfer preparation and CPA coursework.",
    lead="Start an entry-level career in bookkeeping, payroll, or taxation, prepare to transfer for any business degree, or change careers into accounting.",
    overview=["Prepare for entry-level work in bookkeeping, accounts receivable, accounts payable, payroll, or taxation, or complete the lower-division courses you need to transfer.",

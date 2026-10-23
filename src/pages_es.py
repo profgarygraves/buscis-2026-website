@@ -140,7 +140,7 @@ PAGES_ES = {
 <li><a href="https://forms.office.com/r/T1XCq0cEpB">Pide ayuda (formulario de admisión)</a></li></ul></div>
 <div class="aside-card"><h2>Gana experiencia</h2><ul><li><a href="internships.html">Prácticas profesionales con créditos</a></li></ul></div>"""),
 
- "clubs.html": dict(title="Clubes de la división", eyebrow="Más allá del salón",
+ "clubs.html": dict(title="Clubes estudiantiles de la división", eyebrow="Más allá del salón",
   lead="Clubes estudiantiles y sociedades de honor apoyados por el profesorado de Negocios y CIS. Conoce a estudiantes con tus mismos intereses, fortalece tu currículum y diviértete.",
   body="""{{CLUBS}}
 <p class="small">Asesores de clubes: para agregar o actualizar su club, escriban a <a href="mailto:ggraves@fullcoll.edu">Gary Graves</a> con el nombre, asesor, horario de reuniones, enlace de inscripción, redes sociales y logotipo.</p>""",
