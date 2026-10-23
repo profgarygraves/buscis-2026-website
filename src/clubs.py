@@ -7,8 +7,8 @@ CLUB_CANVAS = "https://fullcoll.instructure.com/enroll/876ALN"
 CLUBS = [
  dict(id="hornet-business-club", name="Hornet Business Club", logo=None,
       tag=("For every Business and CIS student", "Para todos los estudiantes de Negocios y CIS"),
-      about=("The division's club for all Business and CIS majors. Join the club's Canvas space for news, events, speakers, and opportunities across the division.",
-             "El club de la división para todos los estudiantes de Negocios y CIS. Únete a su espacio en Canvas para recibir noticias, eventos, conferencistas y oportunidades."),
+      about=("The division's club for all Business and CIS majors, now including the former Accounting Society. Join the club's Canvas space for news, events, speakers, and opportunities across the division.",
+             "El club de la división para todos los estudiantes de Negocios y CIS, que ahora incluye a la antigua Sociedad de Contabilidad (Accounting Society). Únete a su espacio en Canvas para recibir noticias, eventos, conferencistas y oportunidades."),
       advisor="", meets=("", ""),
       join=("Join in Canvas", "Únete en Canvas", CLUB_CANVAS), social=[]),
  dict(id="esports", name="Esports Club", logo="img/clubs/esports.jpg", logo_alt="Fullerton College Phantoms esports logo",
