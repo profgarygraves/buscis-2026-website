@@ -12,6 +12,7 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 - [x] Faculty roster checked against the division's faculty list (October 19): 72 faculty listed
   - Removed 11 who are not on the division list and have no classes in Fall 2026 or Spring 2027: Pascual, Snow, Oates, Reid, West, Collar, Douglas, Kazerooni, Woolridge, Yi, Peikes
   - Added Franco Torres (Paralegal); moved James Downs to Paralegal
+  - Removed Aleksandra Uchlik, no longer with the division (October 24); 71 faculty listed
 - [ ] Teaching but not on the division list; keep? Barry McCarthy (International Business lead), Kenneth Colby, Ross DiLeo, Justin Rife
 - [ ] Joel Salcedo (full-time in another division, teaches BUS): list him?
 - [ ] Franco Torres: add a "Find classes" button once he appears on the schedule
@@ -52,10 +53,10 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 ## B. Content needed
 - [x] Study Abroad: Florence 2028 flyer, planned courses, pending-approval notice, BUS 186 F funding, links to studyabroad.fullcoll.edu (October 19)
 - [ ] Study Abroad: add cost and application dates when set; remove the pending-approval notice after the Board approves; update courses when final
-- [ ] Headshots for 18 faculty (54 of 72 done):
-  - Accounting: Chen, Hoffman, Uchlik
+- [ ] Headshots for 15 faculty (56 of 71 done):
+  - Accounting: Chen, Hoffman
   - Business Management: Boyer, Colby, Durfield, Furlong, C. Ghidella, Gomez-Velazquez, Hines, Steidel, Troop
-  - CIS: Fitzpatrick, Konefsky, Long, Rosenblum
+  - CIS: Fitzpatrick, Long
   - Paralegal: Downs, Torres
 - [ ] Headshots of the counselors: Olivia Barajas done (October 19); still need Castillo, Nguyen, Skiles
 - [ ] Official Business & CIS Division wordmark from Campus Communications

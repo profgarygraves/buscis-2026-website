@@ -26,7 +26,6 @@ FACULTY = [
  ("Paul St. John","pstjohn@fullcoll.edu","acct","","",None),
  ("Cindy Tran","ctran@fullcoll.edu","acct","","",None),
  ("Phat Truong","ptruong@fullcoll.edu","acct","","Financial, Managerial, Taxation, and Cost Accounting","2020/04/phat-truong-1.jpg"),
- ("Aleksandra Uchlik","auchlik@fullcoll.edu","acct","","",None),
 
  ("Kathy Standen","kstanden@fullcoll.edu","bus","Department Coordinator","Marketing and Business Communications","2024/12/Kathy-Standen-jpeg-2.jpg"),
  ("Marcus Wilson","mwilson@fullcoll.edu","bus","Department Coordinator","Business Law, Business Economics, Introduction to Business","2020/04/Marcus-Wilson.jpg"),
@@ -119,7 +118,6 @@ SCHEDULE_NAMES = {
  "pstjohn@fullcoll.edu": ("St. John, Paul", ""),
  "ctran@fullcoll.edu": ("Tran, Cindy", ""),
  "ptruong@fullcoll.edu": ("Truong, Phat", ""),
- "auchlik@fullcoll.edu": ("Uchlik, Aleksandra", "202610"),
  "kstanden@fullcoll.edu": ("Standen, Kathy", ""),
  "mwilson@fullcoll.edu": ("Wilson, Marcus", ""),
  "ggraves@fullcoll.edu": ("Graves, Gary", ""),
