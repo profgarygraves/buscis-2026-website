@@ -42,7 +42,8 @@ Last updated: October 19, 2026. Check items off as they are confirmed.
 
 ### Resources and links
 - [x] Division Clubs page rebuilt as club cards from `src/clubs.py` (October 22); Esports Club added (advisor Carlos Antunez)
-- [ ] Club details still needed: Marwin Luminarias's club; advisors and meeting times for Hornet Business Club and LEX
+- [x] Moot Court Club added (October 25, from Michael Moore)
+- [ ] Club details still needed: Marwin Luminarias's club; advisors and meeting times for Hornet Business Club, Moot Court Club, and LEX
 - [x] Accounting Society merged into the Hornet Business Club; removed from the clubs page (October 23)
 - [ ] LEX contact: FCParalegalStudies@fullcoll.edu
 - [ ] Internship contacts (Graves, Carlin, Moore), both Google Forms, and the Canvas space are current

@@ -184,7 +184,7 @@ P = {
 
  "paralegal": dict(file="paralegal.html", name="Paralegal Studies", color="para", tag="Paralegal Studies Department", subj="PLEG",
    starts=[("PLEG101", "PLEG 101 F", "Introduction to Paralegal Studies")],
-   clubs=['lex', 'hornet-business-club'],
+   clubs=['lex', 'moot-court'],
    desc="An ABA-approved program that prepares you to work on a legal team under the supervision of an attorney.",
    lead="Our ABA-approved program prepares you to work under the supervision of an attorney as a key member of the legal support team, in any area of law.",
    overview=["Earn an Associate in Science degree or a Certificate, then add a specialty certificate in Criminal Law, eDiscovery and Technology, Real Estate Law, or Law School First-Year Prep. Core courses include legal research and terminology, legal writing, advanced legal writing, and civil litigation.",
