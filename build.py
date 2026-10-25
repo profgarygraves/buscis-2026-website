@@ -11,7 +11,7 @@ S = ROOT / "src"; OUT = ROOT / "docs"
 sys.path.insert(0, str(S))
 from programs import P, GROUPS, JOBS, SCHED, LEADS, JOB_SOC, PATHWAYS, PW, CAREER_SOURCES
 from programs_es import ES, GROUPS_ES, TAGS_ES, JOBS_ES, AREA_ES, ROLE_ES, DEPTS_ES
-from people import STAFF, DEPTS, FACULTY, SOCIAL, CLUB, SCHEDULE_NAMES, LINKEDIN
+from people import STAFF, DEPTS, FACULTY, SOCIAL, CLUB, SCHEDULE_NAMES, LINKEDIN, NO_PHOTO
 from urllib.parse import quote
 from pages import PAGES, COUNSELORS, ESARS
 import rotation as ROT
@@ -80,7 +80,7 @@ def photo(name):
     s = slug(name); s = PHOTO_ALIASES.get(s, s)
     return f"img/people/{s}.jpg" if (ROOT / "img" / "people" / f"{s}.jpg").exists() else None
 
-def person(name, role="", area="", email="", phone="", dept="bus", lang="en"):
+def person(name, role="", area="", email="", phone="", dept="bus", lang="en", row=False):
     # Live site (PHP): if file_exists("img/people/{slug}.jpg") print <img>, else the initials tile.
     src = photo(name); R = "" if lang == "en" else "../"
     ph = (f'<div class="ph c-{DEPT_COLOR[dept]}"><img src="{R}{src}" alt="" loading="lazy" width="600" height="750"></div>' if src
@@ -94,6 +94,8 @@ def person(name, role="", area="", email="", phone="", dept="bus", lang="en"):
             + (f'<p class="cls"><a href="https://schedule.nocccd.edu/?college=2{("&amp;term=" + SCHEDULE_NAMES[email][1]) if SCHEDULE_NAMES[email][1] else ""}&amp;instr={quote(SCHEDULE_NAMES[email][0])}">'
                f'{L(lang, "Find classes", "Ver sus clases")}<span class="sr-only"> {L(lang, "taught by", "de")} {name}</span> &rarr;</a></p>'
                if email in SCHEDULE_NAMES else ""))
+    if row or email in NO_PHOTO:  # text-only listing: no photo or initials tile
+        return f'<li class="person prow"><div class="pm">{meta}</div></li>'
     return f'<li class="person">{ph}<div class="pm">{meta}</div></li>'
 
 def last_name(n):
@@ -340,11 +342,13 @@ def faculty_page(lang):
             if f[1] in dict((e, 1) for e in LEADS.values()):
                 parts.append(t("Program Lead", lang) + ": " + ", ".join(lead_roles(f[1], lang)))
             return " &middot; ".join(parts)
-        cards = "".join(person(f[0], frole(f), f[4], f[1], "", k, lang) for f in ppl)
+        cards = "".join(person(f[0], frole(f), f[4], f[1], "", k, lang) for f in ppl if f[1] not in NO_PHOTO)
+        rows = "".join(person(f[0], frole(f), f[4], f[1], "", k, lang, row=True) for f in ppl if f[1] in NO_PHOTO)
+        more = (f'<h4 class="more-h">{L(lang, "More " + v + " faculty", "Más docentes de " + DEPTS_ES[k])}</h4><ul class="people-list">{rows}</ul>' if rows else "")
         n = len(ppl)
         secs.append(f'<section class="dept dp-{k}" aria-labelledby="h-{k}"><div class="group-label"><span class="swatch" style="background:var(--{DEPT_COLOR[k]})" aria-hidden="true"></span>'
-                    f'<h3 id="h-{k}">{dname(k, v)}</h3><span>{n} {L(lang, "faculty", "docentes")}</span></div><ul class="people">{cards}</ul></section>')
-    lead = L(lang, f"{len(FACULTY)} faculty across four departments, plus the division office team. Faculty with a photo on file are listed first, then everyone else, alphabetically by last name.",
+                    f'<h3 id="h-{k}">{dname(k, v)}</h3><span>{n} {L(lang, "faculty", "docentes")}</span></div><ul class="people">{cards}</ul>{more}</section>')
+    lead = L(lang, f"{len(FACULTY)} faculty across four departments, plus the division office team. Faculty with a photo are listed first, then everyone else, alphabetically by last name.",
              f"{len(FACULTY)} docentes en cuatro departamentos, además del equipo de la oficina de la división. Primero aparecen los docentes con foto y después los demás, en orden alfabético por apellido.")
     return f"""<style>{hide}{{display:none}}</style>
 <main id="main">

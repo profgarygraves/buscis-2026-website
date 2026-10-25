@@ -188,3 +188,9 @@ LINKEDIN = {
  "echan@fullcoll.edu": "https://www.linkedin.com/in/erick-chan/",
  "mconlin@fullcoll.edu": "https://www.linkedin.com/in/maryanneconlin/",
 }
+
+# Faculty who asked not to show a photo. They appear in a simple list under their department
+# ("More ... faculty") instead of a photo card. Add an email here to move someone to the list.
+NO_PHOTO = {
+ "jtroop@fullcoll.edu",
+}
