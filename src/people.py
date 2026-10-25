@@ -58,7 +58,7 @@ FACULTY = [
  ("Lambe Papoulias","lpapoulias@fullcoll.edu","bus","","","2024/12/Lambe-P-1-e1734133572797.png"),
  ("Justin Rife","jrife@fullcoll.edu","bus","","",None),
  ("Eric Rodriguez","erodriguez@fullcoll.edu","bus","","","2025/01/Eric-Rodgriguez.jpg"),
- ("Lee Steidel","ksteidel@fullcoll.edu","bus","","",None),
+ ("K. Lee Steidel","ksteidel@fullcoll.edu","bus","","",None),
  ("Jane Troop","jtroop@fullcoll.edu","bus","","Business Management and Computer Applications",None),
  ("Rashawn Underdue","runderdue@fullcoll.edu","bus","","",None),
  ("Rajen Vurdien","rvurdien@fullcoll.edu","bus","","","2025/01/Rajen-Vurdien-scaled.jpg"),
@@ -188,6 +188,7 @@ LINKEDIN = {
  "kwebb@fullcoll.edu": "https://www.linkedin.com/in/kevin-webb-1275037/",
  "echan@fullcoll.edu": "https://www.linkedin.com/in/erick-chan/",
  "mconlin@fullcoll.edu": "https://www.linkedin.com/in/maryanneconlin/",
+ "ksteidel@fullcoll.edu": "https://www.linkedin.com/in/leesteidel/",
 }
 
 # Faculty who asked not to show a photo. They appear in a simple list under their department
