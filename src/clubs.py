@@ -9,7 +9,7 @@ CLUBS = [
       about=("The division's club for all Business and Accounting majors, now including the former Accounting Society. Watch for news, events, speakers, and opportunities across the division.",
              "El club de la división para todos los estudiantes de Negocios y Contabilidad, que ahora incluye a la antigua Sociedad de Contabilidad (Accounting Society). Mantente al tanto de noticias, eventos, conferencistas y oportunidades."),
       advisor="Marwin Luminarias and Diana Hsueh", advisor_label=("Advisors", "Asesores"), meets=("", ""),
-      join=None, social=[]),
+      join=("Email the advisors", "Escribe a los asesores", "mailto:mluminarias@fullcoll.edu,dhsueh@fullcoll.edu?subject=Hornet%20Business%20Club"), social=[]),
  dict(id="esports", name="Esports Club", logo="img/clubs/esports.jpg", logo_alt="Fullerton College Phantoms esports logo",
       tag=("Fullerton College Phantoms", "Fullerton College Phantoms"),
       about=("Play, compete, and connect with other gamers at every skill level. Represent Fullerton College as the FC Phantoms, and pair the club with the Computer Gaming program's eSports courses (CISG 191, 192, and 193).",
