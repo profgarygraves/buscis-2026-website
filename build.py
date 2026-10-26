@@ -462,11 +462,11 @@ def clubs_html(lang):
         if c["advisor"]: dl += f'<dt>{L(lang, *c.get("advisor_label", ("Advisor", "Asesor")))}</dt><dd>{c["advisor"]}</dd>'
         if c["meets"][0]: dl += f'<dt>{L(lang, "Meets", "Reuniones")}</dt><dd>{L(lang, *c["meets"])}</dd>'
         soc = "".join(f'<li><a href="{u}">{(SICON.get(n) or SICON_EXTRA[n])}<span>{n}<span class="sr-only">: {h}</span></span></a></li>' for n, h, u in c["social"])
-        j_en, j_es, ju = c["join"]
+        j_en, j_es, ju = c["join"] or ("", "", "")
         cards.append(f'''<article class="club" id="{c["id"]}" aria-labelledby="h-{c["id"]}">
 <div class="club-head">{logo}<div><h2 id="h-{c["id"]}" lang="en">{c["name"]}</h2><p class="club-tag">{L(lang, *c["tag"])}</p></div></div>
 <p>{L(lang, *c["about"])}</p>{('<dl class="club-dl">' + dl + '</dl>') if dl else ""}
-<p class="club-join"><a class="btn btn-primary" href="{ju}">{L(lang, j_en, j_es)}</a></p>{('<ul class="club-social" aria-label="' + L(lang, "Follow", "Síguenos") + ' ' + c["name"] + '">' + soc + '</ul>') if soc else ""}
+{f'<p class="club-join"><a class="btn btn-primary" href="{ju}">{L(lang, j_en, j_es)}</a></p>' if ju else ""}{('<ul class="club-social" aria-label="' + L(lang, "Follow", "Síguenos") + ' ' + c["name"] + '">' + soc + '</ul>') if soc else ""}
 </article>''')
     why = L(lang,
       '<div class="why"><h2>Why join a club?</h2><ul><li><b>Meet your people.</b> Find classmates who share your goals and study together.</li><li><b>Build your resume.</b> Leadership roles, events, and competitions show employers and universities what you can do.</li><li><b>Connect with faculty and professionals.</b> Advisors and guest speakers open doors to internships and jobs.</li></ul><p class="small">Clubs are free and open to Fullerton College students. Most welcome students from any major.</p></div>',

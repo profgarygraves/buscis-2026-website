@@ -39,7 +39,7 @@ T = {
  "contact": ("Contact", "Contacto"),
  "directory_link": ("Faculty &amp; staff directory", "Directorio del profesorado y personal"),
  "follow": ("Follow the division", "Sigue a la división"),
- "join_club": ("Join the Hornet Business Club", "Únete al Hornet Business Club"),
+ "join_club": ("Explore division student clubs", "Conoce los clubes estudiantiles"),
  "f_directory": ("Directory", "Directorio"),
  "f_connect": ("Connect", "Conéctate"),
  "f_students": ("Students", "Estudiantes"),
