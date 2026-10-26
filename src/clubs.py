@@ -9,7 +9,7 @@ CLUBS = [
       tag=("For every Business and Accounting student", "Para todos los estudiantes de Negocios y Contabilidad"),
       about=("The division's club for all Business and Accounting majors, now including the former Accounting Society. Join the club's Canvas space for news, events, speakers, and opportunities across the division.",
              "El club de la división para todos los estudiantes de Negocios y Contabilidad, que ahora incluye a la antigua Sociedad de Contabilidad (Accounting Society). Únete a su espacio en Canvas para recibir noticias, eventos, conferencistas y oportunidades."),
-      advisor="", meets=("", ""),
+      advisor="Marwin Luminarias and Diana Hsueh", advisor_label=("Advisors", "Asesores"), meets=("", ""),
       join=("Join in Canvas", "Únete en Canvas", CLUB_CANVAS), social=[]),
  dict(id="esports", name="Esports Club", logo="img/clubs/esports.jpg", logo_alt="Fullerton College Phantoms esports logo",
       tag=("Fullerton College Phantoms", "Fullerton College Phantoms"),
