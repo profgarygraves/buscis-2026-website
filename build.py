@@ -459,7 +459,7 @@ def clubs_html(lang):
         logo = (f'<img class="club-logo" src="{R}{c["logo"]}" alt="{c.get("logo_alt", "")}" width="96" height="96">' if c["logo"]
                 else f'<div class="club-logo tile" aria-hidden="true">{c.get("initials") or initials(c["name"])}</div>')
         dl = ""
-        if c["advisor"]: dl += f'<dt>{L(lang, "Advisor", "Asesor")}</dt><dd>{c["advisor"]}</dd>'
+        if c["advisor"]: dl += f'<dt>{L(lang, *c.get("advisor_label", ("Advisor", "Asesor")))}</dt><dd>{c["advisor"]}</dd>'
         if c["meets"][0]: dl += f'<dt>{L(lang, "Meets", "Reuniones")}</dt><dd>{L(lang, *c["meets"])}</dd>'
         soc = "".join(f'<li><a href="{u}">{(SICON.get(n) or SICON_EXTRA[n])}<span>{n}<span class="sr-only">: {h}</span></span></a></li>' for n, h, u in c["social"])
         j_en, j_es, ju = c["join"]
